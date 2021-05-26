@@ -1,0 +1,85 @@
+# Site Information
+site_name: Server Setup Guide
+site_description: A guide of how I've set up my home server.
+site_author: moonstar-x
+site_url: https://moonstar-x.dev/server-setup/
+
+# Repo
+repo_name: 'GitHub: moonstar-x'
+repo_url: https://github.com/moonstar-x
+edit_uri: ''
+
+# Social
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/moonstar-x
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/moonstar_x99
+    - icon: fontawesome/solid/globe-americas
+      link: https://moonstar-x.dev
+
+# Copyright
+copyright: Copyright &copy; 2021 moonstar-x
+
+# Navigation
+nav:
+  - Home: index.md
+
+# Theme Customization
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: fontawesome/solid/star
+    repo: fontawesome/brands/github
+  language: en
+  direction: ltr
+  favicon: assets/favicon.ico
+  features:
+    tabs: false
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.mark
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.betterem
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: date
+
+# Google Analytics
+google_analytics:
+  - UA-167966432-2
+  - auto
