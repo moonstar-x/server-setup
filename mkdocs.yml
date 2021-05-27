@@ -36,6 +36,7 @@ nav:
   - Discord Bots:
     - Initialization: discord-bots/index.md
     - Free Games Notifier: discord-bots/free-games-notifier.md
+    - Text-to-Speech Bot: discord-bots/tts-bot.md
 
 # Theme Customization
 theme:
