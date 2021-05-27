@@ -29,6 +29,7 @@ nav:
     - OS Installation: setting-up/os-installation.md
     - Packages: setting-up/packages.md
     - Mounting Drives: setting-up/mounting-drives.md
+    - Networking: setting-up/networking.md
     - Docker: setting-up/docker.md
 
 # Theme Customization
