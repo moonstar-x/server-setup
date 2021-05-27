@@ -37,6 +37,7 @@ nav:
     - Initialization: discord-bots/index.md
     - Free Games Notifier: discord-bots/free-games-notifier.md
     - Text-to-Speech Bot: discord-bots/tts-bot.md
+    - Music 24/7 Bot: discord-bots/music-24-7.md
 
 # Theme Customization
 theme:
