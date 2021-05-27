@@ -25,6 +25,8 @@ copyright: Copyright &copy; 2021 moonstar-x
 # Navigation
 nav:
   - Home: index.md
+  - Setting-up: 
+    - OS Installation: setting-up/os-installation.md
 
 # Theme Customization
 theme:
@@ -54,7 +56,7 @@ theme:
   direction: ltr
   favicon: assets/favicon.ico
   features:
-    tabs: false
+    navigation.tabs: true
 
 # Extensions
 markdown_extensions:
