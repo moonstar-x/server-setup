@@ -27,6 +27,7 @@ nav:
   - Home: index.md
   - Setting-up: 
     - OS Installation: setting-up/os-installation.md
+    - Packages: setting-up/packages.md
     - Mounting Drives: setting-up/mounting-drives.md
 
 # Theme Customization
