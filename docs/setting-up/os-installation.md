@@ -7,3 +7,11 @@ As a general rule of thumb, after installing the OS it is recommended to update 
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
+
+## Configuring Date and Time
+
+By default, the OS will be installed with **GMT+0** as the timezone. We'll change this to conform with our real timezone which is **GMT-5**.
+
+```bash
+sudo timedatectl set-timezone America/Guayaquil
+```
