@@ -31,6 +31,8 @@ nav:
     - Mounting Drives: setting-up/mounting-drives.md
     - Networking: setting-up/networking.md
     - Docker: setting-up/docker.md
+  - Services:
+    - Samba (Native): services/samba.md
 
 # Theme Customization
 theme:
