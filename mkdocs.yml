@@ -33,6 +33,9 @@ nav:
     - Docker: setting-up/docker.md
   - Services:
     - Samba (Native): services/samba.md
+  - Discord Bots:
+    - Initialization: discord-bots/index.md
+    - Free Games Notifier: discord-bots/free-games-notifier.md
 
 # Theme Customization
 theme:
@@ -67,8 +70,6 @@ theme:
 # Extensions
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
   - toc:
       permalink: true
   - pymdownx.emoji:
@@ -78,6 +79,8 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist
   - pymdownx.betterem
+  - pymdownx.highlight
+  - pymdownx.superfences
 
 # Plugins
 plugins:
