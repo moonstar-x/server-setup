@@ -11,6 +11,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | Jellyfin                    | 8086        | TCP      |
 | Plex                        | 32400       | TCP      |
 | Tautulli                    | 8181        | TCP      |
+| RTMP Simulcast              | 1935        | TCP      |
 
 If you don't know what internal IP the server is running on, you can always type on the terminal:
 
