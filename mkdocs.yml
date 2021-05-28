@@ -38,6 +38,7 @@ nav:
     - Free Games Notifier: discord-bots/free-games-notifier.md
     - Text-to-Speech Bot: discord-bots/tts-bot.md
     - Music 24/7 Bot: discord-bots/music-24-7.md
+    - JDA Music Bot: discord-bots/jda-music-bot.md
 
 # Theme Customization
 theme:
