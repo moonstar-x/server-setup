@@ -10,6 +10,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | Samba (SMB/CIFS)            | 445         | TCP      |
 | Jellyfin                    | 8086        | TCP      |
 | Plex                        | 32400       | TCP      |
+| Tautulli                    | 8181        | TCP      |
 
 If you don't know what internal IP the server is running on, you can always type on the terminal:
 
