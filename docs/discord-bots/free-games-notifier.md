@@ -29,6 +29,7 @@ services:
       - PREFIX=!
       - OWNER_ID=<OWNER_ID_HERE>
       - INVITE_URL=<INVITE_URL_HERE>
+      - TZ=America/Guayaquil
 ```
 
 ## Running

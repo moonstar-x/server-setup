@@ -29,6 +29,7 @@ services:
       - PREFIX=s!
       - CHANNEL_ID=<CHANNEL_ID_HERE>
       - OWNER_ID=<OWNER_ID_HERE>
+      - TZ=America/Guayaquil
 ```
 
 ## Running

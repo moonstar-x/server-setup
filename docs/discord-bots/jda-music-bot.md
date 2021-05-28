@@ -70,6 +70,8 @@ services:
     network_mode: host
     volumes:
       - ./app:/opt/app
+    environment:
+      - TZ=America/Guayaquil
 ```
 
 Before starting, we need to build this image, do so with:

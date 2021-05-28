@@ -25,6 +25,7 @@ services:
     environment:
       - DISCORD_TOKEN=<DISCORD_TOKEN_HERE>
       - PREFIX=$$
+      - TZ=America/Guayaquil
 ```
 
 !!! note
