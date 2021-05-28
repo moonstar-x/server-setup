@@ -39,6 +39,7 @@ nav:
       - Plex: services/media/plex.md
       - Tautulli: services/media/tautulli.md
       - Transmission: services/media/transmission.md
+      - Sonarr: services/media/sonarr.md
     - Other:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
