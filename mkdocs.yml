@@ -36,6 +36,7 @@ nav:
     - Media:
       - Initialization: services/media/index.md
       - Jellyfin: services/media/jellyfin.md
+      - Plex: services/media/plex.md
   - Discord Bots:
     - Initialization: discord-bots/index.md
     - Free Games Notifier: discord-bots/free-games-notifier.md
