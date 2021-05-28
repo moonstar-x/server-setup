@@ -25,6 +25,30 @@ copyright: Copyright &copy; 2021 moonstar-x
 # Navigation
 nav:
   - Home: index.md
+  - Setting-up: 
+    - OS Installation: setting-up/os-installation.md
+    - Packages: setting-up/packages.md
+    - Mounting Drives: setting-up/mounting-drives.md
+    - Networking: setting-up/networking.md
+    - Docker: setting-up/docker.md
+  - Services:
+    - Samba (Native): services/samba.md
+    - Media:
+      - Initialization: services/media/index.md
+      - Jellyfin: services/media/jellyfin.md
+      - Plex: services/media/plex.md
+      - Tautulli: services/media/tautulli.md
+      - Transmission: services/media/transmission.md
+      - Sonarr: services/media/sonarr.md
+    - Other:
+      - Initialization: services/other/index.md
+      - RTMP Simulcast: services/other/rtmp-simulcast.md
+  - Discord Bots:
+    - Initialization: discord-bots/index.md
+    - Free Games Notifier: discord-bots/free-games-notifier.md
+    - Text-to-Speech Bot: discord-bots/tts-bot.md
+    - Music 24/7 Bot: discord-bots/music-24-7.md
+    - JDA Music Bot: discord-bots/jda-music-bot.md
 
 # Theme Customization
 theme:
@@ -54,13 +78,12 @@ theme:
   direction: ltr
   favicon: assets/favicon.ico
   features:
-    tabs: false
+    navigation.tabs: true
+    navigation.expand: true
 
 # Extensions
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
   - toc:
       permalink: true
   - pymdownx.emoji:
@@ -70,6 +93,8 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist
   - pymdownx.betterem
+  - pymdownx.highlight
+  - pymdownx.superfences
 
 # Plugins
 plugins:
