@@ -6,4 +6,4 @@ All the services inside this section will be implemented on *Docker*. Since we'l
 mkdir ~/media
 ```
 
-For each service created, there will be a subfolder where a `docker-compose.yml` file will be located, alongside any data volumes required and even `Dockerfile` if required.
+For each service created, there will be a subfolder where a `docker-compose.yml` file will be located, alongside any data volumes required and even a `Dockerfile` if required.
