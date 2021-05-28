@@ -58,6 +58,9 @@ networks:
 !!! note
     The password should be set inside the `docker-compose.yml` file and not manually updated in `config/settings.json` which will mess up with the s6 supervisor. Use a password you don't care too much about since it would basically be saved in plain text.
 
+!!! note
+    You may change the contents of `config/settings.json` as long as the container is stopped.
+
 ## Post-Installation
 
 We'll need to allow the service's web UI port on our firewall.
