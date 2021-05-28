@@ -1,6 +1,6 @@
 # Plex
 
-[Plex](https://plex.tv) one of the most popular media server options out there. This media server has an official image available on [Docker Hub](https://hub.docker.com/r/plexinc/pms-docker/) which we'll use.
+[Plex](https://plex.tv) is one of the most popular media server options out there. This media server has an official image available on [Docker Hub](https://hub.docker.com/r/plexinc/pms-docker/) which we'll use.
 
 ## Pre-Installation
 
