@@ -40,6 +40,7 @@ nav:
       - Tautulli: services/media/tautulli.md
       - Transmission: services/media/transmission.md
       - Sonarr: services/media/sonarr.md
+      - Radarr: services/media/radarr.md
       - Jackett: services/media/jackett.md
     - Other:
       - Initialization: services/other/index.md
