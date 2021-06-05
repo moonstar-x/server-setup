@@ -1,91 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://moonstar-x.dev/server-setup/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/setting-up/os-installation/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/setting-up/packages/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/setting-up/mounting-drives/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/setting-up/networking/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/setting-up/docker/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/samba/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/media/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/media/jellyfin/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/media/plex/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/media/tautulli/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/media/transmission/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/media/sonarr/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/media/radarr/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/media/jackett/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/other/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/services/other/rtmp-simulcast/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://moonstar-x.dev/server-setup/services/other/webframes/</loc>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/discord-bots/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/discord-bots/free-games-notifier/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/discord-bots/tts-bot/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/discord-bots/music-24-7/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://moonstar-x.dev/server-setup/discord-bots/jda-music-bot/</loc>
-     <lastmod>2021-05-29</lastmod>
+     <lastmod>2021-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
