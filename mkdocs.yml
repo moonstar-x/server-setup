@@ -45,6 +45,7 @@ nav:
     - Other:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
+      - Webframes: services/other/webframes.md
   - Discord Bots:
     - Initialization: discord-bots/index.md
     - Free Games Notifier: discord-bots/free-games-notifier.md
