@@ -42,6 +42,7 @@ nav:
       - Sonarr: services/media/sonarr.md
       - Radarr: services/media/radarr.md
       - Jackett: services/media/jackett.md
+      - JDownloader: services/media/jdownloader.md
     - Data:
       - Initialization: services/data/index.md
       - Gitea: services/data/gitea.md
