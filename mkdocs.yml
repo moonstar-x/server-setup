@@ -86,7 +86,7 @@ theme:
   favicon: assets/favicon.ico
   features:
     navigation.tabs: true
-    navigation.expand: true
+    navigation.sections: true
 
 # Extensions
 markdown_extensions:
