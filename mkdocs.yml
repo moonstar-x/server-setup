@@ -33,6 +33,9 @@ nav:
     - Docker: setting-up/docker.md
   - Services:
     - Samba (Native): services/samba.md
+    - Docker:
+      - Initialization: services/docker/index.md
+      - Portainer: services/docker/portainer.md
     - Media:
       - Initialization: services/media/index.md
       - Jellyfin: services/media/jellyfin.md
