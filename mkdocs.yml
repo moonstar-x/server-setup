@@ -33,6 +33,7 @@ nav:
     - Docker: setting-up/docker.md
   - Services:
     - Samba (Native): services/samba.md
+    - Cloudflared (Native): services/cloudflared.md
     - Docker:
       - Initialization: services/docker/index.md
       - Portainer: services/docker/portainer.md
