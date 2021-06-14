@@ -19,7 +19,8 @@ Here's a table that contains the required default ports that need to be forwarde
 | Gitea                       | 3000        | TCP      |
 | Portainer                   | 8000, 9000  | TCP      |
 | Fleet                       | 8080        | TCP      |
-| Webframes (HTTP)            | 80          | TCP      |
+| Webframes (Internal)        | 80          | TCP      |
+| Webframes (External)        | 4000        | TCP      |
 | RTMP Simulcast              | 1935        | TCP      |
 
 If you don't know what internal IP the server is running on, you can always type on the terminal:
