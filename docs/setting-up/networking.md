@@ -17,6 +17,8 @@ Here's a table that contains the required default ports that need to be forwarde
 | Transmission                | 9091        | TCP      |
 | JDownloader                 | 3129, 5800  | TCP      |
 | Gitea                       | 3000        | TCP      |
+| Portainer                   | 8000, 9000  | TCP      |
+| Fleet                       | 8080        | TCP      |
 | Webframes (HTTP)            | 80          | TCP      |
 | RTMP Simulcast              | 1935        | TCP      |
 

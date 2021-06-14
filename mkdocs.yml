@@ -36,6 +36,7 @@ nav:
     - Docker:
       - Initialization: services/docker/index.md
       - Portainer: services/docker/portainer.md
+      - Fleet: services/docker/fleet.md
     - Media:
       - Initialization: services/media/index.md
       - Jellyfin: services/media/jellyfin.md
