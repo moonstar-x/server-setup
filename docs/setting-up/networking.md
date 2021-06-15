@@ -9,6 +9,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | SSH                         | 22          | TCP      |
 | Samba (SMB/CIFS)            | 445         | TCP      |
 | Jellyfin                    | 8086        | TCP      |
+| EmbyStat                    | 6555        | TCP      |
 | Plex                        | 32400       | TCP      |
 | Tautulli                    | 8181        | TCP      |
 | Sonarr                      | 8989        | TCP      |

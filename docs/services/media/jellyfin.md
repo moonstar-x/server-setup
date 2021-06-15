@@ -10,6 +10,12 @@ We'll create a folder in the main user's home where all the media server's data 
 mkdir ~/media/jellyfin
 ```
 
+We'll also need to create a custom network to allow other containers to communicate with this one.
+
+```bash
+docker network create jellyfin
+```
+
 ## Docker Compose
 
 *Jellyfin* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
@@ -22,6 +28,8 @@ services:
     image: jellyfin/jellyfin:latest
     user: 1000:1000
     restart: unless-stopped
+    networks:
+      - jellyfin
     volumes:
       - ./config:/config
       - ./cache:/cache
@@ -30,6 +38,10 @@ services:
       - 8096:8096
     environment:
       - TZ=America/Guayaquil
+
+networks:
+  jellyfin:
+    external: true
 ```
 
 !!! note

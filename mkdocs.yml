@@ -41,6 +41,7 @@ nav:
     - Media:
       - Initialization: services/media/index.md
       - Jellyfin: services/media/jellyfin.md
+      - EmbyStat: services/media/embystat.md
       - Plex: services/media/plex.md
       - Tautulli: services/media/tautulli.md
       - Transmission: services/media/transmission.md
