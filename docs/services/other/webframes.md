@@ -18,28 +18,16 @@ The service will be run using *Docker Compose*. The content of the `docker-compo
 version: "3.9"
 
 services:
-  internal:
+  webframes:
     image: moonstarx/webframes:latest
     restart: unless-stopped
     ports:
       - 80:4000
     volumes:
-      - ./internal-data:/opt/app/backend/data
-    environment:
-      - TZ=America/Guayaquil
-
-  external:
-    image: moonstarx/webframes:latest
-    restart: unless-stopped
-    ports:
-      - 4000:4000
-    volumes:
-      - ./external-data:/opt/app/backend/data
+      - ./data:/opt/app/backend/data
     environment:
       - TZ=America/Guayaquil
 ```
-
-This will create two different instances of this service, one that should be used for local usage (with the private IP) and the other one that will be accessible from outside.
 
 ## Post-Installation
 
@@ -47,7 +35,6 @@ We'll need to allow the service's port on our firewall.
 
 ```bash
 sudo ufw allow 80/tcp
-sudo ufw allow 4000/tcp
 ```
 
 ## Running
