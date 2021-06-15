@@ -22,6 +22,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | JDownloader                 | 3129, 5800  | TCP      |
 | Gitea                       | 3000        | TCP      |
 | LibreSpeed                  | 8050        | TCP      |
+| Scrutiny                    | 8020        | TCP      |
 | RTMP Simulcast              | 1935        | TCP      |
 | Webframes (Internal)        | 80          | TCP      |
 | Webframes (External)        | 4000        | TCP      |

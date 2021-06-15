@@ -56,6 +56,7 @@ nav:
     - Monitoring:
       - Initialization: services/monitoring/index.md
       - LibreSpeed: services/monitoring/librespeed.md
+      - Scrutiny: services/monitoring/scrutiny.md
     - Other:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
