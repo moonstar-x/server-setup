@@ -44,6 +44,7 @@ nav:
       - EmbyStat: services/media/embystat.md
       - Plex: services/media/plex.md
       - Tautulli: services/media/tautulli.md
+      - Synclounge: services/media/synclounge.md
       - Ombi: services/media/ombi.md
       - Transmission: services/media/transmission.md
       - Sonarr: services/media/sonarr.md

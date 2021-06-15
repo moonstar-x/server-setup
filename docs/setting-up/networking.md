@@ -14,6 +14,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | EmbyStat                    | 6555        | TCP      |
 | Plex                        | 32400       | TCP      |
 | Tautulli                    | 8181        | TCP      |
+| Synclounge                  | 8088        | TCP      |
 | Ombi                        | 3579        | TCP      |
 | Transmission                | 9091        | TCP      |
 | Sonarr                      | 8989        | TCP      |
