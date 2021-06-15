@@ -8,22 +8,23 @@ Here's a table that contains the required default ports that need to be forwarde
 |-----------------------------|-------------|----------|
 | SSH                         | 22          | TCP      |
 | Samba (SMB/CIFS)            | 445         | TCP      |
+| Portainer                   | 8000, 9000  | TCP      |
+| Fleet                       | 8080        | TCP      |
 | Jellyfin                    | 8086        | TCP      |
 | EmbyStat                    | 6555        | TCP      |
 | Plex                        | 32400       | TCP      |
 | Tautulli                    | 8181        | TCP      |
 | Ombi                        | 3579        | TCP      |
+| Transmission                | 9091        | TCP      |
 | Sonarr                      | 8989        | TCP      |
 | Radarr                      | 7878        | TCP      |
 | Jackett                     | 9117        | TCP      |
-| Transmission                | 9091        | TCP      |
 | JDownloader                 | 3129, 5800  | TCP      |
 | Gitea                       | 3000        | TCP      |
-| Portainer                   | 8000, 9000  | TCP      |
-| Fleet                       | 8080        | TCP      |
+| LibreSpeed                  | 8050        | TCP      |
+| RTMP Simulcast              | 1935        | TCP      |
 | Webframes (Internal)        | 80          | TCP      |
 | Webframes (External)        | 4000        | TCP      |
-| RTMP Simulcast              | 1935        | TCP      |
 
 If you don't know what internal IP the server is running on, you can always type on the terminal:
 

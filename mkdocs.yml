@@ -53,6 +53,9 @@ nav:
     - Data:
       - Initialization: services/data/index.md
       - Gitea: services/data/gitea.md
+    - Monitoring:
+      - Initialization: services/monitoring/index.md
+      - LibreSpeed: services/monitoring/librespeed.md
     - Other:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
