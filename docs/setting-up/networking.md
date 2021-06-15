@@ -12,6 +12,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | EmbyStat                    | 6555        | TCP      |
 | Plex                        | 32400       | TCP      |
 | Tautulli                    | 8181        | TCP      |
+| Ombi                        | 3579        | TCP      |
 | Sonarr                      | 8989        | TCP      |
 | Radarr                      | 7878        | TCP      |
 | Jackett                     | 9117        | TCP      |
