@@ -58,6 +58,9 @@ nav:
       - Initialization: services/monitoring/index.md
       - LibreSpeed: services/monitoring/librespeed.md
       - Scrutiny: services/monitoring/scrutiny.md
+    - Automation:
+      - Initialization: services/automation/index.md
+      - n8n: services/automation/n8n.md
     - Other:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
@@ -98,7 +101,6 @@ theme:
   favicon: assets/favicon.ico
   features:
     navigation.tabs: true
-    navigation.sections: true
 
 # Extensions
 markdown_extensions:

@@ -24,6 +24,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | Gitea                       | 3000        | TCP      |
 | LibreSpeed                  | 8050        | TCP      |
 | Scrutiny                    | 8020        | TCP      |
+| n8n                         | 5678        | TCP      |
 | RTMP Simulcast              | 1935        | TCP      |
 | Webframes                   | 80          | TCP      |
 
