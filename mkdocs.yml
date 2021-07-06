@@ -54,6 +54,7 @@ nav:
     - Data:
       - Initialization: services/data/index.md
       - Gitea: services/data/gitea.md
+      - Nextcloud: services/data/nextcloud.md
     - Monitoring:
       - Initialization: services/monitoring/index.md
       - LibreSpeed: services/monitoring/librespeed.md
