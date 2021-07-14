@@ -1,6 +1,6 @@
 # Jellyfin
 
-[Jellyfin](https://jellyfin.org/) is an open source of the famous media server *Emby*. This media server has an official image available on [Docker Hub](https://hub.docker.com/r/jellyfin/jellyfin) which we'll use.
+[Jellyfin](https://jellyfin.org/) is an open source version of the famous media server *Emby*. This media server has an official image available on [Docker Hub](https://hub.docker.com/r/jellyfin/jellyfin) which we'll use.
 
 ## Pre-Installation
 
