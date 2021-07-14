@@ -21,6 +21,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | Radarr                      | 7878        | TCP      |
 | Jackett                     | 9117        | TCP      |
 | JDownloader                 | 3129, 5800  | TCP      |
+| Miniflux                    | 5190        | TCP      |
 | Gitea                       | 3000        | TCP      |
 | Nextcloud                   | 9020        | TCP      |
 | LibreSpeed                  | 8050        | TCP      |
