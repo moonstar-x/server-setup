@@ -73,6 +73,9 @@ nav:
     - Text-to-Speech Bot: discord-bots/tts-bot.md
     - Music 24/7 Bot: discord-bots/music-24-7.md
     - JDA Music Bot: discord-bots/jda-music-bot.md
+  - Game Servers:
+    - Initialization: games/index.md
+    - ZeroTier-One: games/zerotier.md
 
 # Theme Customization
 theme:
