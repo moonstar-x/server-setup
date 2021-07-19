@@ -29,6 +29,9 @@ Here's a table that contains the required default ports that need to be forwarde
 | n8n                         | 5678        | TCP      |
 | RTMP Simulcast              | 1935        | TCP      |
 | Webframes                   | 80          | TCP      |
+| TeamSpeak 3 (Voice)         | 9987        | UDP      |
+| TeamSpeak 3 (ServerQuery)   | 10011       | TCP      |
+| TeamSpeak 3 (FileTransfer)  | 30033       | TCP      |
 
 If you don't know what internal IP the server is running on, you can always type on the terminal:
 

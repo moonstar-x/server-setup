@@ -76,6 +76,7 @@ nav:
   - Game Servers:
     - Initialization: games/index.md
     - ZeroTier-One: games/zerotier.md
+    - TeamSpeak 3: games/teamspeak.md
 
 # Theme Customization
 theme:
