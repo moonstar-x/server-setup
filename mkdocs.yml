@@ -78,6 +78,7 @@ nav:
     - ZeroTier-One: games/zerotier.md
     - TeamSpeak 3: games/teamspeak.md
     - Minecraft (Paper): games/minecraft-paper.md
+    - Valheim: games/valheim.md
 
 # Theme Customization
 theme:
