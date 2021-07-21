@@ -20,7 +20,6 @@ version: "3.9"
 services:
   minecraft:
     image: itzg/minecraft-server:latest
-    restart: on-failure
     ports:
       - 25565:25565
     volumes:

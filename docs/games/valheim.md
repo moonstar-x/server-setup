@@ -20,7 +20,6 @@ version: "3.9"
 services:
   valheim:
     image: lloesche/valheim-server:latest
-    restart: on-failure
     cap_add:
       - SYS_NICE
     ports:
