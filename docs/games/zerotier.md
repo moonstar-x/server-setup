@@ -30,17 +30,40 @@ services:
     network_mode: host
     devices:
       - /dev/net/tun:/dev/net/tun
-    command: CHANGE_THIS
+    command: NETWORK_ID
     volumes:
       - ./config/authtoken.secret:/var/lib/zerotier-one/authtoken.secret
       - ./config/identity.public:/var/lib/zerotier-one/identity.public
       - ./config/identity.secret:/var/lib/zerotier-one/identity.secret
     environment:
       - TZ=America/Guayaquil
+  dns:
+    image: zerotier/zeronsd:latest
+    restart: unless-stopped
+    depends_on:
+      - zerotier
+    network_mode: host
+    command: start NETWORK_ID -d DOMAIN
+    volumes:
+      - ./config/authtoken.secret:/var/lib/zerotier-one/authtoken.secret:ro
+    environment:
+      - TZ=America/Guayaquil
+      - ZEROTIER_CENTRAL_TOKEN=CENTRAL_TOKEN
 ```
 
 !!!note
-    Replace `CHANGE_THIS` with your **Network ID**.
+    + Replace `NETWORK_ID` with your **Network ID**.
+    + Replace `CENTRAL_TOKEN` with a ZeroTier token, you may acquire one from [here](https://my.zerotier.com/account).
+    + Replace `DOMAIN` with the domain you wish to use. Note that the domain only represents the base domain, everyone in your network will be assigned a subdomain based on their assigned names on the network.
+
+## Post-Installation
+
+We'll need to allow the service's port on our firewall.
+
+```bash
+sudo ufw allow 53/tcp
+sudo ufw allow 53/udp
+```
 
 ## Running
 
