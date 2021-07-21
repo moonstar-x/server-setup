@@ -14,6 +14,16 @@ Installing *screen* is as simple as running the following command:
 sudo apt-get install screen
 ```
 
+### Configuration
+
+Create a `~/.screenrc` file and add the following:
+
+```text
+termcapinfo xterm* ti@:te@
+```
+
+This enables the mouse wheel inside *screen*.
+
 ### Usage
 
 At first it may seem a little complicated and maybe even intimidating to use this tool but once you get used to it you'll realize how useful it really is.
