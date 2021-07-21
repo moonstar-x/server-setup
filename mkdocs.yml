@@ -79,6 +79,7 @@ nav:
     - TeamSpeak 3: games/teamspeak.md
     - Minecraft (Paper): games/minecraft-paper.md
     - Valheim: games/valheim.md
+    - Arma 3 (Native): games/arma3.md
 
 # Theme Customization
 theme:
