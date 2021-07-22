@@ -77,9 +77,10 @@ nav:
     - Initialization: games/index.md
     - ZeroTier-One: games/zerotier.md
     - TeamSpeak 3: games/teamspeak.md
+    - Arma 3 (Native): games/arma3.md
+    - Assetto Corsa: games/assettocorsa.md
     - Minecraft (Paper): games/minecraft-paper.md
     - Valheim: games/valheim.md
-    - Arma 3 (Native): games/arma3.md
 
 # Theme Customization
 theme:

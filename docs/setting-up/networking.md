@@ -32,6 +32,10 @@ Here's a table that contains the required default ports that need to be forwarde
 | TeamSpeak 3 (Voice)         | 9987        | UDP      |
 | TeamSpeak 3 (ServerQuery)   | 10011       | TCP      |
 | TeamSpeak 3 (FileTransfer)  | 30033       | TCP      |
+| Arma 3                      | 2302-2345   | TCP/UDP  |
+| Assetto Corsa (Manager)     | 8772        | TCP      |
+| Assetto Corsa (Server)      | 9600        | TCP/UDP  |
+| Assetto Corsa (HTTP)        | 8081        | TCP      |
 | Minecraft                   | 25565       | TCP      |
 | Valheim                     | 2456, 2457  | UDP      |
 
