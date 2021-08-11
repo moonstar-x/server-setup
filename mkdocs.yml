@@ -55,6 +55,7 @@ nav:
     - Data:
       - Initialization: services/data/index.md
       - Gitea: services/data/gitea.md
+      - Drone: services/data/drone.md
       - Nextcloud: services/data/nextcloud.md
     - Monitoring:
       - Initialization: services/monitoring/index.md
