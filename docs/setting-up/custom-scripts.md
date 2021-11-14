@@ -16,6 +16,9 @@ chmod +x <file>
 
 We'll use this script to manually update *docker-compose* containers.
 
+!!! info "Usage"
+    Run `docker-update` inside the folder where `docker-compose.yml` is located to update the container images used.
+
 ```bash
 #!/bin/bash
 
