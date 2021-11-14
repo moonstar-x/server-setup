@@ -24,7 +24,9 @@ services:
     network_mode: host
     environment:
       - DISCORD_TOKEN=<DISCORD_TOKEN_HERE>
-      - PREFIX=$$
+      - DISCORD_PREFIX=$$
+      - DISCORD_OWNER_ID=<OWNER_ID_HERE>
+      - DISCORD_DISCONNECT_TIMEOUT=3600000
       - TZ=America/Guayaquil
 ```
 

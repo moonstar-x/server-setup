@@ -26,9 +26,9 @@ services:
       - ./data:/opt/app/data
     environment:
       - DISCORD_TOKEN=<DISCORD_TOKEN_HERE>
-      - PREFIX=s!
-      - CHANNEL_ID=<CHANNEL_ID_HERE>
-      - OWNER_ID=<OWNER_ID_HERE>
+      - DISCORD_PREFIX=s!
+      - DISCORD_CHANNEL_ID=<CHANNEL_ID_HERE>
+      - DISCORD_OWNER_ID=<OWNER_ID_HERE>
       - TZ=America/Guayaquil
 ```
 

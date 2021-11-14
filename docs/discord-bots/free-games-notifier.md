@@ -26,9 +26,8 @@ services:
       - ./data:/opt/app/data
     environment:
       - DISCORD_TOKEN=<DISCORD_TOKEN_HERE>
-      - PREFIX=!
-      - OWNER_ID=<OWNER_ID_HERE>
-      - INVITE_URL=<INVITE_URL_HERE>
+      - DISCORD_PREFIX=!
+      - DISCORD_OWNER_ID=<OWNER_ID_HERE>
       - TZ=America/Guayaquil
 ```
 
