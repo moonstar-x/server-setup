@@ -29,6 +29,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | LibreSpeed                  | 8050        | TCP      |
 | Scrutiny                    | 8020        | TCP      |
 | n8n                         | 5678        | TCP      |
+| n8n MongoDB                 | 56787       | TCP      |
 | RTMP Simulcast              | 1935        | TCP      |
 | Webframes                   | 80          | TCP      |
 | TeamSpeak 3 (Voice)         | 9987        | UDP      |
