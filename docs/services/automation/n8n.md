@@ -31,6 +31,7 @@ services:
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=CHANGE_THIS
       - N8N_BASIC_AUTH_PASSWORD=CHANGE_THIS
+      - WEBHOOK_URL=https://example.com
 
   mongo:
     image: mongo:latest
