@@ -33,6 +33,7 @@ services:
       - /dev/sdb:/dev/sdb
       - /dev/sdc:/dev/sdc
       - /dev/sdd:/dev/sdd
+      - /dev/sde:/dev/sde
     environment:
       - PUID=1000
       - PGID=1000
