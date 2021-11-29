@@ -30,6 +30,7 @@ services:
       - ./config:/config
       - /media/usb_1tb:/media/usb_1tb
       - /media/usb_4tb:/media/usb_4tb
+      - /media/usb_8tb:/media/usb_8tb
       - /media/sata_2tb/Downloads:/downloads
     ports:
       - 7878:7878
