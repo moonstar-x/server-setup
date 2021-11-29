@@ -60,5 +60,5 @@ screen -rd <screen socket name>
 Install the rest of the packages with the following:
 
 ```bash
-sudo apt-get install net-tools neofetch nload
+sudo apt-get install net-tools neofetch nload progress
 ```
