@@ -35,6 +35,7 @@ services:
 
   mongo:
     image: mongo:latest
+    restart: unless-stopped
     ports:
       - 56787:27017
     volumes:
