@@ -14,13 +14,83 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/moonstar-x
+      name: moonstar-x's GitHub Profile
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/moonstar_x99
+      name: moonstar-x on Twitter
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/mhj3Zsv
+      name: moonstar-x's Discord Server
     - icon: fontawesome/solid/globe-americas
       link: https://moonstar-x.dev
+      name: moonstar-x's Website
+    - icon: fontawesome/solid/coffee
+      link: https://ko-fi.com/moonstar_x
+      name: Buy moonstar-x a coffee
+  analytics:
+    provider: google
+    property: G-JDKMGT92ZH
 
 # Copyright
 copyright: Copyright &copy; 2021 moonstar-x
+
+
+# Theme Customization
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: fontawesome/solid/star
+    repo: fontawesome/brands/github
+  language: en
+  direction: ltr
+  favicon: assets/favicon.ico
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.mark
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.betterem
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: date
 
 # Navigation
 nav:
@@ -83,61 +153,3 @@ nav:
     - Assetto Corsa: games/assettocorsa.md
     - Minecraft (Paper): games/minecraft-paper.md
     - Valheim: games/valheim.md
-
-# Theme Customization
-theme:
-  name: material
-  palette:
-    - scheme: default
-      primary: deep orange
-      accent: orange
-      media: "(prefers-color-scheme: light)"
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - scheme: slate
-      primary: deep orange
-      accent: orange
-      media: "(prefers-color-scheme: dark)"
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  icon:
-    logo: fontawesome/solid/star
-    repo: fontawesome/brands/github
-  language: en
-  direction: ltr
-  favicon: assets/favicon.ico
-  features:
-    navigation.tabs: true
-
-# Extensions
-markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:pymdownx.emoji.twemoji
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
-  - pymdownx.mark
-  - pymdownx.tabbed
-  - pymdownx.tasklist
-  - pymdownx.betterem
-  - pymdownx.highlight
-  - pymdownx.superfences
-
-# Plugins
-plugins:
-  - search
-  - minify:
-      minify_html: true
-  - git-revision-date-localized:
-      type: date
-
-# Google Analytics
-google_analytics:
-  - UA-167966432-2
-  - auto
