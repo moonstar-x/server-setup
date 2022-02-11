@@ -18,20 +18,30 @@ The bot will be run using *Docker Compose*. The content of the `docker-compose.y
 version: "3.9"
 
 services:
+  redis:
+    image: redis:latest
+    restart: unless-stopped
+    ports:
+     - 60000:6379
+    volumes:
+      - ./data:/data
+    environment:
+      - TZ=America/Guayaquil
+    command: redis-server --save 60 1 --loglevel warning
+
   bot:
     image: moonstarx/discord-tts-bot:latest
     restart: unless-stopped
-    network_mode: host
+    depends_on:
+      - redis
     environment:
       - DISCORD_TOKEN=<DISCORD_TOKEN_HERE>
-      - DISCORD_PREFIX=$$
       - DISCORD_OWNER_ID=<OWNER_ID_HERE>
-      - DISCORD_DISCONNECT_TIMEOUT=3600000
+      - DISCORD_DEFAULT_DISCONNECT_TIMEOUT=10
+      - DISCORD_PROVIDER_TYPE=redis
+      - DISCORD_REDIS_URL=redis://redis:6379
       - TZ=America/Guayaquil
 ```
-
-!!! note
-    The prefix in this case is `$`, *Docker Compose* requires to escape any `$` symbol with another `$`.
 
 ## Running
 
