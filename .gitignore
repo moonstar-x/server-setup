@@ -1,1 +1,5 @@
+# Environment
+venv/
+
+# Build
 site/
