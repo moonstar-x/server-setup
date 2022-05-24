@@ -127,7 +127,6 @@ nav:
       - Initialization: services/data/index.md
       - Gitea: services/data/gitea.md
       - Drone: services/data/drone.md
-      - Nextcloud: services/data/nextcloud.md
     - Monitoring:
       - Initialization: services/monitoring/index.md
       - LibreSpeed: services/monitoring/librespeed.md
@@ -153,3 +152,7 @@ nav:
     - Assetto Corsa: games/assettocorsa.md
     - Minecraft (Paper): games/minecraft-paper.md
     - Valheim: games/valheim.md
+  - Deprecated Services:
+    - Data:
+      - Information: deprecated/data/index.md
+      - Nextcloud: deprecated/data/nextcloud.md

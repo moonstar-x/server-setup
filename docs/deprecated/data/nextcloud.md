@@ -1,5 +1,8 @@
 # Nextcloud
 
+!!! warning
+    This section contains information of a service that has been deprecated. The server no longer runs this service. This page will no longer be updated.
+
 [Nextcloud](https://nextcloud.com/) is a self-hosted cloud data server, useful for keeping documents in your own server. This service has an official image on [Docker Hub](https://hub.docker.com/_/nextcloud) which we'll use.
 
 ## Pre-Installation
