@@ -61,6 +61,7 @@ services:
       - DRONE_RPC_SECRET=SHARED_SECRET
       - DRONE_SERVER_HOST=ci.example.com
       - DRONE_SERVER_PROTO=https
+      - DRONE_REGISTRATION_CLOSED=true
 
   runner:
     image: drone/drone-runner-docker:latest

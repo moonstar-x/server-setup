@@ -53,6 +53,21 @@ We'll need to allow the service's port on our firewall.
 sudo ufw allow 3000/tcp
 ```
 
+Once you have started the server once, edit the config file located inside the `data` volume:
+
+```bash
+nano data/gitea/conf/app.ini
+```
+
+And make sure to have the following lines:
+
+```text
+[service]
+DISABLE_REGISTRATION = true
+```
+
+This will make sure that nobody else can register into your server without your knowledge.
+
 ## Running
 
 Start up the service with:

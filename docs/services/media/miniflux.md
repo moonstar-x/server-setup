@@ -28,11 +28,11 @@ services:
       - DATABASE_URL=postgres://miniflux:CHANGE_THIS@db/miniflux?sslmode=disable
       - RUN_MIGRATIONS=1
       - CREATE_ADMIN=1
-      - ADMIN_USERNAME=admin
+      - ADMIN_USERNAME=CHANGE_THIS
       - ADMIN_PASSWORD=CHANGE_THIS
 
   db:
-    image: postgres:latest
+    image: postgres:13.7
     volumes:
       - ./data:/var/lib/postgresql/data
     environment:

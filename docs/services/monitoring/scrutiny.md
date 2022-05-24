@@ -19,7 +19,7 @@ version: "3.9"
 
 services:
   scrutiny:
-    image: ghcr.io/linuxserver/scrutiny:latest
+    image: ghcr.io/linuxserver/scrutiny:8e34ef8d-ls35
     restart: unless-stopped
     cap_add:
       - SYS_RAWIO
