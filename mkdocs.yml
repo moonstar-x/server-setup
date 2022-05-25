@@ -92,6 +92,10 @@ plugins:
   - git-revision-date-localized:
       type: date
 
+# Extras
+extra_css:
+  - stylesheets/extra.css
+
 # Navigation
 nav:
   - Home: index.md
@@ -138,6 +142,15 @@ nav:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
       - Webframes: services/other/webframes.md
+  - Server Monitoring:
+    - Introduction: server-monitoring/introduction.md
+    - In Server:
+      - Initialization: server-monitoring/in-server/index.md
+      - Prometheus: server-monitoring/in-server/prometheus.md
+    - In Monitor:
+      - Initialization: server-monitoring/in-monitor/index.md
+      - Configuration: server-monitoring/in-monitor/configuration.md
+      - Grafana: server-monitoring/in-monitor/grafana.md
   - Discord Bots:
     - Initialization: discord-bots/index.md
     - Free Games Notifier: discord-bots/free-games-notifier.md

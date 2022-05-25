@@ -7,7 +7,7 @@ If you like to stream your video games to multiple platforms simultaneously, the
 
 You can bypass these problems by streaming simultaneously to your desired platforms yourself, but keep in mind, there are some difficulties as well:
 
-* Doing this (ideally) requires you to have a second computer (performance doesn't matter too much, you could even use a Raspberry PI for this), you could technically achieve the same result with a virtual machine inside the streaming computer but it would represent a huge performance drop.
+* Doing this (ideally) requires you to have a second computer (performance doesn't matter too much, you could even use a Raspberry Pi for this), you could technically achieve the same result with a virtual machine inside the streaming computer but it would represent a huge performance drop.
 * Since you would be streaming to multiple platforms yourself, you would need a much higher upload bandwidth (around the stream bitrate multiplied by the number of platforms you're streaming to). For instance, my stream gets rendered at a bitrate of 6000 *kbps*, if I wanted to stream to 3 different platforms at the same time, I would need around 20000 *kbps*.
 
 ## Pre-Installation
