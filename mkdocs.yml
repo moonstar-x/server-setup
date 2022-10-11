@@ -116,6 +116,7 @@ nav:
     - Media:
       - Initialization: services/media/index.md
       - Miniflux: services/media/miniflux.md
+      - Kavita: services/media/kavita.md
       - Jellyfin: services/media/jellyfin.md
       - EmbyStat: services/media/embystat.md
       - Plex: services/media/plex.md
