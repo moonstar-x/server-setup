@@ -13,5 +13,5 @@ The server computer is a self-built desktop with the following specs:
     1. 256GB Crucial BX500 SATA SSD
     2. 2TB WD Green 5400RPM SATA HDD
     3. 4TB Toshiba USB 3.0 HDD
-    4. 1TB Samsung USB 3.0 HDD
+    4. 4TB Toshiba USB 3.0 HDD
     5. 8TB Seagate USB 3.0 HDD
