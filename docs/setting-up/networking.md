@@ -26,6 +26,9 @@ Here's a table that contains the required default ports that need to be forwarde
 | Gitea                       | 3000        | TCP      |
 | Drone                       | 3080        | TCP      |
 | Drone (Runner)              | 3100        | TCP      |
+| Nexus                       | 10600       | TCP      |
+| Nexus (Docker Registry)     | 10610       | TCP      |
+| Nexus (NPM Registry)        | 10620       | TCP      |
 | Nextcloud **DEPRECATED**    | 9020        | TCP      |
 | LibreSpeed                  | 8050        | TCP      |
 | Scrutiny                    | 8020        | TCP      |
