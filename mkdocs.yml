@@ -133,6 +133,7 @@ nav:
       - Gitea: services/data/gitea.md
       - Drone: services/data/drone.md
       - Nexus: services/data/nexus.md
+      - Jenkins: services/data/jenkins.md
     - Monitoring:
       - Initialization: services/monitoring/index.md
       - LibreSpeed: services/monitoring/librespeed.md

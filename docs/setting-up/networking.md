@@ -29,6 +29,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | Nexus                       | 10600       | TCP      |
 | Nexus (Docker Registry)     | 10610       | TCP      |
 | Nexus (NPM Registry)        | 10620       | TCP      |
+| Jenkins                     | 10800       | TCP      |
 | Nextcloud **DEPRECATED**    | 9020        | TCP      |
 | LibreSpeed                  | 8050        | TCP      |
 | Scrutiny                    | 8020        | TCP      |
