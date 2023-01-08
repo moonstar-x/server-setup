@@ -154,6 +154,7 @@ nav:
       - Initialization: server-monitoring/in-monitor/index.md
       - Configuration: server-monitoring/in-monitor/configuration.md
       - Grafana: server-monitoring/in-monitor/grafana.md
+      - Portainer (Agent): server-monitoring/in-monitor/portainer-agent.md
   - Discord Bots:
     - Initialization: discord-bots/index.md
     - Free Games Notifier: discord-bots/free-games-notifier.md
