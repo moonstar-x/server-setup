@@ -1,5 +1,8 @@
 # Miniflux
 
+!!! warning
+    This section contains information of a service that has been deprecated. The server no longer runs this service. This page will no longer be updated.
+
 [Miniflux](https://miniflux.app/) is an RSS feed reader. This service has an official image available on [Docker Hub](https://hub.docker.com/r/miniflux/miniflux) which we'll use.
 
 ## Pre-Installation
