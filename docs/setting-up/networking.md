@@ -22,6 +22,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | Jackett                     | 9117        | TCP      |
 | JDownloader                 | 3129, 5800  | TCP      |
 | Miniflux **DEPRECATED**     | 5190        | TCP      |
+| FreshRSS                    | 5200        | TCP      |
 | Kavita                      | 5000        | TCP      |
 | Gitea                       | 3000        | TCP      |
 | Drone                       | 3080        | TCP      |

@@ -115,6 +115,7 @@ nav:
       - Fleet: services/docker/fleet.md
     - Media:
       - Initialization: services/media/index.md
+      - FreshRSS: services/media/freshrss.md
       - Kavita: services/media/kavita.md
       - Jellyfin: services/media/jellyfin.md
       - EmbyStat: services/media/embystat.md
