@@ -56,6 +56,12 @@ nano clickhouse/clickhouse-user-config.xml
 </clickhouse>
 ```
 
+And now change the permissions for this folder:
+
+```bash
+chmod -R 777 clickhouse
+```
+
 ## Docker Compose
 
 *Plausible* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
@@ -102,6 +108,8 @@ services:
       nofile:
         soft: 262144
         hard: 262144
+    environment:
+      - CLICKHOUSE_DB=plausible_events_db
 ```
 
 !!! note
