@@ -141,6 +141,9 @@ nav:
     - Automation:
       - Initialization: services/automation/index.md
       - n8n: services/automation/n8n.md
+    - Analytics:
+      - Initialization: services/analytics/index.md
+      - Plausible: services/analytics/plausible.md
     - Other:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md

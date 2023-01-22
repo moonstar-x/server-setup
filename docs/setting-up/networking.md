@@ -34,6 +34,7 @@ Here's a table that contains the required default ports that need to be forwarde
 | Nextcloud **DEPRECATED**    | 9020        | TCP      |
 | LibreSpeed                  | 8050        | TCP      |
 | Scrutiny                    | 8020        | TCP      |
+| Plausible                   | 10500       | TCP      |
 | n8n                         | 5678        | TCP      |
 | n8n MongoDB                 | 56787       | TCP      |
 | RTMP Simulcast              | 1935        | TCP      |
