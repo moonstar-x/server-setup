@@ -128,6 +128,7 @@ nav:
       - JDownloader: services/media/jdownloader.md
     - Data:
       - Initialization: services/data/index.md
+      - Nextcloud: services/data/nextcloud.md
       - Gitea: services/data/gitea.md
       - Drone: services/data/drone.md
       - Nexus: services/data/nexus.md
@@ -173,7 +174,6 @@ nav:
   - Deprecated Services:
     - Data:
       - Information: deprecated/data/index.md
-      - Nextcloud: deprecated/data/nextcloud.md
     - Media:
       - Information: deprecated/media/index.md
       - Miniflux: deprecated/media/miniflux.md
