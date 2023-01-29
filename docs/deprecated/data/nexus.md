@@ -1,5 +1,8 @@
 # Nexus
 
+!!! warning "Deprecation Warning"
+    This service has been deprecated in favor of [Gitea](../../services/data/gitea.md)'s [Package Registry](https://docs.gitea.io/en-us/packages/overview/).
+
 [Nexus](https://www.sonatype.com/products/repository-oss-download) is an artifact repository that supports various types of formats, including Docker images and NPM packages. This service has an official image available on [Docker Hub](https://hub.docker.com/r/sonatype/nexus3) which we'll use.
 
 ## Pre-Installation
