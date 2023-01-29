@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://moonstar-x.dev/server-setup/deprecated/data/nexus/</loc>
+         <lastmod>2023-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/media/</loc>
          <lastmod>2023-01-29</lastmod>
          <changefreq>daily</changefreq>
@@ -167,11 +172,6 @@
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/data/nextcloud/</loc>
-         <lastmod>2023-01-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://moonstar-x.dev/server-setup/services/data/nexus/</loc>
          <lastmod>2023-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
