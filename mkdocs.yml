@@ -130,7 +130,6 @@ nav:
       - Initialization: services/data/index.md
       - Nextcloud: services/data/nextcloud.md
       - Gitea: services/data/gitea.md
-      - Drone: services/data/drone.md
       - Nexus: services/data/nexus.md
       - Jenkins: services/data/jenkins.md
     - Monitoring:
@@ -174,6 +173,7 @@ nav:
   - Deprecated Services:
     - Data:
       - Information: deprecated/data/index.md
+      - Drone: deprecated/data/drone.md
     - Media:
       - Information: deprecated/media/index.md
       - Miniflux: deprecated/media/miniflux.md

@@ -1,9 +1,12 @@
 # Drone
 
-!!! danger "Warning"
-    This service requires [Gitea](gitea.md), you must set that up before continuing with this one.
+!!! warning "Deprecation Warning"
+    This service has been deprecated in favor of [Jenkins](../../services/data/jenkins.md).
 
-[Drone](https://drone.io) is a self-hosted CI/CD pipeline service that can be used with [Gitea](gitea.md). This service has an official image on [Docker Hub](https://hub.docker.com/r/drone/drone/) which we'll use.
+!!! danger "Warning"
+    This service requires [Gitea](../../services/data/gitea.md), you must set that up before continuing with this one.
+
+[Drone](https://drone.io) is a self-hosted CI/CD pipeline service that can be used with [Gitea](../../services/data/gitea.md). This service has an official image on [Docker Hub](https://hub.docker.com/r/drone/drone/) which we'll use.
 
 ## Pre-Requisites
 
