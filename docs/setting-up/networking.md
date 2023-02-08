@@ -1,15 +1,29 @@
 # Networking
 
-Here's a table that contains the required default ports that need to be forwarded on the router (and allowed by the firewall) so the services are accessible from outside the private network. Ports can change if desired, port forwarding rules should be set up accordingly.
+Here's a list of ports that are exposed to the host machine. This serves as a reference to prevent setting services to ports that are already in use.
 
-## Port Forwarding Table
+## Port Forwarding Tables
+
+### Native Services
 
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
 | SSH                         | 22          | TCP      |
 | Samba (SMB/CIFS)            | 445         | TCP      |
+
+### Docker Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
 | Portainer                   | 8000, 9000  | TCP      |
 | Fleet                       | 8080        | TCP      |
+
+### Media Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| FreshRSS                    | 5200        | TCP      |
+| Kavita                      | 5000        | TCP      |
 | Jellyfin                    | 8086        | TCP      |
 | EmbyStat                    | 6555        | TCP      |
 | Plex                        | 32400       | TCP      |
@@ -21,26 +35,52 @@ Here's a table that contains the required default ports that need to be forwarde
 | Radarr                      | 7878        | TCP      |
 | Jackett                     | 9117        | TCP      |
 | JDownloader                 | 3129, 5800  | TCP      |
-| Miniflux **DEPRECATED**     | 5190        | TCP      |
-| FreshRSS                    | 5200        | TCP      |
-| Kavita                      | 5000        | TCP      |
+
+### Data Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Nextcloud                   | 9020        | TCP      |
 | Gitea                       | 3000        | TCP      |
-| Drone                       | 3080        | TCP      |
-| Drone (Runner)              | 3100        | TCP      |
-| Nexus                       | 10600       | TCP      |
-| Nexus (Docker Registry)     | 10610       | TCP      |
-| Nexus (NPM Registry)        | 10620       | TCP      |
 | Jenkins                     | 10800       | TCP      |
-| Nextcloud **DEPRECATED**    | 9020        | TCP      |
+
+### Monitoring Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
 | LibreSpeed                  | 8050        | TCP      |
 | Scrutiny                    | 8020        | TCP      |
+
+### Automation Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Custom Automation Service   | 5678        | TCP      |
+
+### Analytics Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
 | Plausible                   | 10500       | TCP      |
-| n8n                         | 5678        | TCP      |
-| n8n MongoDB                 | 56787       | TCP      |
+
+### Other Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
 | RTMP Simulcast              | 1935        | TCP      |
-| Prometheus                  | 9090, 9100  | TCP      |  
-| Grafana **(Raspberry Pi)**  | 3000        | TCP      |  
 | Webframes                   | 80          | TCP      |
+
+### Server Monitoring Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Prometheus                  | 9090, 9100  | TCP      |  
+| Grafana **(Raspberry Pi)**  | 3000        | TCP      |
+
+### Games
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
 | TeamSpeak 3 (Voice)         | 9987        | UDP      |
 | TeamSpeak 3 (ServerQuery)   | 10011       | TCP      |
 | TeamSpeak 3 (FileTransfer)  | 30033       | TCP      |
@@ -50,6 +90,33 @@ Here's a table that contains the required default ports that need to be forwarde
 | Assetto Corsa (HTTP)        | 8081        | TCP      |
 | Minecraft                   | 25565       | TCP      |
 | Valheim                     | 2456, 2457  | UDP      |
+
+## Deprecated Port Forwarding Tables
+
+### Deprecated Media Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Miniflux                    | 5190        | TCP      |
+
+### Deprecated Data Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Drone                       | 3080        | TCP      |
+| Drone (Runner)              | 3100        | TCP      |
+| Nexus                       | 10600       | TCP      |
+| Nexus (Docker Registry)     | 10610       | TCP      |
+| Nexus (NPM Registry)        | 10620       | TCP      |
+
+### Deprecated Automation Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| n8n                         | 5678        | TCP      |
+| n8n MongoDB                 | 56787       | TCP      |
+
+## Information
 
 If you don't know what internal IP the server is running on, you can always type on the terminal:
 
