@@ -137,6 +137,7 @@ nav:
       - Scrutiny: services/monitoring/scrutiny.md
     - Automation:
       - Initialization: services/automation/index.md
+      - Custom Automation Service: services/automation/automation-service.md
     - Analytics:
       - Initialization: services/analytics/index.md
       - Plausible: services/analytics/plausible.md
