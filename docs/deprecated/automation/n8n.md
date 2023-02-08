@@ -1,5 +1,9 @@
 # n8n
 
+!!! warning "Deprecation Warning"
+    This service was deprecated on the server in favor of [my own automation service](../../services/automation/automation-service.md). There is nothing wrong with this service, I just wanted a solution
+    that would give me a bit more control and that would be easier to maintain.
+
 [n8n](https://n8n.io/) is a self-hosted node based automation to run run jobs based on triggers similarly to IFTTT. There is an official image for *n8n* on [Docker Hub](https://hub.docker.com/r/n8nio/n8n) which we'll use.
 
 ## Pre-Installation

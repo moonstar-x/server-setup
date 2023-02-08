@@ -137,7 +137,6 @@ nav:
       - Scrutiny: services/monitoring/scrutiny.md
     - Automation:
       - Initialization: services/automation/index.md
-      - n8n: services/automation/n8n.md
     - Analytics:
       - Initialization: services/analytics/index.md
       - Plausible: services/analytics/plausible.md
@@ -177,3 +176,6 @@ nav:
     - Media:
       - Information: deprecated/media/index.md
       - Miniflux: deprecated/media/miniflux.md
+    - Automation:
+      - Information: deprecated/automation/index.md
+      - n8n: deprecated/automation/n8n.md
