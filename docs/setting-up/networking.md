@@ -40,6 +40,7 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
+| Ghost                       | 15800       | TCP      |
 | Nextcloud                   | 9020        | TCP      |
 | Gitea                       | 3000        | TCP      |
 | Jenkins                     | 10800       | TCP      |
@@ -108,7 +109,6 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Nexus                       | 10600       | TCP      |
 | Nexus (Docker Registry)     | 10610       | TCP      |
 | Nexus (NPM Registry)        | 10620       | TCP      |
-| Ghost                       | 15800       | TCP      |
 
 ### Deprecated Automation Services
 

@@ -1,8 +1,5 @@
 # Ghost
 
-!!! warning "Deprecation Warning"
-    This service was never really used, though I feel like I may give this a more serious try in the future. Currently, I have opted to use [Medium](https://medium.com/@moonstar-x), at least for now.
-
 [Ghost](https://ghost.org/) is a self-hosted blogging platform. This service has an official image available on [Docker Hub](https://hub.docker.com/r/_/ghost) which we'll use.
 
 ## Pre-Installation
