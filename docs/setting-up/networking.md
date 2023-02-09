@@ -108,6 +108,7 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Nexus                       | 10600       | TCP      |
 | Nexus (Docker Registry)     | 10610       | TCP      |
 | Nexus (NPM Registry)        | 10620       | TCP      |
+| Ghost                       | 15800       | TCP      |
 
 ### Deprecated Automation Services
 

@@ -177,6 +177,7 @@ nav:
       - Information: deprecated/data/index.md
       - Drone: deprecated/data/drone.md
       - Nexus: deprecated/data/nexus.md
+      - Ghost: deprecated/data/ghost.md
     - Automation:
       - Information: deprecated/automation/index.md
       - n8n: deprecated/automation/n8n.md
