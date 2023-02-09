@@ -26,11 +26,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://moonstar-x.dev/server-setup/deprecated/data/ghost/</loc>
-         <lastmod>2023-02-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/data/nexus/</loc>
          <lastmod>2023-02-09</lastmod>
          <changefreq>daily</changefreq>
@@ -172,6 +167,11 @@
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/data/</loc>
+         <lastmod>2023-02-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://moonstar-x.dev/server-setup/services/data/ghost/</loc>
          <lastmod>2023-02-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
