@@ -146,6 +146,7 @@ nav:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
       - Webframes: services/other/webframes.md
+      - Homepage: services/other/homepage.md
   - Server Monitoring:
     - Introduction: server-monitoring/introduction.md
     - In Server:

@@ -70,6 +70,7 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 |-----------------------------|-------------|----------|
 | RTMP Simulcast              | 1935        | TCP      |
 | Webframes                   | 16000       | TCP      |
+| Homepage                    | 80          | TCP      |
 
 ### Server Monitoring Services
 
