@@ -22,7 +22,7 @@ services:
     image: moonstarx/webframes:latest
     restart: unless-stopped
     ports:
-      - 80:4000
+      - 16000:4000
     volumes:
       - ./data:/opt/app/backend/data
     environment:
@@ -34,7 +34,7 @@ services:
 We'll need to allow the service's port on our firewall.
 
 ```bash
-sudo ufw allow 80/tcp
+sudo ufw allow 16000/tcp
 ```
 
 ## Running

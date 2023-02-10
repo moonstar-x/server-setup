@@ -69,7 +69,7 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
 | RTMP Simulcast              | 1935        | TCP      |
-| Webframes                   | 80          | TCP      |
+| Webframes                   | 16000       | TCP      |
 
 ### Server Monitoring Services
 
