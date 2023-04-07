@@ -116,10 +116,7 @@ nav:
       - FreshRSS: services/media/freshrss.md
       - Kavita: services/media/kavita.md
       - Jellyfin + EmbyStat: services/media/jellyfin-embystat.md
-      - Plex: services/media/plex.md
-      - Tautulli: services/media/tautulli.md
-      - Synclounge: services/media/synclounge.md
-      - Ombi: services/media/ombi.md
+      - Plex + Tautulli + Synclounge: services/media/plex-tautulli-synclounge.md
       - Transmission: services/media/transmission.md
       - Sonarr: services/media/sonarr.md
       - Radarr: services/media/radarr.md
