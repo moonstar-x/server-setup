@@ -117,11 +117,7 @@ nav:
       - Kavita: services/media/kavita.md
       - Jellyfin + EmbyStat: services/media/jellyfin-embystat.md
       - Plex + Tautulli + Synclounge: services/media/plex-tautulli-synclounge.md
-      - Transmission: services/media/transmission.md
-      - Sonarr: services/media/sonarr.md
-      - Radarr: services/media/radarr.md
-      - Jackett: services/media/jackett.md
-      - JDownloader: services/media/jdownloader.md
+      - Media Acquisition: services/media/media-acquisition.md
     - Data:
       - Initialization: services/data/index.md
       - Ghost: services/data/ghost.md
