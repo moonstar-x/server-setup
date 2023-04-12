@@ -23,6 +23,14 @@ We'll create a folder in the main user's home where all the service's data will 
 mkdir ~/media/media_acquisition
 ```
 
+We'll need to download a GUI for Transmission manually. For this, inside the newly created folder, run the following commands:
+
+```bash
+curl -OL https://github.com/johman10/flood-for-transmission/releases/download/latest/flood-for-transmission.zip
+unzip flood-for-transmission.zip && rm flood-for-transmission.zip
+mv flood-for-transmission transmission-web-ui
+```
+
 ## Docker Compose
 
 *Media Acquisition* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
@@ -37,6 +45,7 @@ services:
     volumes:
       - ./transmission-config:/config
       - ./transmission-watch:/watch
+      - ./transmission-web-ui:/flood-for-transmission
       - /media/sata_2tb/Downloads:/downloads
     ports:
       - 9091:9091
