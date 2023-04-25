@@ -57,6 +57,8 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
 | Custom Automation Service   | 5678        | TCP      |
+| Homebridge (Web)            | 8581        | TCP      |
+| Homebridge (HomeKit)        | 51845       | TCP/UDP  |
 
 ### Analytics Services
 

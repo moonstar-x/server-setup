@@ -131,6 +131,7 @@ nav:
     - Automation:
       - Initialization: services/automation/index.md
       - Custom Automation Service: services/automation/automation-service.md
+      - Smart Home: services/automation/smart-home.md
     - Analytics:
       - Initialization: services/analytics/index.md
       - Plausible: services/analytics/plausible.md
