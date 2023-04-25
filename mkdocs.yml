@@ -139,6 +139,7 @@ nav:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
       - Homepage: services/other/homepage.md
+      - Reactive Resume: services/other/rxresume.md
   - Server Monitoring:
     - Introduction: server-monitoring/introduction.md
     - In Server:

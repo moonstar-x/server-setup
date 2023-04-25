@@ -72,6 +72,8 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 |-----------------------------|-------------|----------|
 | RTMP Simulcast              | 1935        | TCP      |
 | Homepage                    | 80          | TCP      |
+| Reactive Resume (Client)    | 40000       | TCP      |
+| Reactive Resume (Server)    | 40100       | TCP      |
 
 ### Server Monitoring Services
 
