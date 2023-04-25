@@ -1,0 +1,57 @@
+# EmulatorJS
+
+[EmulatorJS](https://www.emulatorjs.com/) is a web-based emulator suite that allows you to play your favorite ROMs from the web browser. For this service we'll use an image from **LinuxServer** available on [Docker Hub](https://hub.docker.com/r/linuxserver/emulatorjs) which we'll use.
+
+## Pre-Installation
+
+We'll create a folder in the main user's home where all the game server's data will be saved.
+
+```bash
+mkdir ~/games/emulatorjs
+```
+
+## Docker Compose
+
+The game server will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
+
+```yaml
+version: "3.9"
+
+services:
+  emulatorjs:
+    image: lscr.io/linuxserver/emulatorjs:latest
+    restart: unless-stopped
+    ports:
+      - 30000:80
+      - 30010:3000
+    volumes:
+      - ./data:/data
+      - ./config:/config
+    environment:
+      - TZ=America/Guayaquil
+      - PUID=1000
+      - PGID=1000
+```
+
+!!! note
+    In the case of the `PUID` and `PGID` environment variables, `1000` corresponds to the user's UID and GID respectively. You can find the values for your own user by running `id $whoami`.
+
+## Post-Installation
+
+We'll need to allow the service's port on our firewall.
+
+```bash
+sudo ufw allow 30000/tcp
+sudo ufw allow 30010/tcp
+```
+
+## Running
+
+Start up the service with:
+
+```bash
+docker-compose up -d
+```
+
+That's it! The service will auto-start on system startup and restart on failure.
+

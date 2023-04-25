@@ -160,6 +160,7 @@ nav:
     - Initialization: games/index.md
     - ZeroTier-One: games/zerotier.md
     - TeamSpeak 3: games/teamspeak.md
+    - EmulatorJS: games/emulatorjs.md
     - Arma 3 (Native): games/arma3.md
     - Assetto Corsa: games/assettocorsa.md
     - Minecraft (Paper): games/minecraft-paper.md
