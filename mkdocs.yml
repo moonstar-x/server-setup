@@ -138,7 +138,6 @@ nav:
     - Other:
       - Initialization: services/other/index.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
-      - Webframes: services/other/webframes.md
       - Homepage: services/other/homepage.md
   - Server Monitoring:
     - Introduction: server-monitoring/introduction.md
@@ -176,3 +175,6 @@ nav:
     - Automation:
       - Information: deprecated/automation/index.md
       - n8n: deprecated/automation/n8n.md
+    - Other:
+      - Information: deprecated/other/index.md
+      - Webframes: deprecated/other/webframes.md

@@ -1,5 +1,8 @@
 # Webframes
 
+!!! warning "Deprecation Warning"
+    This service was deprecated on the server because it is no longer used by me.
+
 [Webframes](https://github.com/moonstar-x/webframes) is a little webapp that frames other pages. This will be useful to have a central place where you can access all the aforementioned web services. This service has an image on [Docker Hub](https://hub.docker.com/r/moonstarx/webframes) which we'll use.
 
 ## Pre-Installation

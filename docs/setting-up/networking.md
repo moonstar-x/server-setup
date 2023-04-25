@@ -71,7 +71,6 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
 | RTMP Simulcast              | 1935        | TCP      |
-| Webframes                   | 16000       | TCP      |
 | Homepage                    | 80          | TCP      |
 
 ### Server Monitoring Services
@@ -121,6 +120,12 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 |-----------------------------|-------------|----------|
 | n8n                         | 5678        | TCP      |
 | n8n MongoDB                 | 56787       | TCP      |
+
+### Deprecated Other Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Webframes                   | 16000       | TCP      |
 
 ## Information
 
