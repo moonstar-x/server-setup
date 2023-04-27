@@ -29,11 +29,17 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Plex                        | 32400       | TCP      |
 | Tautulli                    | 8181        | TCP      |
 | Synclounge                  | 8088        | TCP      |
-| Ombi                        | 3579        | TCP      |
 | Transmission                | 9091        | TCP      |
+| JDownloader                 | 3129, 5800  | TCP      |
+| Ombi                        | 3579        | TCP      |
 | Sonarr                      | 8989        | TCP      |
 | Radarr                      | 7878        | TCP      |
-| JDownloader                 | 3129, 5800  | TCP      |
+| Lidarr                      | 8686        | TCP      |
+| Deemix                      | 6596        | TCP      |
+| Bazarr                      | 6767        | TCP      |
+| Readarr                     | 8787        | TCP      |
+| Prowlarr                    | 9696        | TCP      |
+| OpenBooks                   | 12450       | TCP      |
 
 ### Data Services
 
