@@ -169,6 +169,7 @@ nav:
     - Media:
       - Information: deprecated/media/index.md
       - Miniflux: deprecated/media/miniflux.md
+      - Media Acquisition: deprecated/media/media-acquisition.md
     - Data:
       - Information: deprecated/data/index.md
       - Drone: deprecated/data/drone.md

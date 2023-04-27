@@ -11,8 +11,6 @@
 
 [Radarr](https://radarr.video/) is an RSS downloader focused on movies. There is no official docker image for *Radarr*, however we'll use one from **LinuxServer** on [Docker Hub](https://hub.docker.com/r/linuxserver/radarr).
 
-[Jackett](https://github.com/Jackett/Jackett) is a torrent indexer that standardizes the shape of the data from multiple indexers to make it possible to use originally unsupported indexers on services like *Sonarr*. There is no official docker image for *Jackett*, however we'll use one from **LinuxServer** on [Docker Hub](https://hub.docker.com/r/linuxserver/jackett/).
-
 [Ombi](https://ombi.io/) is a media request tracker, useful for when you share a Plex server or similar with family and friends. There is no official docker image for *Ombi*, however we'll use one from **LinuxServer** on [Docker Hub](https://hub.docker.com/r/linuxserver/ombi).
 
 ## Pre-Installation
@@ -105,19 +103,6 @@ services:
       - PGID=1000
       - TZ=America/Guayaquil
 
-  jackett:
-    image: ghcr.io/linuxserver/jackett:latest
-    restart: unless-stopped
-    volumes:
-      - ./jackett-config:/config
-    ports:
-      - 9117:9117
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=America/Guayaquil
-      - AUTO_UPDATE=true
-
   ombi:
     image: ghcr.io/linuxserver/ombi:latest
     restart: unless-stopped
@@ -153,7 +138,6 @@ sudo ufw allow 3129/tcp
 sudo ufw allow 5800/tcp
 sudo ufw allow 8989/tcp
 sudo ufw allow 7878/tcp
-sudo ufw allow 9117/tcp
 sudo ufw allow 3579/tcp
 ```
 

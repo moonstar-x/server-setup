@@ -33,7 +33,6 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Transmission                | 9091        | TCP      |
 | Sonarr                      | 8989        | TCP      |
 | Radarr                      | 7878        | TCP      |
-| Jackett                     | 9117        | TCP      |
 | JDownloader                 | 3129, 5800  | TCP      |
 
 ### Data Services
@@ -105,6 +104,7 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
 | Miniflux                    | 5190        | TCP      |
+| Jackett                     | 9117        | TCP      |
 
 ### Deprecated Data Services
 
