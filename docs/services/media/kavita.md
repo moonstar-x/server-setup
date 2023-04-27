@@ -25,14 +25,10 @@ services:
       - 5000:5000
     volumes:
       - ./data:/kavita/config
-      - /media/sata_2tb/Nextcloud/data/__groupfolders/1:/books
+      - /media/sata_2tb/Books:/books
     environment:
       - TZ=America/Guayaquil
 ```
-
-!!! note
-    If you're curious about that weird volume for the books, currently this set up syncs up the books from [Nextcloud](../data/nextcloud.md) through
-    the use of a plugin named "Shared Group Folders" which allows multiple users to manage this folder with ease.
 
 ## Post-Installation
 
