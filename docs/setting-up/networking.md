@@ -40,6 +40,7 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Readarr                     | 8787        | TCP      |
 | Prowlarr                    | 9696        | TCP      |
 | OpenBooks                   | 12450       | TCP      |
+| PiGallery 2                 | 20500       | TCP      |
 
 ### Data Services
 
