@@ -24,8 +24,8 @@ services:
     volumes:
       - ./config:/app/data/config
       - ./data:/app/data/db
-      - ./cache:/app/data/tmp
-      - /media/usb_4tb_2/Images:/app/data/images:ro
+      - /media/usb_4tb_2/Gallery/cache:/app/data/tmp
+      - /media/usb_4tb_2/Gallery/Images:/app/data/images:ro
     ports:
       - 20500:80
     environment:
