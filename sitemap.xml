@@ -2,332 +2,337 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://moonstar-x.dev/server-setup/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/automation/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/automation/n8n/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/data/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/data/drone/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/data/nexus/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/media/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/media/media-acquisition/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/media/miniflux/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/other/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/deprecated/other/webframes/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/discord-bots/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/discord-bots/free-games-notifier/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/discord-bots/jda-music-bot/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/discord-bots/music-24-7/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/discord-bots/tts-bot/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/games/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/games/arma3/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/games/assettocorsa/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/games/emulatorjs/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/games/minecraft-paper/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/games/teamspeak/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/games/valheim/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/games/zerotier/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/server-monitoring/introduction/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/server-monitoring/in-monitor/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/server-monitoring/in-monitor/configuration/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/server-monitoring/in-monitor/grafana/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/server-monitoring/in-monitor/portainer-agent/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/server-monitoring/in-server/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/server-monitoring/in-server/prometheus/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/cloudflared/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/samba/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/analytics/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/analytics/plausible/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/automation/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/automation/automation-service/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/automation/smart-home/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/data/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/data/ghost/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/data/gitea/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/data/jenkins/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/data/nextcloud/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/docker/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/docker/fleet/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/docker/portainer/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/media/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/media/freshrss/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/media/jellyfin-embystat/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/media/kavita/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/media/media-acquisition/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/media/pigallery-2/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/media/plex-tautulli-synclounge/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://moonstar-x.dev/server-setup/services/media/reddit-slideshow/</loc>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/monitoring/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/monitoring/librespeed/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/monitoring/scrutiny/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/other/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/other/homepage/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/other/rtmp-simulcast/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/services/other/rxresume/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/setting-up/custom-scripts/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/setting-up/docker/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/setting-up/mounting-drives/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/setting-up/networking/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/setting-up/os-installation/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://moonstar-x.dev/server-setup/setting-up/packages/</loc>
-         <lastmod>2023-05-15</lastmod>
+         <lastmod>2023-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
