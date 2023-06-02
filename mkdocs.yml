@@ -119,6 +119,7 @@ nav:
       - Plex + Tautulli + Synclounge: services/media/plex-tautulli-synclounge.md
       - Media Acquisition: services/media/media-acquisition.md
       - PiGallery 2: services/media/pigallery-2.md
+      - Reddit Slideshow: services/media/reddit-slideshow.md
     - Data:
       - Initialization: services/data/index.md
       - Ghost: services/data/ghost.md

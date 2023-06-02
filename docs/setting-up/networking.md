@@ -41,6 +41,7 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Prowlarr                    | 9696        | TCP      |
 | OpenBooks                   | 12450       | TCP      |
 | PiGallery 2                 | 20500       | TCP      |
+| Reddit Slideshow            | 26969       | TCP      |
 
 ### Data Services
 
