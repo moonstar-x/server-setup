@@ -97,13 +97,15 @@ extra_css:
 # Navigation
 nav:
   - Home: index.md
-  - Setting-up: 
-    - OS Installation: setting-up/os-installation.md
-    - Packages: setting-up/packages.md
-    - Mounting Drives: setting-up/mounting-drives.md
-    - Networking: setting-up/networking.md
-    - Docker: setting-up/docker.md
-    - Custom Scripts: setting-up/custom-scripts.md
+  - Setting-up:
+    - Linux Server:
+      - Introduction: setting-up/linux/index.md
+      - OS Installation: setting-up/linux/os-installation.md
+      - Packages: setting-up/linux/packages.md
+      - Mounting Drives: setting-up/linux/mounting-drives.md
+      - Networking: setting-up/linux/networking.md
+      - Docker: setting-up/linux/docker.md
+      - Custom Scripts: setting-up/linux/custom-scripts.md
   - Services:
     - Samba (Native): services/samba.md
     - Cloudflared (Native): services/cloudflared.md
