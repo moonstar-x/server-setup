@@ -31,7 +31,7 @@ We can create as many tunnels as we want. Generally one tunnel per DNS zone shou
 cloudflared tunnel create <NAME>
 ```
 
-!!!note
+!!! note
     Replace `<NAME>` with the desired name for your tunnel.
 
 Once done, this will create a `.json` file inside `~/.cloudflared` that contains the tunnel credentials.
@@ -56,7 +56,7 @@ ingress:
   - service: http_status:404
 ```
 
-!!!note
+!!! note
     You can add as many hostname/service pairs as you want.
 
 ## Running
@@ -93,7 +93,7 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-!!!note
+!!! note
     Replace `$USER` and `$NAME` with the correct values for your tunnel.
 
 Once saved, start and enable the service.

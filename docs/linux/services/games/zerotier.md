@@ -51,7 +51,7 @@ services:
       - ZEROTIER_CENTRAL_TOKEN=CENTRAL_TOKEN
 ```
 
-!!!note
+!!! note
     + Replace `NETWORK_ID` with your **Network ID**.
     + Replace `CENTRAL_TOKEN` with a ZeroTier token, you may acquire one from [here](https://my.zerotier.com/account).
     + Replace `DOMAIN` with the domain you wish to use. Note that the domain only represents the base domain, everyone in your network will be assigned a subdomain based on their assigned names on the network.

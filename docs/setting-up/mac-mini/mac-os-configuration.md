@@ -1,6 +1,6 @@
 # macOS Configuration
 
-!! note
+!!! note
     This Mac Mini in macOS will operate mainly as a [Jenkins](../../linux/services/data/jenkins.md) agent.
 
 Since the installation of macOS is graphically based there will not be any step by step indications of how to do it.
