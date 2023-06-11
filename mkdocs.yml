@@ -165,3 +165,11 @@ nav:
       - RTMP Simulcast: linux/services/other/rtmp-simulcast.md
   - Bootcamp/Game Servers:
     - Introduction: bootcamp/games/index.md
+    - Alien Swarm Reactive Drop: bootcamp/games/reactivedrop.md
+    - Arma 3: bootcamp/games/arma3.md
+    - 'Counter-Strike: Global Offensive': bootcamp/games/csgo.md
+    - DayZ: bootcamp/games/dayz.md
+    - Left 4 Dead 2: bootcamp/games/l4d2.md
+    - No More Room in Hell: bootcamp/games/nmrih.md
+    - Sven Coop: bootcamp/games/svencoop.md
+    - Valheim: bootcamp/games/valheim.md
