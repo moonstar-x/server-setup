@@ -132,6 +132,15 @@ nav:
       - Gitea: services/data/gitea.md
       - Jenkins: services/data/jenkins.md
       - Nextcloud: services/data/nextcloud.md
+    - Games:
+      - Initialization: services/games/index.md
+      - ZeroTier-One: services/games/zerotier.md
+      - TeamSpeak 3: services/games/teamspeak.md
+      - EmulatorJS: services/games/emulatorjs.md
+      - Arma 3 (Native): services/games/arma3.md
+      - Assetto Corsa: services/games/assettocorsa.md
+      - Minecraft (Paper): services/games/minecraft-paper.md
+      - Valheim: services/games/valheim.md
     - Media:
       - Initialization: services/media/index.md
       - FreshRSS: services/media/freshrss.md
@@ -152,12 +161,3 @@ nav:
       - Homepage: services/other/homepage.md
       - Reactive Resume: services/other/rxresume.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
-  - Game Servers:
-    - Initialization: games/index.md
-    - ZeroTier-One: games/zerotier.md
-    - TeamSpeak 3: games/teamspeak.md
-    - EmulatorJS: games/emulatorjs.md
-    - Arma 3 (Native): games/arma3.md
-    - Assetto Corsa: games/assettocorsa.md
-    - Minecraft (Paper): games/minecraft-paper.md
-    - Valheim: games/valheim.md
