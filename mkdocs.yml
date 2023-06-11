@@ -109,6 +109,12 @@ nav:
   - Services:
     - Samba (Native): services/samba.md
     - Cloudflared (Native): services/cloudflared.md
+    - Discord Bots:
+      - Initialization: services/discord-bots/index.md
+      - Free Games Notifier: services/discord-bots/free-games-notifier.md
+      - Text-to-Speech Bot: services/discord-bots/tts-bot.md
+      - Music 24/7 Bot: services/discord-bots/music-24-7.md
+      - JDA Music Bot: services/discord-bots/jda-music-bot.md
     - Docker:
       - Initialization: services/docker/index.md
       - Portainer: services/docker/portainer.md
@@ -154,12 +160,6 @@ nav:
       - Configuration: server-monitoring/in-monitor/configuration.md
       - Grafana: server-monitoring/in-monitor/grafana.md
       - Portainer (Agent): server-monitoring/in-monitor/portainer-agent.md
-  - Discord Bots:
-    - Initialization: discord-bots/index.md
-    - Free Games Notifier: discord-bots/free-games-notifier.md
-    - Text-to-Speech Bot: discord-bots/tts-bot.md
-    - Music 24/7 Bot: discord-bots/music-24-7.md
-    - JDA Music Bot: discord-bots/jda-music-bot.md
   - Game Servers:
     - Initialization: games/index.md
     - ZeroTier-One: games/zerotier.md
