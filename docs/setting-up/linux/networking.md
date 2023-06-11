@@ -11,6 +11,20 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | SSH                         | 22          | TCP      |
 | Samba (SMB/CIFS)            | 445         | TCP      |
 
+### Analytics Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Plausible                   | 10500       | TCP      |
+
+### Automation Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Custom Automation Service   | 5678        | TCP      |
+| Homebridge (Web)            | 8581        | TCP      |
+| Homebridge (HomeKit)        | 51845       | TCP/UDP  |
+
 ### Docker Services
 
 | Service                     | Port Range  | Protocol |
@@ -18,17 +32,36 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Portainer                   | 8000, 9000  | TCP      |
 | Fleet                       | 8080        | TCP      |
 
+### Data Services
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Ghost                       | 15800       | TCP      |
+| Gitea                       | 3000        | TCP      |
+| Jenkins                     | 10800       | TCP      |
+| Nextcloud                   | 9020        | TCP      |
+
+### Games
+
+| Service                     | Port Range  | Protocol |
+|-----------------------------|-------------|----------|
+| Assetto Corsa (Manager)     | 8772        | TCP      |
+| Assetto Corsa (Server)      | 9600        | TCP/UDP  |
+| Assetto Corsa (HTTP)        | 8081        | TCP      |
+| EmulatorJS (Web)            | 30000       | TCP      |
+| EmulatorJS (ROM Management) | 30010       | TCP      |
+| TeamSpeak 3 (Voice)         | 9987        | UDP      |
+| TeamSpeak 3 (ServerQuery)   | 10011       | TCP      |
+| TeamSpeak 3 (FileTransfer)  | 30033       | TCP      |
+
 ### Media Services
 
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
 | FreshRSS                    | 5200        | TCP      |
-| Kavita                      | 5000        | TCP      |
 | Jellyfin                    | 8086        | TCP      |
 | EmbyStat                    | 6555        | TCP      |
-| Plex                        | 32400       | TCP      |
-| Tautulli                    | 8181        | TCP      |
-| Synclounge                  | 8088        | TCP      |
+| Kavita                      | 5000        | TCP      |
 | Transmission                | 9091        | TCP      |
 | JDownloader                 | 3129, 5800  | TCP      |
 | Ombi                        | 3579        | TCP      |
@@ -41,65 +74,28 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Prowlarr                    | 9696        | TCP      |
 | OpenBooks                   | 12450       | TCP      |
 | PiGallery 2                 | 20500       | TCP      |
+| Plex                        | 32400       | TCP      |
+| Tautulli                    | 8181        | TCP      |
+| Synclounge                  | 8088        | TCP      |
 | Reddit Slideshow            | 26969       | TCP      |
-
-### Data Services
-
-| Service                     | Port Range  | Protocol |
-|-----------------------------|-------------|----------|
-| Ghost                       | 15800       | TCP      |
-| Nextcloud                   | 9020        | TCP      |
-| Gitea                       | 3000        | TCP      |
-| Jenkins                     | 10800       | TCP      |
 
 ### Monitoring Services
 
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
-| LibreSpeed                  | 8050        | TCP      |
-| Scrutiny                    | 8020        | TCP      |
-| Prometheus                  | 9090, 9100  | TCP      |  
 | Grafana                     | 33000       | TCP      |
-
-### Automation Services
-
-| Service                     | Port Range  | Protocol |
-|-----------------------------|-------------|----------|
-| Custom Automation Service   | 5678        | TCP      |
-| Homebridge (Web)            | 8581        | TCP      |
-| Homebridge (HomeKit)        | 51845       | TCP/UDP  |
-
-### Analytics Services
-
-| Service                     | Port Range  | Protocol |
-|-----------------------------|-------------|----------|
-| Plausible                   | 10500       | TCP      |
+| LibreSpeed                  | 8050        | TCP      |
+| Prometheus                  | 9090, 9100  | TCP      |  
+| Scrutiny                    | 8020        | TCP      |
 
 ### Other Services
 
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
-| RTMP Simulcast              | 1935        | TCP      |
 | Homepage                    | 80          | TCP      |
 | Reactive Resume (Client)    | 40000       | TCP      |
 | Reactive Resume (Server)    | 40100       | TCP      |
-
-
-### Games
-
-| Service                     | Port Range  | Protocol |
-|-----------------------------|-------------|----------|
-| TeamSpeak 3 (Voice)         | 9987        | UDP      |
-| TeamSpeak 3 (ServerQuery)   | 10011       | TCP      |
-| TeamSpeak 3 (FileTransfer)  | 30033       | TCP      |
-| EmulatorJS (Web)            | 30000       | TCP      |
-| EmulatorJS (ROM Management) | 30010       | TCP      |
-| Arma 3                      | 2302-2345   | TCP/UDP  |
-| Assetto Corsa (Manager)     | 8772        | TCP      |
-| Assetto Corsa (Server)      | 9600        | TCP/UDP  |
-| Assetto Corsa (HTTP)        | 8081        | TCP      |
-| Minecraft                   | 25565       | TCP      |
-| Valheim                     | 2456, 2457  | UDP      |
+| RTMP Simulcast              | 1935        | TCP      |
 
 ## Information
 
