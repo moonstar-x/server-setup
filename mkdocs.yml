@@ -106,55 +106,55 @@ nav:
       - 4. Docker: setting-up/linux/docker.md
       - 5. Custom Scripts: setting-up/linux/custom-scripts.md
       - 6. Networking: setting-up/linux/networking.md
-  - Services:
-    - Cloudflared (Native): services/cloudflared.md
-    - Samba (Native): services/samba.md
+  - Linux/Services:
+    - Cloudflared (Native): linux/services/cloudflared.md
+    - Samba (Native): linux/services/samba.md
     - Analytics:
-      - Initialization: services/analytics/index.md
-      - Plausible: services/analytics/plausible.md
+      - Initialization: linux/services/analytics/index.md
+      - Plausible: linux/services/analytics/plausible.md
     - Automation:
-      - Initialization: services/automation/index.md
-      - Custom Automation Service: services/automation/automation-service.md
-      - Smart Home: services/automation/smart-home.md
+      - Initialization: linux/services/automation/index.md
+      - Custom Automation Service: linux/services/automation/automation-service.md
+      - Smart Home: linux/services/automation/smart-home.md
     - Discord Bots:
-      - Initialization: services/discord-bots/index.md
-      - Free Games Notifier: services/discord-bots/free-games-notifier.md
-      - JDA Music Bot: services/discord-bots/jda-music-bot.md
-      - Music 24/7 Bot: services/discord-bots/music-24-7.md
-      - Text-to-Speech Bot: services/discord-bots/tts-bot.md
+      - Initialization: linux/services/discord-bots/index.md
+      - Free Games Notifier: linux/services/discord-bots/free-games-notifier.md
+      - JDA Music Bot: linux/services/discord-bots/jda-music-bot.md
+      - Music 24/7 Bot: linux/services/discord-bots/music-24-7.md
+      - Text-to-Speech Bot: linux/services/discord-bots/tts-bot.md
     - Docker:
-      - Initialization: services/docker/index.md
-      - Portainer: services/docker/portainer.md
-      - Fleet: services/docker/fleet.md
+      - Initialization: linux/services/docker/index.md
+      - Portainer: linux/services/docker/portainer.md
+      - Fleet: linux/services/docker/fleet.md
     - Data:
-      - Initialization: services/data/index.md
-      - Ghost: services/data/ghost.md
-      - Gitea: services/data/gitea.md
-      - Jenkins: services/data/jenkins.md
-      - Nextcloud: services/data/nextcloud.md
+      - Initialization: linux/services/data/index.md
+      - Ghost: linux/services/data/ghost.md
+      - Gitea: linux/services/data/gitea.md
+      - Jenkins: linux/services/data/jenkins.md
+      - Nextcloud: linux/services/data/nextcloud.md
     - Games:
-      - Initialization: services/games/index.md
-      - Assetto Corsa: services/games/assettocorsa.md
-      - EmulatorJS: services/games/emulatorjs.md
-      - TeamSpeak 3: services/games/teamspeak.md
-      - ZeroTier-One: services/games/zerotier.md
+      - Initialization: linux/services/games/index.md
+      - Assetto Corsa: linux/services/games/assettocorsa.md
+      - EmulatorJS: linux/services/games/emulatorjs.md
+      - TeamSpeak 3: linux/services/games/teamspeak.md
+      - ZeroTier-One: linux/services/games/zerotier.md
     - Media:
-      - Initialization: services/media/index.md
-      - FreshRSS: services/media/freshrss.md
-      - Jellyfin + EmbyStat: services/media/jellyfin-embystat.md
-      - Kavita: services/media/kavita.md
-      - Media Acquisition: services/media/media-acquisition.md
-      - PiGallery 2: services/media/pigallery-2.md
-      - Plex + Tautulli + Synclounge: services/media/plex-tautulli-synclounge.md
-      - Reddit Slideshow: services/media/reddit-slideshow.md
+      - Initialization: linux/services/media/index.md
+      - FreshRSS: linux/services/media/freshrss.md
+      - Jellyfin + EmbyStat: linux/services/media/jellyfin-embystat.md
+      - Kavita: linux/services/media/kavita.md
+      - Media Acquisition: linux/services/media/media-acquisition.md
+      - PiGallery 2: linux/services/media/pigallery-2.md
+      - Plex + Tautulli + Synclounge: linux/services/media/plex-tautulli-synclounge.md
+      - Reddit Slideshow: linux/services/media/reddit-slideshow.md
     - Monitoring:
-      - Initialization: services/monitoring/index.md
-      - Grafana: services/monitoring/grafana.md
-      - LibreSpeed: services/monitoring/librespeed.md
-      - Prometheus: services/monitoring/prometheus.md
-      - Scrutiny: services/monitoring/scrutiny.md
+      - Initialization: linux/services/monitoring/index.md
+      - Grafana: linux/services/monitoring/grafana.md
+      - LibreSpeed: linux/services/monitoring/librespeed.md
+      - Prometheus: linux/services/monitoring/prometheus.md
+      - Scrutiny: linux/services/monitoring/scrutiny.md
     - Other:
-      - Initialization: services/other/index.md
-      - Homepage: services/other/homepage.md
-      - Reactive Resume: services/other/rxresume.md
-      - RTMP Simulcast: services/other/rtmp-simulcast.md
+      - Initialization: linux/services/other/index.md
+      - Homepage: linux/services/other/homepage.md
+      - Reactive Resume: linux/services/other/rxresume.md
+      - RTMP Simulcast: linux/services/other/rtmp-simulcast.md

@@ -2203,5 +2203,5 @@ And paste the following JSON in it:
 
 This dashboard will look similar to this:
 
-![grafana-dashboard-1](../../assets/monitoring-grafana-1.jpg)
-![grafana-dashboard-2](../../assets/monitoring-grafana-2.jpg)
+![grafana-dashboard-1](../../../assets/monitoring-grafana-1.jpg)
+![grafana-dashboard-2](../../../assets/monitoring-grafana-2.jpg)
