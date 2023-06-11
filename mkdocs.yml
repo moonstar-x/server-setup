@@ -134,13 +134,10 @@ nav:
       - Nextcloud: services/data/nextcloud.md
     - Games:
       - Initialization: services/games/index.md
-      - ZeroTier-One: services/games/zerotier.md
-      - TeamSpeak 3: services/games/teamspeak.md
-      - EmulatorJS: services/games/emulatorjs.md
-      - Arma 3 (Native): services/games/arma3.md
       - Assetto Corsa: services/games/assettocorsa.md
-      - Minecraft (Paper): services/games/minecraft-paper.md
-      - Valheim: services/games/valheim.md
+      - EmulatorJS: services/games/emulatorjs.md
+      - TeamSpeak 3: services/games/teamspeak.md
+      - ZeroTier-One: services/games/zerotier.md
     - Media:
       - Initialization: services/media/index.md
       - FreshRSS: services/media/freshrss.md
