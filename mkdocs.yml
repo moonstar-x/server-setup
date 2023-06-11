@@ -163,3 +163,5 @@ nav:
       - Homepage: linux/services/other/homepage.md
       - Reactive Resume: linux/services/other/rxresume.md
       - RTMP Simulcast: linux/services/other/rtmp-simulcast.md
+  - Bootcamp/Game Servers:
+    - Introduction: bootcamp/games/index.md
