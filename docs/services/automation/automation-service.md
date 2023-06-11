@@ -1,9 +1,9 @@
 # Custom Automation Service
 
-I decided to drop [n8n](../../deprecated/automation/n8n.md) in favor of my own custom [automation service](https://github.com/moonstar-x/automation-service). This service is completely custom made for my needs so chances are this will not be of any
-use for you. If that is the case, you should probably stick to [n8n](../../deprecated/automation/n8n.md).
+This service is completely custom made for my needs so chances are this will not be of any
+use for you.
 
-The only reason I went out of my way to create my own service was because I was finding myself using way too much the `Code` node in n8n. Given this, maintaining my workflows wasn't really that easy and at this point it would be a lot better
+The only reason I went out of my way to create my own service was because I was finding myself using way too much the `Code` node in [n8n](https://n8n.io/). Given this, maintaining my workflows wasn't really that easy and at this point it would be a lot better
 for me to just maintain an actual code based workflow system rather than the workflows I had there.
 
 This service has an Docker image hosted on [GitHub Packages](https://github.com/moonstar-x/automation-service/pkgs/container/automation-service) which will be used.

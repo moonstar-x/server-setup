@@ -105,38 +105,6 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Minecraft                   | 25565       | TCP      |
 | Valheim                     | 2456, 2457  | UDP      |
 
-## Deprecated Port Forwarding Tables
-
-### Deprecated Media Services
-
-| Service                     | Port Range  | Protocol |
-|-----------------------------|-------------|----------|
-| Miniflux                    | 5190        | TCP      |
-| Jackett                     | 9117        | TCP      |
-
-### Deprecated Data Services
-
-| Service                     | Port Range  | Protocol |
-|-----------------------------|-------------|----------|
-| Drone                       | 3080        | TCP      |
-| Drone (Runner)              | 3100        | TCP      |
-| Nexus                       | 10600       | TCP      |
-| Nexus (Docker Registry)     | 10610       | TCP      |
-| Nexus (NPM Registry)        | 10620       | TCP      |
-
-### Deprecated Automation Services
-
-| Service                     | Port Range  | Protocol |
-|-----------------------------|-------------|----------|
-| n8n                         | 5678        | TCP      |
-| n8n MongoDB                 | 56787       | TCP      |
-
-### Deprecated Other Services
-
-| Service                     | Port Range  | Protocol |
-|-----------------------------|-------------|----------|
-| Webframes                   | 16000       | TCP      |
-
 ## Information
 
 If you don't know what internal IP the server is running on, you can always type on the terminal:
