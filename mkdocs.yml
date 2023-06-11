@@ -143,23 +143,15 @@ nav:
       - Reddit Slideshow: services/media/reddit-slideshow.md
     - Monitoring:
       - Initialization: services/monitoring/index.md
+      - Grafana: services/monitoring/grafana.md
       - LibreSpeed: services/monitoring/librespeed.md
+      - Prometheus: services/monitoring/prometheus.md
       - Scrutiny: services/monitoring/scrutiny.md
     - Other:
       - Initialization: services/other/index.md
       - Homepage: services/other/homepage.md
       - Reactive Resume: services/other/rxresume.md
       - RTMP Simulcast: services/other/rtmp-simulcast.md
-  - Server Monitoring:
-    - Introduction: server-monitoring/introduction.md
-    - In Server:
-      - Initialization: server-monitoring/in-server/index.md
-      - Prometheus: server-monitoring/in-server/prometheus.md
-    - In Monitor:
-      - Initialization: server-monitoring/in-monitor/index.md
-      - Configuration: server-monitoring/in-monitor/configuration.md
-      - Grafana: server-monitoring/in-monitor/grafana.md
-      - Portainer (Agent): server-monitoring/in-monitor/portainer-agent.md
   - Game Servers:
     - Initialization: games/index.md
     - ZeroTier-One: games/zerotier.md

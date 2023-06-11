@@ -58,6 +58,8 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 |-----------------------------|-------------|----------|
 | LibreSpeed                  | 8050        | TCP      |
 | Scrutiny                    | 8020        | TCP      |
+| Prometheus                  | 9090, 9100  | TCP      |  
+| Grafana                     | 33000       | TCP      |
 
 ### Automation Services
 
@@ -82,12 +84,6 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Reactive Resume (Client)    | 40000       | TCP      |
 | Reactive Resume (Server)    | 40100       | TCP      |
 
-### Server Monitoring Services
-
-| Service                     | Port Range  | Protocol |
-|-----------------------------|-------------|----------|
-| Prometheus                  | 9090, 9100  | TCP      |  
-| Grafana **(Raspberry Pi)**  | 3000        | TCP      |
 
 ### Games
 

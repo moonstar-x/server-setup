@@ -1,13 +1,16 @@
 # Grafana
 
-[Prometheus](https://grafana.com/) is a dashboard that can consume from Prometheus and other data sources to display all the information that you need. This service has an official image on [Docker Hub](https://hub.docker.com/r/grafana/grafana) which we'll use.
+!!! warning
+    You should set up [Prometheus](./prometheus.md) first before setting this up.
+
+[Grafana](https://grafana.com/) is a dashboard that can consume from Prometheus and other data sources to display all the information that you need. This service has an official image on [Docker Hub](https://hub.docker.com/r/grafana/grafana) which we'll use.
 
 ## Pre-Installation
 
 We'll create a folder in the main user's home where all the service's data will be saved.
 
 ```bash
-mkdir ~/grafana
+mkdir ~/monitoring/grafana
 ```
 
 Inside this folder, create a `data` folder:
@@ -29,11 +32,19 @@ services:
     restart: unless-stopped
     user: 1000:1000
     ports:
-      - 3000:3000
+      - 33000:3000
     volumes:
       - ./data:/var/lib/grafana
     environment:
       - TZ=America/Guayaquil
+```
+
+## Post-Installation
+
+We'll need to allow the service's port on our firewall.
+
+```bash
+sudo ufw allow 33000/tcp
 ```
 
 ## Running
@@ -2194,28 +2205,3 @@ This dashboard will look similar to this:
 
 ![grafana-dashboard-1](../../assets/monitoring-grafana-1.jpg)
 ![grafana-dashboard-2](../../assets/monitoring-grafana-2.jpg)
-
-## Final Touches
-
-Before saying we're done we would like to autostart this dashboard on system startup. For this we'll need to install the [Auto fullscreen](https://addons.mozilla.org/en-US/firefox/addon/autofullscreen/) Firefox addon so that every time we open the browser it opens on fullscreen mode.
-
-We'll also make the following URL the home page of the browser:
-
-```text
-http://localhost:3000/d/iUjT2qZgz/server-dashboard?orgid=1&refresh=10s&kiosk
-```
-
-!!! note
-    Make sure to replace this URL with the one for your actual dashboard.
-
-Finally, to autostart firefox, create the following file:
-
-```bash
-nano ~/.xinitrc
-```
-
-And add the following text inside:
-
-```text
-awesome & firefox 
-```
