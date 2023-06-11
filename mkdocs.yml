@@ -107,49 +107,49 @@ nav:
       - 5. Custom Scripts: setting-up/linux/custom-scripts.md
       - 6. Networking: setting-up/linux/networking.md
   - Services:
-    - Samba (Native): services/samba.md
     - Cloudflared (Native): services/cloudflared.md
-    - Discord Bots:
-      - Initialization: services/discord-bots/index.md
-      - Free Games Notifier: services/discord-bots/free-games-notifier.md
-      - Text-to-Speech Bot: services/discord-bots/tts-bot.md
-      - Music 24/7 Bot: services/discord-bots/music-24-7.md
-      - JDA Music Bot: services/discord-bots/jda-music-bot.md
-    - Docker:
-      - Initialization: services/docker/index.md
-      - Portainer: services/docker/portainer.md
-      - Fleet: services/docker/fleet.md
-    - Media:
-      - Initialization: services/media/index.md
-      - FreshRSS: services/media/freshrss.md
-      - Kavita: services/media/kavita.md
-      - Jellyfin + EmbyStat: services/media/jellyfin-embystat.md
-      - Plex + Tautulli + Synclounge: services/media/plex-tautulli-synclounge.md
-      - Media Acquisition: services/media/media-acquisition.md
-      - PiGallery 2: services/media/pigallery-2.md
-      - Reddit Slideshow: services/media/reddit-slideshow.md
-    - Data:
-      - Initialization: services/data/index.md
-      - Ghost: services/data/ghost.md
-      - Nextcloud: services/data/nextcloud.md
-      - Gitea: services/data/gitea.md
-      - Jenkins: services/data/jenkins.md
-    - Monitoring:
-      - Initialization: services/monitoring/index.md
-      - LibreSpeed: services/monitoring/librespeed.md
-      - Scrutiny: services/monitoring/scrutiny.md
+    - Samba (Native): services/samba.md
+    - Analytics:
+      - Initialization: services/analytics/index.md
+      - Plausible: services/analytics/plausible.md
     - Automation:
       - Initialization: services/automation/index.md
       - Custom Automation Service: services/automation/automation-service.md
       - Smart Home: services/automation/smart-home.md
-    - Analytics:
-      - Initialization: services/analytics/index.md
-      - Plausible: services/analytics/plausible.md
+    - Discord Bots:
+      - Initialization: services/discord-bots/index.md
+      - Free Games Notifier: services/discord-bots/free-games-notifier.md
+      - JDA Music Bot: services/discord-bots/jda-music-bot.md
+      - Music 24/7 Bot: services/discord-bots/music-24-7.md
+      - Text-to-Speech Bot: services/discord-bots/tts-bot.md
+    - Docker:
+      - Initialization: services/docker/index.md
+      - Portainer: services/docker/portainer.md
+      - Fleet: services/docker/fleet.md
+    - Data:
+      - Initialization: services/data/index.md
+      - Ghost: services/data/ghost.md
+      - Gitea: services/data/gitea.md
+      - Jenkins: services/data/jenkins.md
+      - Nextcloud: services/data/nextcloud.md
+    - Media:
+      - Initialization: services/media/index.md
+      - FreshRSS: services/media/freshrss.md
+      - Jellyfin + EmbyStat: services/media/jellyfin-embystat.md
+      - Kavita: services/media/kavita.md
+      - Media Acquisition: services/media/media-acquisition.md
+      - PiGallery 2: services/media/pigallery-2.md
+      - Plex + Tautulli + Synclounge: services/media/plex-tautulli-synclounge.md
+      - Reddit Slideshow: services/media/reddit-slideshow.md
+    - Monitoring:
+      - Initialization: services/monitoring/index.md
+      - LibreSpeed: services/monitoring/librespeed.md
+      - Scrutiny: services/monitoring/scrutiny.md
     - Other:
       - Initialization: services/other/index.md
-      - RTMP Simulcast: services/other/rtmp-simulcast.md
       - Homepage: services/other/homepage.md
       - Reactive Resume: services/other/rxresume.md
+      - RTMP Simulcast: services/other/rtmp-simulcast.md
   - Server Monitoring:
     - Introduction: server-monitoring/introduction.md
     - In Server:
