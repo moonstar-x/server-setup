@@ -36,7 +36,6 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 
 | Service                     | Port Range  | Protocol |
 |-----------------------------|-------------|----------|
-| Ghost                       | 15800       | TCP      |
 | Gitea                       | 3000        | TCP      |
 | Jenkins                     | 10800       | TCP      |
 | Nextcloud                   | 9020        | TCP      |

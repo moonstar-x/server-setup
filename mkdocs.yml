@@ -133,7 +133,6 @@ nav:
       - Fleet: linux/services/docker/fleet.md
     - Data:
       - Initialization: linux/services/data/index.md
-      - Ghost: linux/services/data/ghost.md
       - Gitea: linux/services/data/gitea.md
       - Jenkins: linux/services/data/jenkins.md
       - Nextcloud: linux/services/data/nextcloud.md
