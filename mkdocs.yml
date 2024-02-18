@@ -139,7 +139,6 @@ nav:
     - Games:
       - Initialization: linux/services/games/index.md
       - Assetto Corsa: linux/services/games/assettocorsa.md
-      - EmulatorJS: linux/services/games/emulatorjs.md
       - TeamSpeak 3: linux/services/games/teamspeak.md
       - ZeroTier-One: linux/services/games/zerotier.md
     - Media:

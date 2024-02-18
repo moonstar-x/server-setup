@@ -47,8 +47,6 @@ Here's a list of ports that are exposed to the host machine. This serves as a re
 | Assetto Corsa (Manager)     | 8772        | TCP      |
 | Assetto Corsa (Server)      | 9600        | TCP/UDP  |
 | Assetto Corsa (HTTP)        | 8081        | TCP      |
-| EmulatorJS (Web)            | 30000       | TCP      |
-| EmulatorJS (ROM Management) | 30010       | TCP      |
 | TeamSpeak 3 (Voice)         | 9987        | UDP      |
 | TeamSpeak 3 (ServerQuery)   | 10011       | TCP      |
 | TeamSpeak 3 (FileTransfer)  | 30033       | TCP      |
