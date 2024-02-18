@@ -19,7 +19,7 @@ version: "3.9"
 
 services:
   homepage:
-    image: ghcr.io/benphelps/homepage:latest
+    image: ghcr.io/gethomepage/homepage:latest
     restart: unless-stopped
     ports:
       - 80:3000
