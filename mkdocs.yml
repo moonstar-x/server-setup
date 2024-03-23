@@ -97,78 +97,86 @@ extra_css:
 # Navigation
 nav:
   - Home: index.md
-  - Setting-up:
-    - Linux Server:
-      - 0. Introduction: setting-up/linux/index.md
-      - 1. OS Installation: setting-up/linux/os-installation.md
-      - 2. Packages: setting-up/linux/packages.md
-      - 3. Mounting Drives: setting-up/linux/mounting-drives.md
-      - 4. Docker: setting-up/linux/docker.md
-      - 5. Custom Scripts: setting-up/linux/custom-scripts.md
-      - 6. Networking: setting-up/linux/networking.md
-    - Mac Mini:
-      - 0. Introduction: setting-up/mac-mini/index.md
-      - 1. macOS Configuration: setting-up/mac-mini/mac-os-configuration.md
-      - 2. Bootcamp: setting-up/mac-mini/bootcamp.md
-      - 3. Windows Configuration: setting-up/mac-mini/windows-configuration.md
-  - Linux/Services:
-    - Cloudflared (Native): linux/services/cloudflared.md
-    - Samba (Native): linux/services/samba.md
-    - Analytics:
-      - Initialization: linux/services/analytics/index.md
-      - Plausible: linux/services/analytics/plausible.md
-    - Automation:
-      - Initialization: linux/services/automation/index.md
-      - Custom Automation Service: linux/services/automation/automation-service.md
-      - Smart Home: linux/services/automation/smart-home.md
-    - Discord Bots:
-      - Initialization: linux/services/discord-bots/index.md
-      - Free Games Notifier: linux/services/discord-bots/free-games-notifier.md
-      - JDA Music Bot: linux/services/discord-bots/jda-music-bot.md
-      - Music 24/7 Bot: linux/services/discord-bots/music-24-7.md
-      - Text-to-Speech Bot: linux/services/discord-bots/tts-bot.md
-    - Docker:
-      - Initialization: linux/services/docker/index.md
-      - Portainer: linux/services/docker/portainer.md
-      - Fleet: linux/services/docker/fleet.md
-    - Data:
-      - Initialization: linux/services/data/index.md
-      - Actual: linux/services/data/actual.md
-      - Gitea: linux/services/data/gitea.md
-      - Jenkins: linux/services/data/jenkins.md
-      - Nextcloud: linux/services/data/nextcloud.md
-    - Games:
-      - Initialization: linux/services/games/index.md
-      - Assetto Corsa: linux/services/games/assettocorsa.md
-      - TeamSpeak 3: linux/services/games/teamspeak.md
-      - ZeroTier-One: linux/services/games/zerotier.md
-    - Media:
-      - Initialization: linux/services/media/index.md
-      - FreshRSS: linux/services/media/freshrss.md
-      - Jellyfin + EmbyStat: linux/services/media/jellyfin-embystat.md
-      - Kavita: linux/services/media/kavita.md
-      - Media Acquisition: linux/services/media/media-acquisition.md
-      - PiGallery 2: linux/services/media/pigallery-2.md
-      - Plex + Tautulli + Synclounge: linux/services/media/plex-tautulli-synclounge.md
-      - Reddit Slideshow: linux/services/media/reddit-slideshow.md
-    - Monitoring:
-      - Initialization: linux/services/monitoring/index.md
-      - Grafana: linux/services/monitoring/grafana.md
-      - LibreSpeed: linux/services/monitoring/librespeed.md
-      - Prometheus: linux/services/monitoring/prometheus.md
-      - Scrutiny: linux/services/monitoring/scrutiny.md
-    - Other:
-      - Initialization: linux/services/other/index.md
-      - Homepage: linux/services/other/homepage.md
-      - Reactive Resume: linux/services/other/rxresume.md
-      - RTMP Simulcast: linux/services/other/rtmp-simulcast.md
-  - Bootcamp/Game Servers:
-    - Introduction: bootcamp/games/index.md
-    - Alien Swarm Reactive Drop: bootcamp/games/reactivedrop.md
-    - Arma 3: bootcamp/games/arma3.md
-    - 'Counter-Strike: Global Offensive': bootcamp/games/csgo.md
-    - DayZ: bootcamp/games/dayz.md
-    - Left 4 Dead 2: bootcamp/games/l4d2.md
-    - No More Room in Hell: bootcamp/games/nmrih.md
-    - Sven Coop: bootcamp/games/svencoop.md
-    - Valheim: bootcamp/games/valheim.md
+  - Linux:
+    - Setting Up:
+      - 0. Introduction: linux/setting-up/index.md
+      - 1. Installation: linux/setting-up/installation.md
+      - 2. Mounting Drives: linux/setting-up/mounting-drives.md
+      - 3. Docker: linux/setting-up/docker.md
+      - 4. Custom Scripts: linux/setting-up/custom-scripts.md
+
+  # - Setting-up:
+  #   - Linux Server:
+  #     - 0. Introduction: setting-up/linux/index.md
+  #     - 1. OS Installation: setting-up/linux/os-installation.md
+  #     - 2. Packages: setting-up/linux/packages.md
+  #     - 3. Mounting Drives: setting-up/linux/mounting-drives.md
+  #     - 4. Docker: setting-up/linux/docker.md
+  #     - 5. Custom Scripts: setting-up/linux/custom-scripts.md
+  #     - 6. Networking: setting-up/linux/networking.md
+  #   - Mac Mini:
+  #     - 0. Introduction: setting-up/mac-mini/index.md
+  #     - 1. macOS Configuration: setting-up/mac-mini/mac-os-configuration.md
+  #     - 2. Bootcamp: setting-up/mac-mini/bootcamp.md
+  #     - 3. Windows Configuration: setting-up/mac-mini/windows-configuration.md
+  # - Linux/Services:
+  #   - Cloudflared (Native): linux/services/cloudflared.md
+  #   - Samba (Native): linux/services/samba.md
+  #   - Analytics:
+  #     - Initialization: linux/services/analytics/index.md
+  #     - Plausible: linux/services/analytics/plausible.md
+  #   - Automation:
+  #     - Initialization: linux/services/automation/index.md
+  #     - Custom Automation Service: linux/services/automation/automation-service.md
+  #     - Smart Home: linux/services/automation/smart-home.md
+  #   - Discord Bots:
+  #     - Initialization: linux/services/discord-bots/index.md
+  #     - Free Games Notifier: linux/services/discord-bots/free-games-notifier.md
+  #     - JDA Music Bot: linux/services/discord-bots/jda-music-bot.md
+  #     - Music 24/7 Bot: linux/services/discord-bots/music-24-7.md
+  #     - Text-to-Speech Bot: linux/services/discord-bots/tts-bot.md
+  #   - Docker:
+  #     - Initialization: linux/services/docker/index.md
+  #     - Portainer: linux/services/docker/portainer.md
+  #     - Fleet: linux/services/docker/fleet.md
+  #   - Data:
+  #     - Initialization: linux/services/data/index.md
+  #     - Actual: linux/services/data/actual.md
+  #     - Gitea: linux/services/data/gitea.md
+  #     - Jenkins: linux/services/data/jenkins.md
+  #     - Nextcloud: linux/services/data/nextcloud.md
+  #   - Games:
+  #     - Initialization: linux/services/games/index.md
+  #     - Assetto Corsa: linux/services/games/assettocorsa.md
+  #     - TeamSpeak 3: linux/services/games/teamspeak.md
+  #     - ZeroTier-One: linux/services/games/zerotier.md
+  #   - Media:
+  #     - Initialization: linux/services/media/index.md
+  #     - FreshRSS: linux/services/media/freshrss.md
+  #     - Jellyfin + EmbyStat: linux/services/media/jellyfin-embystat.md
+  #     - Kavita: linux/services/media/kavita.md
+  #     - Media Acquisition: linux/services/media/media-acquisition.md
+  #     - PiGallery 2: linux/services/media/pigallery-2.md
+  #     - Plex + Tautulli + Synclounge: linux/services/media/plex-tautulli-synclounge.md
+  #     - Reddit Slideshow: linux/services/media/reddit-slideshow.md
+  #   - Monitoring:
+  #     - Initialization: linux/services/monitoring/index.md
+  #     - Grafana: linux/services/monitoring/grafana.md
+  #     - LibreSpeed: linux/services/monitoring/librespeed.md
+  #     - Prometheus: linux/services/monitoring/prometheus.md
+  #     - Scrutiny: linux/services/monitoring/scrutiny.md
+  #   - Other:
+  #     - Initialization: linux/services/other/index.md
+  #     - Homepage: linux/services/other/homepage.md
+  #     - Reactive Resume: linux/services/other/rxresume.md
+  #     - RTMP Simulcast: linux/services/other/rtmp-simulcast.md
+  # - Bootcamp/Game Servers:
+  #   - Introduction: bootcamp/games/index.md
+  #   - Alien Swarm Reactive Drop: bootcamp/games/reactivedrop.md
+  #   - Arma 3: bootcamp/games/arma3.md
+  #   - 'Counter-Strike: Global Offensive': bootcamp/games/csgo.md
+  #   - DayZ: bootcamp/games/dayz.md
+  #   - Left 4 Dead 2: bootcamp/games/l4d2.md
+  #   - No More Room in Hell: bootcamp/games/nmrih.md
+  #   - Sven Coop: bootcamp/games/svencoop.md
+  #   - Valheim: bootcamp/games/valheim.md
