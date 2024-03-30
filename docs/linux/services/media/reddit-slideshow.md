@@ -34,12 +34,26 @@ services:
   web:
     image: code.moonstar-x.dev/public/reddit-slideshow:latest
     restart: unless-stopped
-    ports:
-      - 13000:8080
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - reddit_slideshow
     volumes:
       - ./settings.json:/usr/share/nginx/html/settings.json
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.reddit_slideshow.rule: Host(`slideshow.home.arpa`)
+      traefik.http.routers.reddit_slideshow.entrypoints: local
+      traefik.http.routers.reddit_slideshow.service: reddit_slideshow@docker
+      traefik.http.services.reddit_slideshow.loadbalancer.server.port: 8080
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 ## Running

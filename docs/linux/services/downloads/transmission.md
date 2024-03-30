@@ -34,14 +34,16 @@ docker network create downloads_external
 
 ```yaml
 services:
-  transmission:
+  web:
     image: ghcr.io/linuxserver/transmission:latest
     restart: unless-stopped
     networks:
-      - default
-      - downloads_external
+      default:
+      downloads_external:
+      proxy_external:
+        aliases:
+          - transmission
     ports:
-      - 45000:9091
       - 51413:51413
       - 51413:51413/udp
     volumes:
@@ -56,9 +58,18 @@ services:
       PASS: BASIC_AUTH_PASSWORD
       PUID: 1000
       PGID: 1000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.transmission.rule: Host(`transmission.home.arpa`)
+      traefik.http.routers.transmission.entrypoints: local
+      traefik.http.routers.transmission.service: transmission@docker
+      traefik.http.services.transmission.loadbalancer.server.port: 9091
 
 networks:
   downloads_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

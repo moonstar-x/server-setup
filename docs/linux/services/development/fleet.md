@@ -18,13 +18,16 @@ mkdir ~/services/development/fleet
 
 ```yaml
 services:
-  fleet:
+  web:
     image: ghcr.io/linuxserver/fleet:latest
     restart: unless-stopped
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - fleet
     depends_on:
       - db
-    ports:
-      - 30000:8080
     volumes:
       - ./config:/config
     environment:
@@ -35,6 +38,13 @@ services:
       fleet_database_url: jdbc:mariadb://db/fleet
       fleet_database_username: fleet
       fleet_database_password: DATABASE_PASSWORD
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.fleet.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.fleet.entrypoints: public
+      traefik.http.routers.fleet.service: fleet@docker
+      traefik.http.services.fleet.loadbalancer.server.port: 8080
 
   db:
     image: mariadb:10
@@ -47,6 +57,10 @@ services:
       MYSQL_DATABASE: fleet
       MYSQL_USER: fleet
       MYSQL_PASSWORD: DATABASE_PASSWORD
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! note

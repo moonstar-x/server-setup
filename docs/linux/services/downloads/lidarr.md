@@ -26,15 +26,15 @@ docker network create downloads_external
 
 ```yaml
 services:
-  lidarr:
+  web:
     image: youegraillot/lidarr-on-steroids:latest
     restart: unless-stopped
     networks:
-      - default
-      - downloads_external
-    ports:
-      - 45400:8686
-      - 45410:6595
+      default:
+      downloads_external:
+      proxy_external:
+        aliases:
+          - lidarr
     volumes:
       - ./config:/config
       - ./deemix:/config_deemix
@@ -45,9 +45,22 @@ services:
       PUID: 1000
       PGID: 1000
       AUTOCONFIG: true
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.lidarr.rule: Host(`lidarr.home.arpa`)
+      traefik.http.routers.lidarr.entrypoints: local
+      traefik.http.routers.lidarr.service: lidarr@docker
+      traefik.http.services.lidarr.loadbalancer.server.port: 8686
+      traefik.http.routers.deemix.rule: Host(`deemix.home.arpa`)
+      traefik.http.routers.deemix.entrypoints: local
+      traefik.http.routers.deemix.service: deemix@docker
+      traefik.http.services.deemix.loadbalancer.server.port: 6595
 
 networks:
   downloads_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

@@ -18,9 +18,14 @@ mkdir ~/services/management/homepage
 
 ```yaml
 services:
-  homepage:
+  web:
     image: ghcr.io/gethomepage/homepage:latest
     restart: unless-stopped
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - homepage
     volumes:
       - ./config:/app/config
       - ./images:/app/public/images
@@ -31,6 +36,17 @@ services:
       - /media/usb_8tb:/media/usb_8tb:ro
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.homepage.rule: Host(`home.arpa`)
+      traefik.http.routers.homepage.entrypoints: local
+      traefik.http.routers.homepage.service: homepage@docker
+      traefik.http.services.homepage.loadbalancer.server.port: 3000
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 ## Running

@@ -26,23 +26,33 @@ docker network create jellyfin_external
 
 ```yaml
 services:
-  embystat:
+  web:
     image: ghcr.io/linuxserver/embystat:latest
     restart: unless-stopped
     networks:
-      - default
-      - jellyfin_external
-    ports:
-      - 60010:6555
+      default:
+      jellyfin_external:
+      proxy_external:
+        aliases:
+          - embystat
     volumes:
       - ./config:/config
     environment:
       TZ: America/Guayaquil
       PUID: 1000
       PGID: 1000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.embystat.rule: Host(`embystat.home.arpa`)
+      traefik.http.routers.embystat.entrypoints: local
+      traefik.http.routers.embystat.service: embystat@docker
+      traefik.http.services.embystat.loadbalancer.server.port: 6555
 
 networks:
   jellyfin_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

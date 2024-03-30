@@ -18,7 +18,7 @@ mkdir ~/services/media/plex
 
 ```yaml
 services:
-  plex:
+  web:
     image: plexinc/pms-docker:latest
     restart: unless-stopped
     network_mode: host

@@ -26,14 +26,15 @@ docker network create downloads_external
 
 ```yaml
 services:
-  bazarr:
+  web:
     image: ghcr.io/linuxserver/bazarr:latest
     restart: unless-stopped
     networks:
-      - default
-      - downloads_external
-    ports:
-      - 45600:6767
+      default:
+      downloads_external:
+      proxy_external:
+        aliases:
+          - bazarr
     volumes:
       - ./config:/config
       - /media/usb_4tb:/media/usb_4tb
@@ -43,9 +44,18 @@ services:
       TZ: America/Guayaquil
       PUID: 1000
       PGID: 1000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.bazarr.rule: Host(`bazarr.home.arpa`)
+      traefik.http.routers.bazarr.entrypoints: local
+      traefik.http.routers.bazarr.service: bazarr@docker
+      traefik.http.services.bazarr.loadbalancer.server.port: 6767
 
 networks:
   downloads_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

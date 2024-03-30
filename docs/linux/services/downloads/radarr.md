@@ -26,14 +26,15 @@ docker network create downloads_external
 
 ```yaml
 services:
-  radarr:
+  web:
     image: ghcr.io/linuxserver/radarr:latest
     restart: unless-stopped
     networks:
-      - default
-      - downloads_external
-    ports:
-      - 45500:7878
+      default:
+      downloads_external:
+      proxy_external:
+        aliases:
+          - radarr
     volumes:
       - ./config:/config
       - /media/usb_4tb:/media/usb_4tb
@@ -43,9 +44,18 @@ services:
       TZ: America/Guayaquil
       PUID: 1000
       PGID: 1000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.radarr.rule: Host(`radarr.home.arpa`)
+      traefik.http.routers.radarr.entrypoints: local
+      traefik.http.routers.radarr.service: radarr@docker
+      traefik.http.services.radarr.loadbalancer.server.port: 7878
 
 networks:
   downloads_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

@@ -18,13 +18,27 @@ mkdir ~/services/media/synclounge
 
 ```yaml
 services:
-  synclounge:
+  web:
     image: ghcr.io/linuxserver/synclounge:latest
     restart: unless-stopped
-    ports:
-      - 10010:8088
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - synclounge
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.synclounge.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.synclounge.entrypoints: public
+      traefik.http.routers.synclounge.service: synclounge@docker
+      traefik.http.services.synclounge.loadbalancer.server.port: 8088
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 ## Running

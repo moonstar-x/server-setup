@@ -64,26 +64,40 @@ Make sure to add the generated private key as a Credential inside *Jenkins* as a
 
 ```yaml
 services:
-  jenkins:
+  web:
     image: jenkins/jenkins:lts
     restart: unless-stopped
-    ports:
-      - 10800:8080
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - jenkins
     volumes:
       - ./data:/var/jenkins_home
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.jenkins.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.jenkins.entrypoints: public
+      traefik.http.routers.jenkins.service: jenkins@docker
+      traefik.http.services.jenkins.loadbalancer.server.port: 8080
 
   agent:
     build: ./agent/
     restart: unless-stopped
     depends_on:
-      - jenkins
+      - web
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       TZ: America/Guayaquil
       JENKINS_AGENT_SSH_PUBKEY: PUBKEY_HERE
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! note

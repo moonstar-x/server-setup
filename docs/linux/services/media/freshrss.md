@@ -18,17 +18,31 @@ mkdir ~/services/media/freshrss
 
 ```yaml
 services:
-  freshrss:
+  web:
     image: ghcr.io/linuxserver/freshrss:latest
     restart: unless-stopped
-    ports:
-      - 11000:80
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - freshrss
     volumes:
       - ./data:/config
     environment:
       TZ: America/Guayaquil
       PUID: 1000
       PGID: 1000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.freshrss.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.freshrss.entrypoints: public
+      traefik.http.routers.freshrss.service: freshrss@docker
+      traefik.http.services.freshrss.loadbalancer.server.port: 80
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! note

@@ -104,40 +104,6 @@ nav:
     - 4. Custom Scripts: linux/setting-up/custom-scripts.md
   - Linux/Services:
     - Introduction: linux/services/index.md
-    - Networking:
-      - Introduction: linux/services/networking/index.md
-      - Cloudflared: linux/services/networking/cloudflared.md
-      - Samba: linux/services/networking/samba.md
-      - Traefik: linux/services/networking/traefik.md
-      - ZeroTier-One: linux/services/networking/zerotier.md
-    - Media:
-      - Introduction: linux/services/media/index.md
-      - FreshRSS: linux/services/media/freshrss.md
-      - Kavita: linux/services/media/kavita.md
-      - Jellyfin: linux/services/media/jellyfin.md
-      - EmbyStat: linux/services/media/embystat.md
-      - PiGallery 2: linux/services/media/pigallery-2.md
-      - Plex: linux/services/media/plex.md
-      - Tautulli: linux/services/media/tautulli.md
-      - Synclounge: linux/services/media/synclounge.md
-      - Reddit Slideshow: linux/services/media/reddit-slideshow.md
-    - Development:
-      - Introduction: linux/services/development/index.md
-      - Fleet: linux/services/development/fleet.md
-      - Gitea: linux/services/development/gitea.md
-      - Jenkins: linux/services/development/jenkins.md
-    - Observability:
-      - Introduction: linux/services/observability/index.md
-      - LibreSpeed: linux/services/observability/librespeed.md
-      - Prometheus: linux/services/observability/prometheus.md
-      - Grafana: linux/services/observability/grafana.md
-      - Scrutiny: linux/services/observability/scrutiny.md
-    - Discord:
-      - Introduction: linux/services/discord/index.md
-      - Free Games Notifier: linux/services/discord/free-games-notifier.md
-      - JDA Music Bot: linux/services/discord/jda-music-bot.md
-      - Music 24/7: linux/services/discord/music-24-7.md
-      - Text-to-Speech: linux/services/discord/text-to-speech.md
     - Automation:
       - Introduction: linux/services/automation/index.md
       - Homebridge: linux/services/automation/homebridge.md
@@ -146,26 +112,60 @@ nav:
       - Actual: linux/services/data/actual.md
       - Nextcloud: linux/services/data/nextcloud.md
       - Reactive Resume: linux/services/data/rx-resume.md
-    - Games:
-      - Introduction: linux/services/games/index.md
-      - TeamSpeak 3: linux/services/games/teamspeak.md
-      - Assetto Corsa: linux/services/games/assetto-corsa.md
+    - Development:
+      - Introduction: linux/services/development/index.md
+      - Fleet: linux/services/development/fleet.md
+      - Gitea: linux/services/development/gitea.md
+      - Jenkins: linux/services/development/jenkins.md
+    - Discord:
+      - Introduction: linux/services/discord/index.md
+      - Free Games Notifier: linux/services/discord/free-games-notifier.md
+      - JDA Music Bot: linux/services/discord/jda-music-bot.md
+      - Music 24/7: linux/services/discord/music-24-7.md
+      - Text-to-Speech: linux/services/discord/text-to-speech.md
     - Downloads:
       - Introduction: linux/services/downloads/index.md
-      - Transmission: linux/services/downloads/transmission.md
-      - JDownloader: linux/services/downloads/jdownloader.md
-      - Prowlarr: linux/services/downloads/prowlarr.md
-      - Sonarr: linux/services/downloads/sonarr.md
-      - Lidarr: linux/services/downloads/lidarr.md
-      - Radarr: linux/services/downloads/radarr.md
       - Bazarr: linux/services/downloads/bazarr.md
-      - Readarr: linux/services/downloads/readarr.md
+      - JDownloader: linux/services/downloads/jdownloader.md
+      - Lidarr: linux/services/downloads/lidarr.md
       - Ombi: linux/services/downloads/ombi.md
       - OpenBooks: linux/services/downloads/openbooks.md
+      - Prowlarr: linux/services/downloads/prowlarr.md
+      - Radarr: linux/services/downloads/radarr.md
+      - Readarr: linux/services/downloads/readarr.md
+      - Sonarr: linux/services/downloads/sonarr.md
+      - Transmission: linux/services/downloads/transmission.md
+    - Games:
+      - Introduction: linux/services/games/index.md
+      - Assetto Corsa: linux/services/games/assetto-corsa.md
+      - TeamSpeak 3: linux/services/games/teamspeak.md
     - Management:
       - Introduction: linux/services/management/index.md
-      - Portainer: linux/services/management/portainer.md
       - Homepage: linux/services/management/homepage.md
+      - Portainer: linux/services/management/portainer.md
+    - Media:
+      - Introduction: linux/services/media/index.md
+      - EmbyStat: linux/services/media/embystat.md
+      - FreshRSS: linux/services/media/freshrss.md
+      - Jellyfin: linux/services/media/jellyfin.md
+      - Kavita: linux/services/media/kavita.md
+      - PiGallery 2: linux/services/media/pigallery-2.md
+      - Plex: linux/services/media/plex.md
+      - Reddit Slideshow: linux/services/media/reddit-slideshow.md
+      - Synclounge: linux/services/media/synclounge.md
+      - Tautulli: linux/services/media/tautulli.md
+    - Networking:
+      - Introduction: linux/services/networking/index.md
+      - Cloudflared: linux/services/networking/cloudflared.md
+      - Traefik: linux/services/networking/traefik.md
+      - Samba: linux/services/networking/samba.md
+      - ZeroTier-One: linux/services/networking/zerotier.md
+    - Observability:
+      - Introduction: linux/services/observability/index.md
+      - Grafana: linux/services/observability/grafana.md
+      - LibreSpeed: linux/services/observability/librespeed.md
+      - Prometheus: linux/services/observability/prometheus.md
+      - Scrutiny: linux/services/observability/scrutiny.md
   - Bootcamp/Setting Up:
     - 0. Introduction: bootcamp/setting-up/index.md
     - 1. macOS Configuration: bootcamp/setting-up/mac-os-configuration.md

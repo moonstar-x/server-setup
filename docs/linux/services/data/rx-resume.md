@@ -29,17 +29,20 @@ services:
       POSTGRES_USER: rxresume
       POSTGRES_PASSWORD: DATABASE_PASSWORD
 
-  server:
+  api:
     image: amruthpillai/reactive-resume:server-latest
     restart: unless-stopped
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - rxresume_api
     depends_on:
       - db
-    ports:
-      - 42000:3100
     environment:
       TZ: America/Guayaquil
-      PUBLIC_URL: http://public_client_domain.com
-      PUBLIC_SERVER_URL: http://public_api_domain.com
+      PUBLIC_URL: http://resume.home.arpa
+      PUBLIC_SERVER_URL: http://api.resume.home.arpa
       POSTGRES_DB: rxresume
       POSTGRES_USER: rxresume
       POSTGRES_PASSWORD: DATABASE_PASSWORD
@@ -48,18 +51,39 @@ services:
       POSTGRES_PORT: 5432
       JWT_SECRET: JWT_SECRET
       JWT_EXPIRY_TIME: 604800
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.rxresume_api.rule: Host(`api.resume.home.arpa`)
+      traefik.http.routers.rxresume_api.entrypoints: local
+      traefik.http.routers.rxresume_api.service: rxresume_api@docker
+      traefik.http.services.rxresume_api.loadbalancer.server.port: 3100
 
-  client:
+  web:
     image: amruthpillai/reactive-resume:client-latest
     restart: unless-stopped
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - rxresume_web
     depends_on:
-      - server
-    ports:
-      - 42010:3000
+      - api
     environment:
       TZ: America/Guayaquil
-      PUBLIC_URL: http://public_client_domain.com
-      PUBLIC_SERVER_URL: http://public_api_domain.com
+      PUBLIC_URL: http://resume.home.arpa
+      PUBLIC_SERVER_URL: http://api.resume.home.arpa
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.rxresume_web.rule: Host(`resume.home.arpa`)
+      traefik.http.routers.rxresume_web.entrypoints: local
+      traefik.http.routers.rxresume_web.service: rxresume_web@docker
+      traefik.http.services.rxresume_web.loadbalancer.server.port: 3000
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! note

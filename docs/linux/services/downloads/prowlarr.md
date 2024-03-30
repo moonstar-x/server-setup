@@ -26,23 +26,33 @@ docker network create downloads_external
 
 ```yaml
 services:
-  prowlarr:
+  web:
     image: ghcr.io/linuxserver/prowlarr:latest
     restart: unless-stopped
     networks:
-      - default
-      - downloads_external
-    ports:
-      - 45200:9696
+      default:
+      downloads_external:
+      proxy_external:
+        aliases:
+          - prowlarr
     volumes:
       - ./config:/config
     environment:
       TZ: America/Guayaquil
       PUID: 1000
       PGID: 1000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.prowlarr.rule: Host(`prowlarr.home.arpa`)
+      traefik.http.routers.prowlarr.entrypoints: local
+      traefik.http.routers.prowlarr.service: prowlarr@docker
+      traefik.http.services.prowlarr.loadbalancer.server.port: 9696
 
 networks:
   downloads_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

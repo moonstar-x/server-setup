@@ -26,15 +26,17 @@ docker network create downloads_external
 
 ```yaml
 services:
-  jdownloader:
+  web:
     image: jlesage/jdownloader-2:latest
     restart: unless-stopped
     networks:
-      - default
-      - downloads_external
+      default:
+      downloads_external:
+      proxy_external:
+        aliases:
+          - jdownloader
     ports:
-      - 45100:3129
-      - 45110:5800
+      - 3129:3129
     volumes:
       - ./config:/config
       - /media/sata_2tb/Downloads:/output
@@ -43,9 +45,18 @@ services:
       USER_ID: 1000
       GROUP_ID: 1000
       VNC_PASSWORD: BASIC_AUTH_PASSWORD
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.jdownloader.rule: Host(`jdownloader.home.arpa`)
+      traefik.http.routers.jdownloader.entrypoints: local
+      traefik.http.routers.jdownloader.service: jdownloader@docker
+      traefik.http.services.jdownloader.loadbalancer.server.port: 5800
 
 networks:
   downloads_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

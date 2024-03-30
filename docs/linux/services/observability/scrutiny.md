@@ -21,6 +21,11 @@ services:
   web:
     image: ghcr.io/analogj/scrutiny:master-web
     restart: unless-stopped
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - scrutiny
     depends_on:
       influx:
         condition: service_healthy
@@ -30,13 +35,18 @@ services:
       timeout: 10s
       retries: 20
       start_period: 10s
-    ports:
-      - 21000:8080
     volumes:
       - ./config:/config
     environment:
       TZ: America/Guayaquil
       SCRUTINY_WEB_INFLUXDB_HOST: influx
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.scrutiny.rule: Host(`scrutiny.home.arpa`)
+      traefik.http.routers.scrutiny.entrypoints: local
+      traefik.http.routers.scrutiny.service: scrutiny@docker
+      traefik.http.services.scrutiny.loadbalancer.server.port: 8080
 
   collector:
     image: ghcr.io/analogj/scrutiny:master-collector
@@ -71,6 +81,10 @@ services:
       - ./data:/var/lib/influxdb2
     environment:
       TZ: America/Guayaquil
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! note

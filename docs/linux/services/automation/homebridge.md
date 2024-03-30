@@ -18,7 +18,7 @@ mkdir ~/services/automation/homebridge
 
 ```yaml
 services:
-  homebridge:
+  web:
     image: homebridge/homebridge:latest
     restart: unless-stopped
     network_mode: host

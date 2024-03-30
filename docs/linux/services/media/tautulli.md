@@ -18,17 +18,31 @@ mkdir ~/services/media/tautulli
 
 ```yaml
 services:
-  tautulli:
+  web:
     image: tautulli/tautulli:latest
     restart: unless-stopped
-    ports:
-      - 10000:8181
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - tautulli
     volumes:
       - ./config:/config
     environment:
       TZ: America/Guayaquil
       PUID: 1000
       PGID: 1000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.tautulli.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.tautulli.entrypoints: public
+      traefik.http.routers.tautulli.service: tautulli@docker
+      traefik.http.services.tautulli.loadbalancer.server.port: 8181
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! note

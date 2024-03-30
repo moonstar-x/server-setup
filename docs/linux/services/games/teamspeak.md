@@ -18,7 +18,7 @@ mkdir ~/services/games/teamspeak
 
 ```yaml
 services:
-  teamspeak:
+  server:
     image: teamspeak:latest
     restart: unless-stopped
     depends_on:
@@ -46,6 +46,7 @@ services:
     volumes:
       - ./db:/var/lib/mysql
     environment:
+      TZ: America/Guayaquil
       MYSQL_ROOT_PASSWORD: DATABASE_PASSWORD
       MYSQL_DATABASE: teamspeak
 ```

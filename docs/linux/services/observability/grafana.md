@@ -29,22 +29,32 @@ docker network create grafana_external
 
 ```yaml
 services:
-  grafana:
+  web:
     image: grafana/grafana:latest
     restart: unless-stopped
     user: 1000:1000
     networks:
-      - default
-      - grafana_external
-    ports:
-      - 24000:3000
+      default:
+      grafana_external:
+      proxy_external:
+        aliases:
+          - grafana
     volumes:
       - ./data:/var/lib/grafana
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.grafana.rule: Host(`grafana.home.arpa`)
+      traefik.http.routers.grafana.entrypoints: local
+      traefik.http.routers.grafana.service: grafana@docker
+      traefik.http.services.grafana.loadbalancer.server.port: 3000
 
 networks:
   grafana_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

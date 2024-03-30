@@ -18,17 +18,32 @@ mkdir ~/services/management/portainer
 
 ```yaml
 services:
-  portainer:
+  web:
     image: portainer/portainer-ce:latest
     restart: unless-stopped
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - portainer
     ports:
-      - 20000:8000
-      - 20010:9000
+      - 8000:8000
     volumes:
       - ./data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.portainer.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.portainer.entrypoints: public
+      traefik.http.routers.portainer.service: portainer@docker
+      traefik.http.services.portainer.loadbalancer.server.port: 9000
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 ## Running

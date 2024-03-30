@@ -18,16 +18,30 @@ mkdir ~/services/media/kavita
 
 ```yaml
 services:
-  kavita:
+  web:
     image: jvmilazz0/kavita:latest
     restart: unless-stopped
-    ports:
-      - 12000:5000
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - kavita
     volumes:
       - ./data:/kavita/config
       - /media/sata_2tb/Books:/books
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.kavita.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.kavita.entrypoints: public
+      traefik.http.routers.kavita.service: kavita@docker
+      traefik.http.services.kavita.loadbalancer.server.port: 5000
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 ## Running

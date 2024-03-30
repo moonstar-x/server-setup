@@ -26,22 +26,32 @@ docker network create downloads_external
 
 ```yaml
 services:
-  openbooks:
-    image: ghcr.io/evan-buss/openbooks
+  web:
+    image: ghcr.io/evan-buss/openbooks:latest
     restart: unless-stopped
     networks:
-      - default
-      - downloads_external
-    ports:
-      - 45900:80
+      default:
+      downloads_external:
+      proxy_external:
+        aliases:
+          - openbooks
     volumes:
       - /media/sata_2tb/Books/OpenBooks:/books
     command: --name USERNAME --persist
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.openbooks.rule: Host(`openbooks.home.arpa`)
+      traefik.http.routers.openbooks.entrypoints: local
+      traefik.http.routers.openbooks.service: openbooks@docker
+      traefik.http.services.openbooks.loadbalancer.server.port: 80
 
 networks:
   downloads_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

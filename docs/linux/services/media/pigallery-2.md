@@ -18,11 +18,14 @@ mkdir ~/services/media/pigallery2
 
 ```yaml
 services:
-  pigallery2:
+  web:
     image: bpatrik/pigallery2:1.9.5
     restart: unless-stopped
-    ports:
-      - 61000:80
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - pigallery
     volumes:
       - ./config:/app/data/config
       - ./data:/app/data/db
@@ -31,6 +34,17 @@ services:
     environment:
       TZ: America/Guayaquil
       NODE_ENV: production
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.pigallery.rule: Host(`gallery.home.arpa`)
+      traefik.http.routers.pigallery.entrypoints: local
+      traefik.http.routers.pigallery.service: pigallery@docker
+      traefik.http.services.pigallery.loadbalancer.server.port: 80
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 ## Running

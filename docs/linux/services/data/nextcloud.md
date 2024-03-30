@@ -30,13 +30,16 @@ RUN apt-get update && apt-get install -y procps smbclient && rm -rf /var/lib/apt
 
 ```yaml
 services:
-  nextcloud:
+  web:
     build: .
     restart: unless-stopped
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - nextcloud
     depends_on:
       - db
-    ports:
-      - 41000:80
     volumes:
       - /media/sata_2tb/Nextcloud:/var/www/html
     environment:
@@ -45,6 +48,13 @@ services:
       MYSQL_USER: nextcloud
       MYSQL_PASSWORD: DATABASE_PASSWORD
       MYSQL_HOST: db
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.nextcloud.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.nextcloud.entrypoints: public
+      traefik.http.routers.nextcloud.service: nextcloud@docker
+      traefik.http.services.nextcloud.loadbalancer.server.port: 80
 
   db:
     image: mariadb:10.5
@@ -53,6 +63,7 @@ services:
       - ./data:/var/lib/mysql
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     environment:
+      TZ: America/Guayaquil
       MYSQL_ROOT_PASSWORD: DATABASE_PASSWORD
       MYSQL_DATABASE: nextcloud
       MYSQL_USER: nextcloud
@@ -62,12 +73,16 @@ services:
     image: nextcloud:stable
     restart: unless-stopped
     depends_on:
-      - nextcloud
+      - web
     volumes:
       - /media/sata_2tb/Nextcloud:/var/www/html
     entrypoint: /cron.sh
     environment:
       TZ: America/Guayaquil
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! note

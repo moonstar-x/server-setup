@@ -18,7 +18,7 @@ mkdir ~/services/networking/samba
 
 ```yaml
 services:
-  samba:
+  server:
     image: ghcr.io/servercontainers/samba:smbd-only-latest
     restart: unless-stopped
     network_mode: host

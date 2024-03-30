@@ -22,14 +22,16 @@ Since this service will be exposed to the Internet through [Traefik](../networki
 
 ```yaml
 services:
-  gitea:
+  web:
     image: gitea/gitea:latest
     restart: unless-stopped
     depends_on:
       - db
     networks:
-      - default
-      - proxy_external
+      default:
+      proxy_external:
+        aliases:
+          - gitea
     volumes:
       - ./data:/data
     environment:

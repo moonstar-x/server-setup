@@ -22,7 +22,7 @@ To create a network, simply visit [My ZeroTier](https://my.zerotier.com/), login
 
 ```yaml
 services:
-  zerotier:
+  vpn:
     image: zerotier/zerotier:latest
     restart: unless-stopped
     network_mode: host
@@ -43,7 +43,7 @@ services:
     restart: unless-stopped
     network_mode: host
     depends_on:
-      - zerotier
+      - vpn
     volumes:
       - ./config/authtoken.secret:/var/lib/zerotier-one/authtoken.secret:ro
     command: start NETWORK_ID -d DOMAIN

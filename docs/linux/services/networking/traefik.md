@@ -21,33 +21,67 @@ docker network create tunnel_external
 docker network create proxy_external
 ```
 
+## Configuration
+
+Create a `traefik.yml` file with the following content:
+
+```yaml
+global:
+  checkNewVersion: true
+
+log:
+  level: DEBUG
+
+api:
+  insecure: true
+  dashboard: true
+
+providers:
+  docker:
+    exposedByDefault: false
+    watch: true
+  file:
+    fileName: /etc/traefik/traefik.yaml
+    watch: true
+
+entryPoints:
+  public:
+    address: :8000
+  local:
+    address: :8020
+```
+
 ## Docker Compose
 
 *Traefik* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
 
 ```yaml
 services:
-  traefik:
+  proxy:
     image: traefik:latest
     restart: unless-stopped
     networks:
-      - default
-      - proxy_external
-      - tunnel_external
+      default:
+      tunnel_external:
+        aliases:
+          - traefik
+      proxy_external:
+        aliases:
+          - traefik
     ports:
       - 80:8020
-      - 9000:8080
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-    command:
-      - '--log.level=DEBUG'
-      - '--api.insecure=true'
-      - '--providers.docker=true'
-      - '--providers.docker.exposedByDefault=false'
-      - '--entrypoints.public.address=:8000'
-      - '--entrypoints.local.address=:8020'
+      - ./traefik.yml:/etc/traefik/traefik.yaml
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.traefik.rule: Host(`proxy.home.arpa`)
+      traefik.http.routers.traefik.entrypoints: local
+      traefik.http.routers.traefik.service: traefik@docker
+      traefik.http.services.traefik.loadbalancer.server.port: 8080
 
 networks:
   proxy_external:

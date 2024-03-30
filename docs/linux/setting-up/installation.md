@@ -57,3 +57,11 @@ You can add a new rule by using:
 ```bash
 sudo ufw allow <PORT_RANGE>/<PROTOCOL>
 ```
+
+## Git
+
+By default, `git` does not have a credential store configured, so make sure you run the following command to allow git operations in protected repos:
+
+```bash
+git config --global credential.helper store
+```

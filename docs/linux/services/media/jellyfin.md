@@ -26,24 +26,34 @@ docker network create jellyfin_external
 
 ```yaml
 services:
-  jellyfin:
+  web:
     image: jellyfin/jellyfin:latest
     restart: unless-stopped
     user: 1000:1000
     networks:
-      - default
-      - jellyfin_external
-    ports:
-      - 60000:8096
+      default:
+      jellyfin_external:
+      proxy_external:
+        aliases:
+          - jellyfin
     volumes:
       - ./jellyfin-config:/config
       - ./jellyfin-cache:/cache
       - /media/usb_4tb_2/Jellyfin:/media
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.jellyfin.rule: Host(`jellyfin.home.arpa`)
+      traefik.http.routers.jellyfin.entrypoints: local
+      traefik.http.routers.jellyfin.service: jellyfin@docker
+      traefik.http.services.jellyfin.loadbalancer.server.port: 8096
 
 networks:
   jellyfin_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

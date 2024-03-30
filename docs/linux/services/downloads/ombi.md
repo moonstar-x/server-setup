@@ -26,23 +26,33 @@ docker network create downloads_external
 
 ```yaml
 services:
-  ombi:
+  web:
     image: ghcr.io/linuxserver/ombi:latest
     restart: unless-stopped
     networks:
-      - default
-      - downloads_external
-    ports:
-      - 45800:3579
+      default:
+      downloads_external:
+      proxy_external:
+        aliases:
+          - ombi
     volumes:
       - ./config:/config
     environment:
       TZ: America/Guayaquil
       PUID: 1000
       PGID: 1000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.ombi.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.ombi.entrypoints: public
+      traefik.http.routers.ombi.service: ombi@docker
+      traefik.http.services.ombi.loadbalancer.server.port: 3579
 
 networks:
   downloads_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

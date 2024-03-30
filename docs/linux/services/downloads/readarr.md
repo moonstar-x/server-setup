@@ -26,12 +26,15 @@ docker network create downloads_external
 
 ```yaml
 services:
-  readarr:
+  web:
     image: ghcr.io/linuxserver/readarr:develop
     restart: unless-stopped
     networks:
-      - default
-      - downloads_external
+      default:
+      downloads_external:
+      proxy_external:
+        aliases:
+          - readarr
     ports:
       - 45700:8787
     volumes:
@@ -42,9 +45,18 @@ services:
       TZ: America/Guayaquil
       PUID: 1000
       PGID: 1000
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.readarr.rule: Host(`readarr.home.arpa`)
+      traefik.http.routers.readarr.entrypoints: local
+      traefik.http.routers.readarr.service: readarr@docker
+      traefik.http.services.readarr.loadbalancer.server.port: 8787
 
 networks:
   downloads_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

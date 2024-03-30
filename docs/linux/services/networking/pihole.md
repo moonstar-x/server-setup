@@ -1,13 +1,18 @@
+```yaml
 services:
-  pihole:
+  dns:
     image: pihole/pihole:latest
     restart: unless-stopped
     cap_add:
       - NET_ADMIN
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - pihole
     ports:
       - 53:53
       - 53:53/udp
-      - 9500:80
     volumes:
       - ./config:/etc/pihole
       - ./dnsmasq:/etc/dnsmasq.d
@@ -15,6 +20,19 @@ services:
       TZ: America/Guayaquil
       WEBPASSWORD: '031688'
       FTLCONF_LOCAL_IPV4: 192.168.100.4
+      VIRTUAL_HOST: dns.home.arpa
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.pihole.rule: Host(`dns.home.arpa`)
+      traefik.http.routers.pihole.entrypoints: local
+      traefik.http.routers.pihole.service: pihole@docker
+      traefik.http.services.pihole.loadbalancer.server.port: 80
+
+networks:
+  proxy_external:
+    external: true
+```
 
 
 Settings > DNS > Permit all origins

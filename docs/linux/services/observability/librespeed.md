@@ -18,11 +18,14 @@ mkdir ~/services/observability/librespeed
 
 ```yaml
 services:
-  librespeed:
+  web:
     image: ghcr.io/linuxserver/librespeed:latest
     restart: unless-stopped
-    ports:
-      - 22000:80
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - librespeed
     volumes:
       - ./config:/config
     environment:
@@ -30,6 +33,17 @@ services:
       PUID: 1000
       PGID: 1000
       PASSWORD: DATABASE_PASSWORD
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.librespeed.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.librespeed.entrypoints: public
+      traefik.http.routers.librespeed.service: librespeed@docker
+      traefik.http.services.librespeed.loadbalancer.server.port: 80
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! note

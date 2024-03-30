@@ -18,15 +18,29 @@ mkdir ~/services/data/actual
 
 ```yaml
 services:
-  actual:
+  web:
     image: actualbudget/actual-server:latest
     restart: unless-stopped
-    ports:
-      - 40000:5006
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - actual
     volumes:
       - ./data:/data
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.actual.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.actual.entrypoints: public
+      traefik.http.routers.actual.service: actual@docker
+      traefik.http.services.actual.loadbalancer.server.port: 5006
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 ## Running

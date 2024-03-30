@@ -55,22 +55,30 @@ docker network create grafana_external
 
 ```yaml
 services:
-  prometheus:
+  web:
     image: prom/prometheus:latest
     restart: unless-stopped
     user: 1000:1000
     extra_hosts:
       - host.docker.internal:host-gateway
     networks:
-      - default
-      - grafana_external
-    ports:
-      - 23000:9090
+      default:
+      grafana_external:
+      proxy_external:
+        aliases:
+          - prometheus
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - ./data:/prometheus
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.prometheus.rule: Host(`prometheus.home.arpa`)
+      traefik.http.routers.prometheus.entrypoints: local
+      traefik.http.routers.prometheus.service: prometheus@docker
+      traefik.http.services.prometheus.loadbalancer.server.port: 9090
 
   exporter:
     image: prom/node-exporter:latest
@@ -91,6 +99,8 @@ services:
 
 networks:
   grafana_external:
+    external: true
+  proxy_external:
     external: true
 ```
 

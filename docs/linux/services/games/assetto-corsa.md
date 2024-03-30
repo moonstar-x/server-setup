@@ -20,12 +20,16 @@ mkdir ~/services/games/assetto-corsa
 
 ```yaml
 services:
-  assettocorsa:
+  web:
     image: ghcr.io/moonstar-x/assetto-server-manager:master
     restart: unless-stopped
     user: 1000:1000
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - assetto_corsa
     ports:
-      - 8772:8772
       - 9600:9600
       - 9600:9600/udp
       - 8081:8081
@@ -34,6 +38,17 @@ services:
       - ./data:/home/assetto/server-manager
     environment:
       TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.assetto_corsa.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.assetto_corsa.entrypoints: public
+      traefik.http.routers.assetto_corsa.service: assetto_corsa@docker
+      traefik.http.services.assetto_corsa.loadbalancer.server.port: 8772
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! warning
