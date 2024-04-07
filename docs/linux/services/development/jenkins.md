@@ -103,6 +103,9 @@ networks:
 !!! note
     Make sure to replace `PUBKEY_HERE` with the content of the public key generated previously.
 
+!!! note
+    Replace `subdomain.example.com` with the domain name where your service will be accessible from.
+
 ### Reverse Proxy
 
 This service is exposed by a reverse proxy. More specifically, it is using [Traefik](../networking/traefik.md).

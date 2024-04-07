@@ -48,6 +48,9 @@ networks:
 !!! note
     In the case of the `PUID` and `PGID` environment variables, `1000` corresponds to the user's UID and GID respectively. You can find the values for your own user by running `id $whoami`.
 
+!!! note
+    Replace `subdomain.example.com` with the domain name where your service will be accessible from.
+
 ### Reverse Proxy
 
 This service is exposed by a reverse proxy. More specifically, it is using [Traefik](../networking/traefik.md).

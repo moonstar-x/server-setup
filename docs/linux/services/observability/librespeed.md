@@ -52,6 +52,9 @@ networks:
 !!! note
     Make sure to change `DATABASE_PASSWORD` to a custom value.
 
+!!! note
+    Replace `subdomain.example.com` with the domain name where your service will be accessible from.
+
 ### Reverse Proxy
 
 This service is exposed by a reverse proxy. More specifically, it is using [Traefik](../networking/traefik.md).
