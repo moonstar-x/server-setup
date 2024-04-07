@@ -153,6 +153,7 @@ nav:
       - PiGallery 2: linux/services/media/pigallery-2.md
       - Plex: linux/services/media/plex.md
       - Reddit Slideshow: linux/services/media/reddit-slideshow.md
+      - Restreamer: linux/services/media/restreamer.md
       - Synclounge: linux/services/media/synclounge.md
       - Tautulli: linux/services/media/tautulli.md
     - Networking:
