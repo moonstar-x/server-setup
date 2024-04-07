@@ -29,6 +29,8 @@ services:
       TZ: America/Guayaquil
 
       SAMBA_CONF_LOG_LEVEL: 3
+      AVAHI_DISABLE: disabled
+      WSDD2_DISABLE: disabled
 
       ACCOUNT_foo: 'foo:1000:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:86C156FC198B358CCCF6278D8BD49B6A:[U          ]:LCT-65FF474F:'
       UID_foo: 1000
