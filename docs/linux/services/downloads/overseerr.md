@@ -1,15 +1,15 @@
-# Ombi
+# Overseerr
 
-[Ombi](https://ombi.io/) is a media request tracker, useful for when you share a Plex server or similar with family and friends.
+[Overseer](https://overseerr.dev/) is a media request tracker, useful for when you share a Plex server or similar with family and friends.
 
-There is no official image for this service, so we'll use [ghcr.io/linuxserver/ombi](https://hub.docker.com/r/linuxserver/ombi).
+There is no official image for this service, so we'll use [ghcr.io/linuxserver/overseerr](https://hub.docker.com/r/linuxserver/overseerr).
 
 ## Pre-Installation
 
 We'll create a folder in the main user's home where all the service's data will be saved.
 
 ```bash
-mkdir ~/services/downloads/ombi
+mkdir ~/services/downloads/overseerr
 ```
 
 ### External Network
@@ -22,19 +22,21 @@ docker network create downloads_external
 
 ## Docker Compose
 
-*Ombi* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
+*Overseerr* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
 
 ```yaml
 services:
   web:
-    image: ghcr.io/linuxserver/ombi:latest
+    image: ghcr.io/linuxserver/overseerr:latest
     restart: unless-stopped
     networks:
       default:
       downloads_external:
       proxy_external:
         aliases:
-          - ombi
+          - overseerr
+    extra_hosts:
+      - host.docker.internal:host-gateway
     volumes:
       - ./config:/config
     environment:
@@ -44,10 +46,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.ombi.rule: Host(`subdomain.example.com`)
-      traefik.http.routers.ombi.entrypoints: public
-      traefik.http.routers.ombi.service: ombi@docker
-      traefik.http.services.ombi.loadbalancer.server.port: 3579
+      traefik.http.routers.overseerr.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.overseerr.entrypoints: public
+      traefik.http.routers.overseerr.service: overseerr@docker
+      traefik.http.services.overseerr.loadbalancer.server.port: 5055
 
 networks:
   downloads_external:

@@ -135,8 +135,8 @@ nav:
       - Bazarr: linux/services/downloads/bazarr.md
       - JDownloader: linux/services/downloads/jdownloader.md
       - Lidarr: linux/services/downloads/lidarr.md
-      - Ombi: linux/services/downloads/ombi.md
       - OpenBooks: linux/services/downloads/openbooks.md
+      - Overseerr: linux/services/downloads/overseerr.md
       - Prowlarr: linux/services/downloads/prowlarr.md
       - Radarr: linux/services/downloads/radarr.md
       - Readarr: linux/services/downloads/readarr.md

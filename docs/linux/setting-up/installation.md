@@ -24,7 +24,7 @@ sudo timedatectl set-timezone America/Guayaquil
 Here's a list of packages I like to have on the server, you may choose not to install them since they're not *crucial*.
 
 ```bash
-sudo apt-get install openssh-server openssh-client net-tools neofetch nload progress nano iputils-ping
+sudo apt-get install openssh-server openssh-client net-tools neofetch nload progress nano iputils-ping htop
 ```
 
 ## Firewall
