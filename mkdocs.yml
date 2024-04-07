@@ -153,9 +153,9 @@ nav:
       - Portainer: linux/services/management/portainer.md
     - Media:
       - Introduction: linux/services/media/index.md
-      - EmbyStat: linux/services/media/embystat.md
       - FreshRSS: linux/services/media/freshrss.md
       - Jellyfin: linux/services/media/jellyfin.md
+      - Jellystat: linux/services/media/jellystat.md
       - Kavita: linux/services/media/kavita.md
       - PiGallery 2: linux/services/media/pigallery-2.md
       - Plex: linux/services/media/plex.md

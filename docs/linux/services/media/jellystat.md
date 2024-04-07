@@ -1,15 +1,15 @@
-# EmbyStat
+# Jellystat
 
-[EmbyStat](https://github.com/mregni/EmbyStat) is an analytics service for Jellyfin/Emby.
+[Jellystat](https://github.com/CyferShepard/Jellystat) is an analytics service for Jellyfin.
 
-There is no official image for this service, so we'll use [ghcr.io/linuxserver/embystat](https://hub.docker.com/r/linuxserver/embystat).
+There is an official image for this service that we'll use: [cyfershepard/jellystat](https://hub.docker.com/r/cyfershepard/jellystat).
 
 ## Pre-Installation
 
 We'll create a folder in the main user's home where all the service's data will be saved.
 
 ```bash
-mkdir ~/services/media/embystat
+mkdir ~/services/media/jellystat
 ```
 
 ### External Network
@@ -22,32 +22,48 @@ docker network create jellyfin_external
 
 ## Docker Compose
 
-*EmbyStat* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
+*Jellystat* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
 
 ```yaml
 services:
   web:
-    image: ghcr.io/linuxserver/embystat:latest
+    image: cyfershepard/jellystat:latest
     restart: unless-stopped
+    depends_on:
+      - db
     networks:
       default:
       jellyfin_external:
       proxy_external:
         aliases:
-          - embystat
+          - jellystat
     volumes:
-      - ./config:/config
+      - ./backup-data:/app/backend/backup-data
     environment:
       TZ: America/Guayaquil
-      PUID: 1000
-      PGID: 1000
+      POSTGRES_USER: DATABASE_USER
+      POSTGRES_PASSWORD: DATABASE_PASSWORD
+      POSTGRES_IP: db
+      POSTGRES_PORT: 5432
+      JWT_SECRET: JWT_SECRET
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.embystat.rule: Host(`embystat.home.arpa`)
-      traefik.http.routers.embystat.entrypoints: local
-      traefik.http.routers.embystat.service: embystat@docker
-      traefik.http.services.embystat.loadbalancer.server.port: 6555
+      traefik.http.routers.jellystat.rule: Host(`jellystat.home.arpa`)
+      traefik.http.routers.jellystat.entrypoints: local
+      traefik.http.routers.jellystat.service: jellystat@docker
+      traefik.http.services.jellystat.loadbalancer.server.port: 3000
+
+  db:
+    image: postgres:15.2
+    restart: unless-stopped
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      TZ: America/Guayaquil
+      POSTGRES_DB: jellystat
+      POSTGRES_USER: DATABASE_USER
+      POSTGRES_PASSWORD: DATABASE_PASSWORD
 
 networks:
   jellyfin_external:
@@ -57,7 +73,10 @@ networks:
 ```
 
 !!! note
-    In the case of the `PUID` and `PGID` environment variables, `1000` corresponds to the user's UID and GID respectively. You can find the values for your own user by running `id $whoami`.
+    Make sure to change `DATABASE_USER` and `DATABASE_PASSWORD` to a custom secret value.
+
+!!! note
+    Make sure to change `JWT_SECRET` to a custom secret value. You can generate this with `openssl rand -hex 32`.
 
 ### Reverse Proxy
 
