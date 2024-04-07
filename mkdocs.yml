@@ -21,12 +21,9 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/mhj3Zsv
       name: moonstar-x's Discord Server
-    - icon: fontawesome/solid/globe-americas
+    - icon: fontawesome/solid/earth-americas
       link: https://moonstar-x.dev
       name: moonstar-x's Website
-    - icon: fontawesome/solid/coffee
-      link: https://ko-fi.com/moonstar_x
-      name: Buy moonstar-x a coffee
 
 # Copyright
 copyright: Copyright &copy; 2021 moonstar-x
@@ -37,15 +34,15 @@ theme:
   custom_dir: overrides
   palette:
     - scheme: default
-      primary: deep orange
-      accent: orange
+      primary: black
+      accent: indigo
       media: "(prefers-color-scheme: light)"
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
-      primary: deep orange
-      accent: orange
+      primary: black
+      accent: yellow
       media: "(prefers-color-scheme: dark)"
       toggle:
         icon: material/toggle-switch

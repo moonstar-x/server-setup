@@ -115,4 +115,3 @@ That's it! The service will auto-start on system startup and restart on failure.
 This page just described the basic steps to follow to set up the reverse proxy. This is far from done, make sure you check out:
 
 * How to expose web services via Cloudflare with [cloudflared](./cloudflared.md).
-* How to set forward authentication with [dex](./dex.md).
