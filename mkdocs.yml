@@ -153,6 +153,7 @@ nav:
       - Portainer: linux/services/management/portainer.md
     - Media:
       - Introduction: linux/services/media/index.md
+      - Fireshare: linux/services/media/fireshare.md
       - FreshRSS: linux/services/media/freshrss.md
       - Jellyfin: linux/services/media/jellyfin.md
       - Jellystat: linux/services/media/jellystat.md
