@@ -107,6 +107,7 @@ nav:
     - Automation:
       - Introduction: linux/services/automation/index.md
       - Homebridge: linux/services/automation/homebridge.md
+      - n8n: linux/services/automation/n8n.md
     - Data:
       - Introduction: linux/services/data/index.md
       - Actual: linux/services/data/actual.md
