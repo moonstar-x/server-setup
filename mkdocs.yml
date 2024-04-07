@@ -117,6 +117,7 @@ nav:
       - Fleet: linux/services/development/fleet.md
       - Gitea: linux/services/development/gitea.md
       - Jenkins: linux/services/development/jenkins.md
+      - Kroki: linux/services/development/kroki.md
     - Discord:
       - Introduction: linux/services/discord/index.md
       - Free Games Notifier: linux/services/discord/free-games-notifier.md
