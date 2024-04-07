@@ -115,9 +115,11 @@ nav:
       - Introduction: linux/services/data/index.md
       - Actual: linux/services/data/actual.md
       - Nextcloud: linux/services/data/nextcloud.md
+      - Pairdrop: linux/services/data/pairdrop.md
       - Reactive Resume: linux/services/data/rx-resume.md
     - Development:
       - Introduction: linux/services/development/index.md
+      - Code Server: linux/services/development/code-server.md
       - Fleet: linux/services/development/fleet.md
       - Gitea: linux/services/development/gitea.md
       - Jenkins: linux/services/development/jenkins.md
@@ -143,6 +145,7 @@ nav:
     - Games:
       - Introduction: linux/services/games/index.md
       - Assetto Corsa: linux/services/games/assetto-corsa.md
+      - Romm: linux/services/games/romm.md
       - TeamSpeak 3: linux/services/games/teamspeak.md
     - Management:
       - Introduction: linux/services/management/index.md
