@@ -21,16 +21,12 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/mhj3Zsv
       name: moonstar-x's Discord Server
-    - icon: fontawesome/solid/globe-americas
+    - icon: fontawesome/solid/earth-americas
       link: https://moonstar-x.dev
       name: moonstar-x's Website
-    - icon: fontawesome/solid/coffee
-      link: https://ko-fi.com/moonstar_x
-      name: Buy moonstar-x a coffee
 
 # Copyright
 copyright: Copyright &copy; 2021 moonstar-x
-
 
 # Theme Customization
 theme:
@@ -38,15 +34,15 @@ theme:
   custom_dir: overrides
   palette:
     - scheme: default
-      primary: deep orange
-      accent: orange
+      primary: black
+      accent: indigo
       media: "(prefers-color-scheme: light)"
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
-      primary: deep orange
-      accent: orange
+      primary: black
+      accent: yellow
       media: "(prefers-color-scheme: dark)"
       toggle:
         icon: material/toggle-switch
@@ -97,71 +93,91 @@ extra_css:
 # Navigation
 nav:
   - Home: index.md
-  - Setting-up:
-    - Linux Server:
-      - 0. Introduction: setting-up/linux/index.md
-      - 1. OS Installation: setting-up/linux/os-installation.md
-      - 2. Packages: setting-up/linux/packages.md
-      - 3. Mounting Drives: setting-up/linux/mounting-drives.md
-      - 4. Docker: setting-up/linux/docker.md
-      - 5. Custom Scripts: setting-up/linux/custom-scripts.md
-      - 6. Networking: setting-up/linux/networking.md
-    - Mac Mini:
-      - 0. Introduction: setting-up/mac-mini/index.md
-      - 1. macOS Configuration: setting-up/mac-mini/mac-os-configuration.md
-      - 2. Bootcamp: setting-up/mac-mini/bootcamp.md
-      - 3. Windows Configuration: setting-up/mac-mini/windows-configuration.md
+  - Linux/Setting Up:
+    - 0. Introduction: linux/setting-up/index.md
+    - 1. Installation: linux/setting-up/installation.md
+    - 2. Mounting Drives: linux/setting-up/mounting-drives.md
+    - 3. Docker: linux/setting-up/docker.md
+    - 4. Custom Scripts: linux/setting-up/custom-scripts.md
   - Linux/Services:
-    - Cloudflared (Native): linux/services/cloudflared.md
-    - Samba (Native): linux/services/samba.md
+    - Introduction: linux/services/index.md
     - Analytics:
-      - Initialization: linux/services/analytics/index.md
-      - Plausible: linux/services/analytics/plausible.md
+      - Introduction: linux/services/analytics/index.md
+      - Umami: linux/services/analytics/umami.md
     - Automation:
-      - Initialization: linux/services/automation/index.md
-      - Custom Automation Service: linux/services/automation/automation-service.md
-      - Smart Home: linux/services/automation/smart-home.md
-    - Discord Bots:
-      - Initialization: linux/services/discord-bots/index.md
-      - Free Games Notifier: linux/services/discord-bots/free-games-notifier.md
-      - JDA Music Bot: linux/services/discord-bots/jda-music-bot.md
-      - Music 24/7 Bot: linux/services/discord-bots/music-24-7.md
-      - Text-to-Speech Bot: linux/services/discord-bots/tts-bot.md
-    - Docker:
-      - Initialization: linux/services/docker/index.md
-      - Portainer: linux/services/docker/portainer.md
-      - Fleet: linux/services/docker/fleet.md
+      - Introduction: linux/services/automation/index.md
+      - Homebridge: linux/services/automation/homebridge.md
+      - n8n: linux/services/automation/n8n.md
     - Data:
-      - Initialization: linux/services/data/index.md
+      - Introduction: linux/services/data/index.md
       - Actual: linux/services/data/actual.md
-      - Gitea: linux/services/data/gitea.md
-      - Jenkins: linux/services/data/jenkins.md
       - Nextcloud: linux/services/data/nextcloud.md
+      - Pairdrop: linux/services/data/pairdrop.md
+      - Reactive Resume: linux/services/data/rx-resume.md
+    - Development:
+      - Introduction: linux/services/development/index.md
+      - Code Server: linux/services/development/code-server.md
+      - Fleet: linux/services/development/fleet.md
+      - Gitea: linux/services/development/gitea.md
+      - Jenkins: linux/services/development/jenkins.md
+      - Kroki: linux/services/development/kroki.md
+    - Discord:
+      - Introduction: linux/services/discord/index.md
+      - Free Games Notifier: linux/services/discord/free-games-notifier.md
+      - JDA Music Bot: linux/services/discord/jda-music-bot.md
+      - Music 24/7: linux/services/discord/music-24-7.md
+      - Text-to-Speech: linux/services/discord/text-to-speech.md
+    - Downloads:
+      - Introduction: linux/services/downloads/index.md
+      - Bazarr: linux/services/downloads/bazarr.md
+      - JDownloader: linux/services/downloads/jdownloader.md
+      - Lidarr: linux/services/downloads/lidarr.md
+      - OpenBooks: linux/services/downloads/openbooks.md
+      - Overseerr: linux/services/downloads/overseerr.md
+      - Prowlarr: linux/services/downloads/prowlarr.md
+      - Radarr: linux/services/downloads/radarr.md
+      - Readarr: linux/services/downloads/readarr.md
+      - Sonarr: linux/services/downloads/sonarr.md
+      - Transmission: linux/services/downloads/transmission.md
     - Games:
-      - Initialization: linux/services/games/index.md
-      - Assetto Corsa: linux/services/games/assettocorsa.md
+      - Introduction: linux/services/games/index.md
+      - Assetto Corsa: linux/services/games/assetto-corsa.md
+      - Romm: linux/services/games/romm.md
       - TeamSpeak 3: linux/services/games/teamspeak.md
-      - ZeroTier-One: linux/services/games/zerotier.md
+    - Management:
+      - Introduction: linux/services/management/index.md
+      - Homepage: linux/services/management/homepage.md
+      - Portainer: linux/services/management/portainer.md
     - Media:
-      - Initialization: linux/services/media/index.md
+      - Introduction: linux/services/media/index.md
+      - Fireshare: linux/services/media/fireshare.md
       - FreshRSS: linux/services/media/freshrss.md
-      - Jellyfin + EmbyStat: linux/services/media/jellyfin-embystat.md
+      - Jellyfin: linux/services/media/jellyfin.md
+      - Jellystat: linux/services/media/jellystat.md
       - Kavita: linux/services/media/kavita.md
-      - Media Acquisition: linux/services/media/media-acquisition.md
       - PiGallery 2: linux/services/media/pigallery-2.md
-      - Plex + Tautulli + Synclounge: linux/services/media/plex-tautulli-synclounge.md
+      - Plex: linux/services/media/plex.md
       - Reddit Slideshow: linux/services/media/reddit-slideshow.md
-    - Monitoring:
-      - Initialization: linux/services/monitoring/index.md
-      - Grafana: linux/services/monitoring/grafana.md
-      - LibreSpeed: linux/services/monitoring/librespeed.md
-      - Prometheus: linux/services/monitoring/prometheus.md
-      - Scrutiny: linux/services/monitoring/scrutiny.md
-    - Other:
-      - Initialization: linux/services/other/index.md
-      - Homepage: linux/services/other/homepage.md
-      - Reactive Resume: linux/services/other/rxresume.md
-      - RTMP Simulcast: linux/services/other/rtmp-simulcast.md
+      - Restreamer: linux/services/media/restreamer.md
+      - Synclounge: linux/services/media/synclounge.md
+      - Tautulli: linux/services/media/tautulli.md
+    - Networking:
+      - Introduction: linux/services/networking/index.md
+      - Cloudflared: linux/services/networking/cloudflared.md
+      - Traefik: linux/services/networking/traefik.md
+      - Samba: linux/services/networking/samba.md
+      - ZeroTier-One: linux/services/networking/zerotier.md
+    - Observability:
+      - Introduction: linux/services/observability/index.md
+      - Grafana: linux/services/observability/grafana.md
+      - LibreSpeed: linux/services/observability/librespeed.md
+      - Prometheus: linux/services/observability/prometheus.md
+      - Scrutiny: linux/services/observability/scrutiny.md
+  - Bootcamp/Setting Up:
+    - 0. Introduction: bootcamp/setting-up/index.md
+    - 1. macOS Configuration: bootcamp/setting-up/mac-os-configuration.md
+    - 2. Bootcamp: bootcamp/setting-up/bootcamp.md
+    - 3. Windows Configuration: bootcamp/setting-up/windows-configuration.md
   - Bootcamp/Game Servers:
     - Introduction: bootcamp/games/index.md
     - Alien Swarm Reactive Drop: bootcamp/games/reactivedrop.md

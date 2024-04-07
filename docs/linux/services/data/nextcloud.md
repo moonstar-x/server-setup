@@ -1,13 +1,15 @@
 # Nextcloud
 
-[Nextcloud](https://nextcloud.com/) is a self-hosted cloud data server, useful for keeping documents in your own server. This service has an official image on [Docker Hub](https://hub.docker.com/_/nextcloud) which we'll use.
+[Nextcloud](https://nextcloud.com/) is a self-hosted cloud data server, useful for keeping documents in your own server.
+
+There is an official image for this service that we'll use: [nextcloud](https://hub.docker.com/r/_/nextcloud).
 
 ## Pre-Installation
 
 We'll create a folder in the main user's home where all the service's data will be saved.
 
 ```bash
-mkdir ~/data/nextcloud
+mkdir ~/services/data/nextcloud
 ```
 
 ## Dockerfile
@@ -24,84 +26,90 @@ RUN apt-get update && apt-get install -y procps smbclient && rm -rf /var/lib/apt
 
 ## Docker Compose
 
-The service will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
+*Actual* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
 
 ```yaml
-version: "3.9"
-
 services:
-  nextcloud:
+  web:
     build: .
     restart: unless-stopped
-    volumes:
-      - /media/sata_2tb/Nextcloud:/var/www/html
-    ports:
-      - 9020:80
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - nextcloud
     depends_on:
       - db
+    volumes:
+      - /media/sata_2tb/Nextcloud:/var/www/html
     environment:
-      - TZ=America/Guayaquil
-      - MYSQL_DATABASE=nextcloud
-      - MYSQL_USER=nextcloud
-      - MYSQL_PASSWORD=CHANGE_THIS
-      - MYSQL_HOST=db
+      TZ: America/Guayaquil
+      MYSQL_DATABASE: nextcloud
+      MYSQL_USER: nextcloud
+      MYSQL_PASSWORD: DATABASE_PASSWORD
+      MYSQL_HOST: db
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.nextcloud.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.nextcloud.entrypoints: public
+      traefik.http.routers.nextcloud.service: nextcloud@docker
+      traefik.http.services.nextcloud.loadbalancer.server.port: 80
 
   db:
     image: mariadb:10.5
     restart: unless-stopped
-    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     volumes:
-      - ./db:/var/lib/mysql
+      - ./data:/var/lib/mysql
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     environment:
-      - MYSQL_ROOT_PASSWORD=CHANGE_THIS
-      - MYSQL_DATABASE=nextcloud
-      - MYSQL_USER=nextcloud
-      - MYSQL_PASSWORD=CHANGE_THIS
+      TZ: America/Guayaquil
+      MYSQL_ROOT_PASSWORD: DATABASE_PASSWORD
+      MYSQL_DATABASE: nextcloud
+      MYSQL_USER: nextcloud
+      MYSQL_PASSWORD: DATABASE_PASSWORD
 
   cron:
     image: nextcloud:stable
     restart: unless-stopped
     depends_on:
-      - nextcloud
+      - web
     volumes:
       - /media/sata_2tb/Nextcloud:/var/www/html
     entrypoint: /cron.sh
     environment:
-      - TZ=America/Guayaquil
+      TZ: America/Guayaquil
+
+networks:
+  proxy_external:
+    external: true
 ```
 
 !!! note
-    Make sure to change `CHANGE_THIS` to a custom value.
+    Make sure to change `DATABASE_PASSWORD` to a custom secret value.
 
-## Post-Installation
+!!! note
+    Replace `subdomain.example.com` with the domain name where your service will be accessible from.
 
-We'll need to allow the service's port on our firewall.
+### Reverse Proxy
 
-```bash
-sudo ufw allow 9020/tcp
-```
+This service is exposed by a reverse proxy. More specifically, it is using [Traefik](../networking/traefik.md).
 
-We'll also need to add the user to the `www-data` group to allow access to the data being uploaded inside the service:
+For this reason, you will see that this service has:
 
-```bash
-sudo usermod -aG www-data $USER
-```
+1. A directive to connect it to the `proxy_external` external network.
+2. A container alias for the `proxy_external` network.
+3. A number of labels with names starting with `traefik`.
 
-Additionally, you may need to change the `/media/sata_2tb/Nextcloud/config/config.php` file. Make sure to have the correct array of `trusted_domains`, to
-update the `overwrite.cli.url` to the correct URL where the service will be accessible from, and include the following line:
-
-```php
-'overwriteprotocol' => 'https',
-```
-
-Inside Nextcloud, some applications should be installed, notably the Group Shared Folder one, which allows to quickly share folders with multiple users internally.
+If you're not using a reverse proxy, feel free to remove these from the `docker-compose.yml` file.
+Keep in mind you might need to bind the ports to connect to the service instead.
 
 ## Running
 
 Start up the service with:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 That's it! The service will auto-start on system startup and restart on failure.

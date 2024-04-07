@@ -3,3 +3,6 @@ venv/
 
 # Build
 site/
+
+# Old Files
+docs/old
