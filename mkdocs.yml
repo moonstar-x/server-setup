@@ -104,6 +104,9 @@ nav:
     - 4. Custom Scripts: linux/setting-up/custom-scripts.md
   - Linux/Services:
     - Introduction: linux/services/index.md
+    - Analytics:
+      - Introduction: linux/services/analytics/index.md
+      - Umami: linux/services/analytics/umami.md
     - Automation:
       - Introduction: linux/services/automation/index.md
       - Homebridge: linux/services/automation/homebridge.md
