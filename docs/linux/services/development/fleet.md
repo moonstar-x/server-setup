@@ -69,6 +69,19 @@ networks:
 !!! note
     Make sure to change `DATABASE_PASSWORD` to a custom secret value.
 
+### Reverse Proxy
+
+This service is exposed by a reverse proxy. More specifically, it is using [Traefik](../networking/traefik.md).
+
+For this reason, you will see that this service has:
+
+1. A directive to connect it to the `proxy_external` external network.
+2. A container alias for the `proxy_external` network.
+3. A number of labels with names starting with `traefik`.
+
+If you're not using a reverse proxy, feel free to remove these from the `docker-compose.yml` file.
+Keep in mind you might need to bind the ports to connect to the service instead.
+
 ## Post-Installation
 
 The default user and password are: `admin`:`admin`, you should create a new user and remove this initial admin user.

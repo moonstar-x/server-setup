@@ -90,6 +90,16 @@ networks:
     external: true
 ```
 
+### Reverse Proxy
+
+*Traefik* usually comes with a web dashboard for managing the resources exposed. Now, we're actually using it to expose its dashboard itself.
+
+For this reason, you will see that this service has:
+
+1. A number of labels with names starting with `traefik`.
+
+If you don't want to use the proxy itself to expose its own dashboard, feel free to remove those labels and bind the dashboard port manually.
+
 ## Running
 
 Start up the service with:

@@ -12,10 +12,6 @@ We'll create a folder in the main user's home where all the service's data will 
 mkdir ~/services/observability/gitea
 ```
 
-### Proxy Set-up
-
-Since this service will be exposed to the Internet through [Traefik](../networking/traefik.md), we'll need to add this service to the `proxy_external` network. Make sure you have it set up before configuring this service.
-
 ## Docker Compose
 
 *Gitea* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
@@ -66,6 +62,19 @@ networks:
 
 !!! note
     Replace `subdomain.example.com` with the domain name where your service will be accessible from.
+
+### Reverse Proxy
+
+This service is exposed by a reverse proxy. More specifically, it is using [Traefik](../networking/traefik.md).
+
+For this reason, you will see that this service has:
+
+1. A directive to connect it to the `proxy_external` external network.
+2. A container alias for the `proxy_external` network.
+3. A number of labels with names starting with `traefik`.
+
+If you're not using a reverse proxy, feel free to remove these from the `docker-compose.yml` file.
+Keep in mind you might need to bind the ports to connect to the service instead.
 
 ## Post-Installation
 
