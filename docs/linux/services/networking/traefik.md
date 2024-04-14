@@ -79,6 +79,8 @@ services:
   proxy:
     image: traefik:latest
     restart: unless-stopped
+    extra_hosts:
+      - host.docker.internal:host-gateway
     networks:
       default:
       tunnel_external:
