@@ -47,8 +47,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.sonarr.rule: Host(`sonarr.home.arpa`)
-      traefik.http.routers.sonarr.entrypoints: local
+      traefik.http.routers.sonarr.rule: Host(`sonarr.home.example.com`, `sonarr.vpn.example.com`)
+      traefik.http.routers.sonarr.entrypoints: local-https
+      traefik.http.routers.sonarr.tls: true
+      traefik.http.routers.sonarr.tls.certresolver: le
       traefik.http.routers.sonarr.service: sonarr@docker
       traefik.http.services.sonarr.loadbalancer.server.port: 8989
 

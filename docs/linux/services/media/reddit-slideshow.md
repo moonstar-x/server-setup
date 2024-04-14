@@ -46,8 +46,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.reddit_slideshow.rule: Host(`slideshow.home.arpa`)
-      traefik.http.routers.reddit_slideshow.entrypoints: local
+      traefik.http.routers.reddit_slideshow.rule: Host(`slideshow.home.example.com`, `slideshow.vpn.example.com`)
+      traefik.http.routers.reddit_slideshow.entrypoints: local-https
+      traefik.http.routers.reddit_slideshow.tls: true
+      traefik.http.routers.reddit_slideshow.tls.certresolver: le
       traefik.http.routers.reddit_slideshow.service: reddit_slideshow@docker
       traefik.http.services.reddit_slideshow.loadbalancer.server.port: 8080
 

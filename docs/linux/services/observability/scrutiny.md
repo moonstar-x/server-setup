@@ -43,8 +43,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.scrutiny.rule: Host(`scrutiny.home.arpa`)
-      traefik.http.routers.scrutiny.entrypoints: local
+      traefik.http.routers.scrutiny.rule: Host(`scrutiny.home.example.com`, `scrutiny.vpn.example.com`)
+      traefik.http.routers.scrutiny.entrypoints: local-https
+      traefik.http.routers.scrutiny.tls: true
+      traefik.http.routers.scrutiny.tls.certresolver: le
       traefik.http.routers.scrutiny.service: scrutiny@docker
       traefik.http.services.scrutiny.loadbalancer.server.port: 8080
 

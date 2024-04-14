@@ -46,8 +46,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.grafana.rule: Host(`grafana.home.arpa`)
-      traefik.http.routers.grafana.entrypoints: local
+      traefik.http.routers.grafana.rule: Host(`grafana.home.example.com`, `grafana.vpn.example.com`)
+      traefik.http.routers.grafana.entrypoints: local-https
+      traefik.http.routers.grafana.tls: true
+      traefik.http.routers.grafana.tls.certresolver: le
       traefik.http.routers.grafana.service: grafana@docker
       traefik.http.services.grafana.loadbalancer.server.port: 3000
 

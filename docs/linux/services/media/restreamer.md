@@ -36,8 +36,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.restreamer.rule: Host(`stream.home.arpa`)
-      traefik.http.routers.restreamer.entrypoints: local
+      traefik.http.routers.restreamer.rule: Host(`stream.home.example.com`, `stream.vpn.example.com`)
+      traefik.http.routers.restreamer.entrypoints: local-https
+      traefik.http.routers.restreamer.tls: true
+      traefik.http.routers.restreamer.tls.certresolver: le
       traefik.http.routers.restreamer.service: restreamer@docker
       traefik.http.services.restreamer.loadbalancer.server.port: 8080
 

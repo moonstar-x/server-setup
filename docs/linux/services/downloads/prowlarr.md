@@ -44,8 +44,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.prowlarr.rule: Host(`prowlarr.home.arpa`)
-      traefik.http.routers.prowlarr.entrypoints: local
+      traefik.http.routers.prowlarr.rule: Host(`prowlarr.home.example.com`, `prowlarr.vpn.example.com`)
+      traefik.http.routers.prowlarr.entrypoints: local-https
+      traefik.http.routers.prowlarr.tls: true
+      traefik.http.routers.prowlarr.tls.certresolver: le
       traefik.http.routers.prowlarr.service: prowlarr@docker
       traefik.http.services.prowlarr.loadbalancer.server.port: 9696
 

@@ -48,8 +48,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.readarr.rule: Host(`readarr.home.arpa`)
-      traefik.http.routers.readarr.entrypoints: local
+      traefik.http.routers.readarr.rule: Host(`readarr.home.example.com`, `readarr.vpn.example.com`)
+      traefik.http.routers.readarr.entrypoints: local-https
+      traefik.http.routers.readarr.tls: true
+      traefik.http.routers.readarr.tls.certresolver: le
       traefik.http.routers.readarr.service: readarr@docker
       traefik.http.services.readarr.loadbalancer.server.port: 8787
 

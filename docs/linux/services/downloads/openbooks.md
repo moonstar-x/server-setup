@@ -43,8 +43,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.openbooks.rule: Host(`openbooks.home.arpa`)
-      traefik.http.routers.openbooks.entrypoints: local
+      traefik.http.routers.openbooks.rule: Host(`openbooks.home.example.com`, `openbooks.vpn.example.com`)
+      traefik.http.routers.openbooks.entrypoints: local-https
+      traefik.http.routers.openbooks.tls: true
+      traefik.http.routers.openbooks.tls.certresolver: le
       traefik.http.routers.openbooks.service: openbooks@docker
       traefik.http.services.openbooks.loadbalancer.server.port: 80
 

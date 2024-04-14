@@ -45,13 +45,14 @@ services:
       ROMM_AUTH_SECRET_KEY: AUTH_SECRET_KEY
       ROMM_AUTH_USERNAME: AUTH_USERNAME
       ROMM_AUTH_PASSWORD: AUTH_PASSWORD
-      ROMM_HOST: roms.home.arpa
       DISABLE_CSRF_PROTECTION: true
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.romm.rule: Host(`roms.home.arpa`)
-      traefik.http.routers.romm.entrypoints: local
+      traefik.http.routers.romm.rule: Host(`roms.home.example.com`, `roms.vpn.example.com`)
+      traefik.http.routers.romm.entrypoints: local-https
+      traefik.http.routers.romm.tls: true
+      traefik.http.routers.romm.tls.certresolver: le
       traefik.http.routers.romm.service: romm@docker
       traefik.http.services.romm.loadbalancer.server.port: 8080
 

@@ -41,8 +41,8 @@ services:
       - db
     environment:
       TZ: America/Guayaquil
-      PUBLIC_URL: http://resume.home.arpa
-      PUBLIC_SERVER_URL: http://api.resume.home.arpa
+      PUBLIC_URL: https://resume.home.example.com
+      PUBLIC_SERVER_URL: https://resume-api.home.example.com
       POSTGRES_DB: rxresume
       POSTGRES_USER: rxresume
       POSTGRES_PASSWORD: DATABASE_PASSWORD
@@ -54,8 +54,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.rxresume_api.rule: Host(`api.resume.home.arpa`)
-      traefik.http.routers.rxresume_api.entrypoints: local
+      traefik.http.routers.rxresume_api.rule: Host(`resume-api.home.example.com`)
+      traefik.http.routers.rxresume_api.entrypoints: local-https
+      traefik.http.routers.rxresume_api.tls: true
+      traefik.http.routers.rxresume_api.tls.certresolver: le
       traefik.http.routers.rxresume_api.service: rxresume_api@docker
       traefik.http.services.rxresume_api.loadbalancer.server.port: 3100
 
@@ -71,13 +73,15 @@ services:
       - api
     environment:
       TZ: America/Guayaquil
-      PUBLIC_URL: http://resume.home.arpa
-      PUBLIC_SERVER_URL: http://api.resume.home.arpa
+      PUBLIC_URL: https://resume.home.example.com
+      PUBLIC_SERVER_URL: https://resume-api.home.example.com
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.rxresume_web.rule: Host(`resume.home.arpa`)
-      traefik.http.routers.rxresume_web.entrypoints: local
+      traefik.http.routers.rxresume_web.rule: Host(`resume.home.example.com`)
+      traefik.http.routers.rxresume_web.entrypoints: local-https
+      traefik.http.routers.rxresume_web.tls: true
+      traefik.http.routers.rxresume_web.tls.certresolver: le
       traefik.http.routers.rxresume_web.service: rxresume_web@docker
       traefik.http.services.rxresume_web.loadbalancer.server.port: 3000
 
@@ -91,19 +95,6 @@ networks:
 
 !!! note
     Make sure to change `http://public_client_domain.com` and `http://public_api_domain.com` to the domains where each service is hosted.
-
-### Reverse Proxy
-
-This service is exposed by a reverse proxy. More specifically, it is using [Traefik](../networking/traefik.md).
-
-For this reason, you will see that this service has:
-
-1. A directive to connect it to the `proxy_external` external network.
-2. A container alias for the `proxy_external` network.
-3. A number of labels with names starting with `traefik`.
-
-If you're not using a reverse proxy, feel free to remove these from the `docker-compose.yml` file.
-Keep in mind you might need to bind the ports to connect to the service instead.
 
 ## Running
 

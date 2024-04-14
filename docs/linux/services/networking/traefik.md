@@ -47,9 +47,28 @@ providers:
 entryPoints:
   public:
     address: :8000
-  local:
+  local-http:
     address: :8020
+  local-https:
+    address: :8040
+
+certificatesresolvers:
+  le:
+    acme:
+      dnschallenge:
+        provider: cloudflare
+        delaybeforecheck: 0
+        resolvers: 1.1.1.1
+      email: YOUR_EMAIL_HERE
+      storage: /letsencrypt/acme.json
 ```
+
+!!! note
+    Make sure to replace `YOUR_EMAIL_HERE` with your actual email.
+
+As a side note, we're using TLS in certain services that point to local IP addresses. I decided to go this route to keep using my own existing domain while keeping HTTPS active. We're using a DNS challenge which requires you to provide a Cloudflare API token with edit access for your DNS zones.
+
+If it does not apply to you, you may want to explore different challenges such as HTTP or TLS, or just serve your content through HTTP altogether.
 
 ## Docker Compose
 
@@ -73,13 +92,17 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./traefik.yml:/etc/traefik/traefik.yaml
+      - ./letsencrypt:/letsencrypt
     environment:
       TZ: America/Guayaquil
+      CF_DNS_API_TOKEN: CLOUDFLARE_API_TOKEN
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.traefik.rule: Host(`proxy.home.arpa`)
-      traefik.http.routers.traefik.entrypoints: local
+      traefik.http.routers.traefik.rule: Host(`proxy.home.example.com`, `proxy.vpn.example.com`)
+      traefik.http.routers.traefik.entrypoints: local-https
+      traefik.http.routers.traefik.tls: true
+      traefik.http.routers.traefik.tls.certresolver: le
       traefik.http.routers.traefik.service: traefik@docker
       traefik.http.services.traefik.loadbalancer.server.port: 8080
 
@@ -89,6 +112,9 @@ networks:
   tunnel_external:
     external: true
 ```
+
+!!! note
+    Make sure to replace `CLOUDFLARE_API_TOKEN` with a token you have acquired from your own [dashboard](https://dash.cloudflare.com/).
 
 ### Reverse Proxy
 

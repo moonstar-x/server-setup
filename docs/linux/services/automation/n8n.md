@@ -21,6 +21,11 @@ services:
   web:
     image: n8nio/n8n:latest
     restart: unless-stopped
+    depends_on:
+      - mongo
+      - redis
+    extra_hosts:
+      - host.docker.internal:host-gateway
     networks:
       default:
       proxy_external:
@@ -75,10 +80,43 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.automation-mongo.rule: Host(`mongo.automation.home.arpa`)
-      traefik.http.routers.automation-mongo.entrypoints: local
+      traefik.http.routers.automation-mongo.rule: Host(`automation-mongo.home.example.com`, `automation-mongo.vpn.example.com`)
+      traefik.http.routers.automation-mongo.entrypoints: local-https
+      traefik.http.routers.automation-mongo.tls: true
+      traefik.http.routers.automation-mongo.tls.certresolver: le
       traefik.http.routers.automation-mongo.service: automation-mongo@docker
       traefik.http.services.automation-mongo.loadbalancer.server.port: 8081
+
+  redis:
+    image: redis:latest
+    restart: unless-stopped
+    environment:
+      TZ: America/Guayaquil
+
+  redis-insight:
+    image: redis/redisinsight:latest
+    restart: unless-stopped
+    user: 1000:1000
+    depends_on:
+      - redis
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - automation-redis
+    volumes:
+      - ./redis-insight:/data
+    environment:
+      TZ: America/Guayaquil
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.automation-redis.rule: Host(`automation-redis.home.example.com`, `automation-redis.vpn.example.com`)
+      traefik.http.routers.automation-redis.entrypoints: local-https
+      traefik.http.routers.automation-redis.tls: true
+      traefik.http.routers.automation-redis.tls.certresolver: le
+      traefik.http.routers.automation-redis.service: automation-redis@docker
+      traefik.http.services.automation-redis.loadbalancer.server.port: 5540
 
 networks:
   proxy_external:

@@ -48,8 +48,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.jdownloader.rule: Host(`jdownloader.home.arpa`)
-      traefik.http.routers.jdownloader.entrypoints: local
+      traefik.http.routers.jdownloader.rule: Host(`jdownloader.home.example.com`, `jdownloader.vpn.example.com`)
+      traefik.http.routers.jdownloader.entrypoints: local-https
+      traefik.http.routers.jdownloader.tls: true
+      traefik.http.routers.jdownloader.tls.certresolver: le
       traefik.http.routers.jdownloader.service: jdownloader@docker
       traefik.http.services.jdownloader.loadbalancer.server.port: 5800
 

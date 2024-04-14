@@ -48,12 +48,16 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.lidarr.rule: Host(`lidarr.home.arpa`)
-      traefik.http.routers.lidarr.entrypoints: local
+      traefik.http.routers.lidarr.rule: Host(`lidarr.home.example.com`, `lidarr.vpn.example.com`)
+      traefik.http.routers.lidarr.entrypoints: local-https
+      traefik.http.routers.lidarr.tls: true
+      traefik.http.routers.lidarr.tls.certresolver: le
       traefik.http.routers.lidarr.service: lidarr@docker
       traefik.http.services.lidarr.loadbalancer.server.port: 8686
-      traefik.http.routers.deemix.rule: Host(`deemix.home.arpa`)
-      traefik.http.routers.deemix.entrypoints: local
+      traefik.http.routers.deemix.rule: Host(`deemix.home.example.com`, `deemix.vpn.example.com`)
+      traefik.http.routers.deemix.entrypoints: local-https
+      traefik.http.routers.deemix.tls: true
+      traefik.http.routers.deemix.tls.certresolver: le
       traefik.http.routers.deemix.service: deemix@docker
       traefik.http.services.deemix.loadbalancer.server.port: 6595
 

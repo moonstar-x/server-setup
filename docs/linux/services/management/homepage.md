@@ -39,8 +39,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.homepage.rule: Host(`home.arpa`)
-      traefik.http.routers.homepage.entrypoints: local
+      traefik.http.routers.homepage.rule: Host(`home.example.com`, `vpn.example.com`)
+      traefik.http.routers.homepage.entrypoints: local-https
+      traefik.http.routers.homepage.tls: true
+      traefik.http.routers.homepage.tls.certresolver: le
       traefik.http.routers.homepage.service: homepage@docker
       traefik.http.services.homepage.loadbalancer.server.port: 3000
 

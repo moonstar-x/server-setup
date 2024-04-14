@@ -49,8 +49,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.jellystat.rule: Host(`jellystat.home.arpa`)
-      traefik.http.routers.jellystat.entrypoints: local
+      traefik.http.routers.jellystat.rule: Host(`jellystat.home.example.com`, `jellystat.vpn.example.com`)
+      traefik.http.routers.jellystat.entrypoints: local-https
+      traefik.http.routers.jellystat.tls: true
+      traefik.http.routers.jellystat.tls.certresolver: le
       traefik.http.routers.jellystat.service: jellystat@docker
       traefik.http.services.jellystat.loadbalancer.server.port: 3000
 

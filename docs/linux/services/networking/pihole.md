@@ -38,12 +38,14 @@ services:
       TZ: America/Guayaquil
       WEBPASSWORD: PASSWORD
       FTLCONF_LOCAL_IPV4: LOCAL_IP
-      VIRTUAL_HOST: dns.home.arpa
+      VIRTUAL_HOST: dns.home.example.com
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.pihole.rule: Host(`dns.home.arpa`)
-      traefik.http.routers.pihole.entrypoints: local
+      traefik.http.routers.pihole.rule: Host(`dns.home.example.com`)
+      traefik.http.routers.pihole.entrypoints: local-https
+      traefik.http.routers.pihole.tls: true
+      traefik.http.routers.pihole.tls.certresolver: le
       traefik.http.routers.pihole.service: pihole@docker
       traefik.http.services.pihole.loadbalancer.server.port: 80
 

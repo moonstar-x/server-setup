@@ -21,6 +21,8 @@ services:
   web:
     image: ghcr.io/linuxserver/code-server:latest
     restart: unless-stopped
+    extra_hosts:
+      - host.docker.internal:host-gateway
     networks:
       default:
       proxy_external:
@@ -33,13 +35,14 @@ services:
       TZ: America/Guayaquil
       PUID: 1000
       PGID: 1000
-      PASSWORD: '031688'
-      PROXY_DOMAIN: code.home.arpa
+      PASSWORD: UI_PASSWORD
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.code-server.rule: Host(`code.home.arpa`)
-      traefik.http.routers.code-server.entrypoints: local
+      traefik.http.routers.code-server.rule: Host(`code.home.example.com`, `code.vpn.example.com`)
+      traefik.http.routers.code-server.entrypoints: local-https
+      traefik.http.routers.code-server.tls: true
+      traefik.http.routers.code-server.tls.certresolver: le
       traefik.http.routers.code-server.service: code-server@docker
       traefik.http.services.code-server.loadbalancer.server.port: 8443
 
@@ -50,6 +53,9 @@ networks:
 
 !!! note
     In the case of the `PUID` and `PGID` environment variables, `1000` corresponds to the user's UID and GID respectively. You can find the values for your own user by running `id $whoami`.
+
+!!! note
+    Make sure to change `UI_PASSWORD` to a custom secret value.
 
 ### Reverse Proxy
 

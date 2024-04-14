@@ -45,8 +45,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.jellyfin.rule: Host(`jellyfin.home.arpa`)
-      traefik.http.routers.jellyfin.entrypoints: local
+      traefik.http.routers.jellyfin.rule: Host(`jellyfin.home.example.com`, `jellyfin.vpn.example.com`)
+      traefik.http.routers.jellyfin.entrypoints: local-https
+      traefik.http.routers.jellyfin.tls: true
+      traefik.http.routers.jellyfin.tls.certresolver: le
       traefik.http.routers.jellyfin.service: jellyfin@docker
       traefik.http.services.jellyfin.loadbalancer.server.port: 8096
 

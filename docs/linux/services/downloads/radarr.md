@@ -47,8 +47,10 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.radarr.rule: Host(`radarr.home.arpa`)
-      traefik.http.routers.radarr.entrypoints: local
+      traefik.http.routers.radarr.rule: Host(`radarr.home.example.com`, `radarr.vpn.example.com`)
+      traefik.http.routers.radarr.entrypoints: local-https
+      traefik.http.routers.radarr.tls: true
+      traefik.http.routers.radarr.tls.certresolver: le
       traefik.http.routers.radarr.service: radarr@docker
       traefik.http.services.radarr.loadbalancer.server.port: 7878
 
