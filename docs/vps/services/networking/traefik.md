@@ -45,12 +45,10 @@ providers:
     watch: true
 
 entryPoints:
-  public:
+  tunnel:
     address: :8000
-  local-http:
+  direct:
     address: :8020
-  local-https:
-    address: :8040
 
 certificatesresolvers:
   le:
@@ -90,8 +88,8 @@ services:
         aliases:
           - traefik
     ports:
-      - 80:8020
-      - 443:8040
+      - 80:8000
+      - 443:8020
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./traefik.yml:/etc/traefik/traefik.yaml
@@ -102,8 +100,8 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.traefik.rule: Host(`proxy.home.example.com`, `proxy.vpn.example.com`)
-      traefik.http.routers.traefik.entrypoints: local-https
+      traefik.http.routers.traefik.rule: Host(`proxy.vps.example.com`)
+      traefik.http.routers.traefik.entrypoints: direct
       traefik.http.routers.traefik.tls: true
       traefik.http.routers.traefik.tls.certresolver: le
       traefik.http.routers.traefik.service: traefik@docker

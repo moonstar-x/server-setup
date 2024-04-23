@@ -1,4 +1,4 @@
-# Portainer
+# Prometheus
 
 [Prometheus](https://prometheus.io/) is a time series database for monitoring systems, this will serve as the backend of the monitoring service.
 
