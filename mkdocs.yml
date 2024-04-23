@@ -174,18 +174,32 @@ nav:
       - LibreSpeed: linux/services/observability/librespeed.md
       - Prometheus: linux/services/observability/prometheus.md
       - Scrutiny: linux/services/observability/scrutiny.md
-  - Bootcamp/Setting Up:
-    - 0. Introduction: bootcamp/setting-up/index.md
-    - 1. macOS Configuration: bootcamp/setting-up/mac-os-configuration.md
-    - 2. Bootcamp: bootcamp/setting-up/bootcamp.md
-    - 3. Windows Configuration: bootcamp/setting-up/windows-configuration.md
-  - Bootcamp/Game Servers:
-    - Introduction: bootcamp/games/index.md
-    - Alien Swarm Reactive Drop: bootcamp/games/reactivedrop.md
-    - Arma 3: bootcamp/games/arma3.md
-    - 'Counter-Strike: Global Offensive': bootcamp/games/csgo.md
-    - DayZ: bootcamp/games/dayz.md
-    - Left 4 Dead 2: bootcamp/games/l4d2.md
-    - No More Room in Hell: bootcamp/games/nmrih.md
-    - Sven Coop: bootcamp/games/svencoop.md
-    - Valheim: bootcamp/games/valheim.md
+  - VPS/Setting Up:
+    - 0. Introduction: vps/setting-up/index.md
+    - 1. Installation: vps/setting-up/installation.md
+    - 2. Docker: vps/setting-up/docker.md
+    - 3. Custom Scripts: vps/setting-up/custom-scripts.md
+  - VPS/Services:
+    - Introduction: vps/services/index.md
+    - Management:
+      - Introduction: vps/services/management/index.md
+      - Portainer Agent: vps/services/management/portainer-agent.md
+    - Networking:
+      - Introduction: vps/services/networking/index.md
+    - Observability:
+      - Introduction: vps/services/observability/index.md
+  # - Bootcamp/Setting Up:
+  #   - 0. Introduction: bootcamp/setting-up/index.md
+  #   - 1. macOS Configuration: bootcamp/setting-up/mac-os-configuration.md
+  #   - 2. Bootcamp: bootcamp/setting-up/bootcamp.md
+  #   - 3. Windows Configuration: bootcamp/setting-up/windows-configuration.md
+  # - Bootcamp/Game Servers:
+  #   - Introduction: bootcamp/games/index.md
+  #   - Alien Swarm Reactive Drop: bootcamp/games/reactivedrop.md
+  #   - Arma 3: bootcamp/games/arma3.md
+  #   - 'Counter-Strike: Global Offensive': bootcamp/games/csgo.md
+  #   - DayZ: bootcamp/games/dayz.md
+  #   - Left 4 Dead 2: bootcamp/games/l4d2.md
+  #   - No More Room in Hell: bootcamp/games/nmrih.md
+  #   - Sven Coop: bootcamp/games/svencoop.md
+  #   - Valheim: bootcamp/games/valheim.md
