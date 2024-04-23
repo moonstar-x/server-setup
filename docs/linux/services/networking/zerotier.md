@@ -37,34 +37,10 @@ services:
     command: NETWORK_ID
     environment:
       TZ: America/Guayaquil
-
-  dns:
-    image: zerotier/zeronsd:latest
-    restart: unless-stopped
-    network_mode: host
-    depends_on:
-      - vpn
-    volumes:
-      - ./config/authtoken.secret:/var/lib/zerotier-one/authtoken.secret:ro
-    command: start NETWORK_ID -d DOMAIN
-    environment:
-      TZ: America/Guayaquil
-      ZEROTIER_CENTRAL_TOKEN: CENTRAL_TOKEN
 ```
 
 !!! note
-    + Replace `NETWORK_ID` with your **Network ID**.
-    + Replace `CENTRAL_TOKEN` with a ZeroTier token, you may acquire one from [here](https://my.zerotier.com/account).
-    + Replace `DOMAIN` with the domain you wish to use. Note that the domain only represents the base domain, everyone in your network will be assigned a subdomain based on their assigned names on the network.
-
-## Post-Installation
-
-We'll need to allow the service's port on our firewall.
-
-```bash
-sudo ufw allow 53/tcp
-sudo ufw allow 53/udp
-```
+    Replace `NETWORK_ID` with your **Network ID**. You can add multiple networks separated by a whitespace.
 
 ## Running
 
