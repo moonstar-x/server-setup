@@ -191,6 +191,7 @@ nav:
       - ZeroTier-One: vps/services/networking/zerotier.md
     - Observability:
       - Introduction: vps/services/observability/index.md
+      - Uptime Kuma: vps/services/observability/uptime-kuma.md
   # - Bootcamp/Setting Up:
   #   - 0. Introduction: bootcamp/setting-up/index.md
   #   - 1. macOS Configuration: bootcamp/setting-up/mac-os-configuration.md
