@@ -186,6 +186,7 @@ nav:
       - Portainer Agent: vps/services/management/portainer-agent.md
     - Networking:
       - Introduction: vps/services/networking/index.md
+      - Cloudflared: vps/services/networking/cloudflared.md
     - Observability:
       - Introduction: vps/services/observability/index.md
   # - Bootcamp/Setting Up:
