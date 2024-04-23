@@ -187,6 +187,7 @@ nav:
     - Networking:
       - Introduction: vps/services/networking/index.md
       - Cloudflared: vps/services/networking/cloudflared.md
+      - Traefik: vps/services/networking/traefik.md
     - Observability:
       - Introduction: vps/services/observability/index.md
   # - Bootcamp/Setting Up:
