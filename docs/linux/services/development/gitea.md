@@ -9,7 +9,7 @@ There is an official image for this service that we'll use: [gitea/gitea](https:
 We'll create a folder in the main user's home where all the service's data will be saved.
 
 ```bash
-mkdir ~/services/observability/gitea
+mkdir ~/services/development/gitea
 ```
 
 ## Docker Compose
