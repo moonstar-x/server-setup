@@ -27,6 +27,7 @@ services:
       - ./transcode:/transcode
       - /media/usb_4tb:/media/usb_4tb
       - /media/usb_8tb:/media/usb_8tb
+      - /media/sata_2tb:/media/sata_2tb
     environment:
       TZ: America/Guayaquil
       PLEX_UID: 1000
