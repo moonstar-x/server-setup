@@ -23,16 +23,16 @@ We'll use this script to manually update *docker compose* containers.
 #!/bin/bash
 
 echo "Stopping containers..."
-docker-compose stop
+docker compose stop
 
 echo "Removing containers..."
-docker-compose rm -f
+docker compose rm -f
 
 echo "Pulling images..."
-docker-compose pull
+docker compose pull
 
 echo "Restarting containers..."
-docker-compose up -d
+docker compose up -d
 ```
 
 ## `custom-docker-restart`
