@@ -126,7 +126,6 @@ nav:
       - Introduction: linux/services/discord/index.md
       - Free Games Notifier: linux/services/discord/free-games-notifier.md
       - JDA Music Bot: linux/services/discord/jda-music-bot.md
-      - Music 24/7: linux/services/discord/music-24-7.md
       - Text-to-Speech: linux/services/discord/text-to-speech.md
     - Downloads:
       - Introduction: linux/services/downloads/index.md
