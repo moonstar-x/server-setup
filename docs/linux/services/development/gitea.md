@@ -78,7 +78,7 @@ Keep in mind you might need to bind the ports to connect to the service instead.
 
 ## Post-Installation
 
-nce you have started the server once, edit the config file located inside the `data` volume:
+Once you have started the server once, edit the config file located inside the `data` volume:
 
 ```bash
 nano data/gitea/conf/app.ini

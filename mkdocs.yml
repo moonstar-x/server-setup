@@ -122,6 +122,7 @@ nav:
       - Gitea: linux/services/development/gitea.md
       - Jenkins: linux/services/development/jenkins.md
       - Kroki: linux/services/development/kroki.md
+      - Penpot: linux/services/development/penpot.md
     - Discord:
       - Introduction: linux/services/discord/index.md
       - Free Games Notifier: linux/services/discord/free-games-notifier.md
