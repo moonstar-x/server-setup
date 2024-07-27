@@ -24,6 +24,7 @@ services:
     depends_on:
       - mongo
       - redis
+      - rabbitmq
     extra_hosts:
       - host.docker.internal:host-gateway
     networks:
@@ -33,6 +34,7 @@ services:
           - n8n
     volumes:
       - ./data:/home/node/.n8n
+      - ./local:/home/node/host
     environment:
       TZ: America/Guayaquil
       GENERIC_TIMEZONE: America/Guayaquil
@@ -80,7 +82,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.automation-mongo.rule: Host(`automation-mongo.home.example.com`, `automation-mongo.vpn.example.com`)
+      traefik.http.routers.automation-mongo.rule: Host(`mongo.automation.home.example.com`, `mongo.automation.vpn.example.com`)
       traefik.http.routers.automation-mongo.entrypoints: local-https
       traefik.http.routers.automation-mongo.tls: true
       traefik.http.routers.automation-mongo.tls.certresolver: le
@@ -111,12 +113,36 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.automation-redis.rule: Host(`automation-redis.home.example.com`, `automation-redis.vpn.example.com`)
+      traefik.http.routers.automation-redis.rule: Host(`redis.automation.home.example.com`, `redis.automation.vpn.example.com`)
       traefik.http.routers.automation-redis.entrypoints: local-https
       traefik.http.routers.automation-redis.tls: true
       traefik.http.routers.automation-redis.tls.certresolver: le
       traefik.http.routers.automation-redis.service: automation-redis@docker
       traefik.http.services.automation-redis.loadbalancer.server.port: 5540
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: unless-stopped
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - automation-rabbitmq
+    volumes:
+      - ./rabbitmq:/var/lib/rabbitmq
+    environment:
+      TZ: America/Guayaquil
+      RABBITMQ_DEFAULT_USER: MANAGEMENT_USER
+      RABBITMQ_DEFAULT_PASS: MANAGEMENT_PASS
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.automation-rabbit-mq.rule: Host(`rabbitmq.automation.home.moonstar-x.dev`, `rabbitmq.automation.vpn.moonstar-x.dev`)
+      traefik.http.routers.automation-rabbit-mq.entrypoints: local-https
+      traefik.http.routers.automation-rabbit-mq.tls: true
+      traefik.http.routers.automation-rabbit-mq.tls.certresolver: le
+      traefik.http.routers.automation-rabbit-mq.service: automation-rabbit-mq@docker
+      traefik.http.services.automation-rabbit-mq.loadbalancer.server.port: 15672
 
 networks:
   proxy_external:
@@ -130,9 +156,10 @@ networks:
     Make sure to change `BASIC_AUTH_USER` and `BASIC_AUTH_PASSWORD` to a custom secret value.
 
 !!! note
-    Replace `subdomain.example.com` with the domain name where your service will be accessible from.
+    Make sure to change `MANAGEMENT_USER` and `MANAGEMENT_PASS` to a custom secret value.
 
-We also need a database for workflows that require data persistence, in this case we've chosen `mongo` but any database that is supported by `n8n` can work just fine.
+!!! note
+    Replace `subdomain.example.com` with the domain name where your service will be accessible from.
 
 ### Reverse Proxy
 
@@ -146,6 +173,20 @@ For this reason, you will see that this service has:
 
 If you're not using a reverse proxy, feel free to remove these from the `docker-compose.yml` file.
 Keep in mind you might need to bind the ports to connect to the service instead.
+
+### Extras
+
+Technically to get *n8n* up and running you only need the `web` container. However, we've extended this stack with other services to use alongside *n8n* like:
+
+* *mongo* as a database for data persistence.
+* *redis* as a cache for caching certain operations to accelerate certain workflows.
+* *rabbitmq* as a message queue for processing events for certain workflows.
+
+Each of these services come with web based dashboards to access their data from outside if needed.
+
+#### Local Data
+
+Additionally, you may have noticed the volumes in the `web` container. Only the first volume is required to keep *n8n*'s data, the rest are extra volumes that we've included to interface with the host's local filesystem.
 
 ## Running
 
