@@ -35,6 +35,7 @@ services:
     volumes:
       - ./data:/home/node/.n8n
       - ./local:/home/node/host
+      - /media/sata_2tb/MVs:/home/node/binds/MVs
     environment:
       TZ: America/Guayaquil
       GENERIC_TIMEZONE: America/Guayaquil
