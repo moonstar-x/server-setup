@@ -18,7 +18,7 @@
 <span class=w>    </span><span class=nt>labels</span><span class=p>:</span>
 <span class=w>      </span><span class=nt>traefik.enable</span><span class=p>:</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class=w>      </span><span class=nt>traefik.docker.network</span><span class=p>:</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">proxy_external</span>
-<span class=w>      </span><span class=nt>traefik.http.routers.jellyfin.rule</span><span class=p>:</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">Host(`jellyfin.home.example.com`, `jellyfin.vpn.example.com`)</span>
+<span class=w>      </span><span class=nt>traefik.http.routers.jellyfin.rule</span><span class=p>:</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">Host(`jellyfin.home.example.com`) || Host(`jellyfin.vpn.example.com`)</span>
 <span class=w>      </span><span class=nt>traefik.http.routers.jellyfin.entrypoints</span><span class=p>:</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">local-https</span>
 <span class=w>      </span><span class=nt>traefik.http.routers.jellyfin.tls</span><span class=p>:</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class=w>      </span><span class=nt>traefik.http.routers.jellyfin.tls.certresolver</span><span class=p>:</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">le</span>
