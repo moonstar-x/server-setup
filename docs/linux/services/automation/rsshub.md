@@ -1,6 +1,6 @@
 # RSSHub
 
-[n8n](https://docs.rsshub.app/) is a RSS bridge that generates RSS feeds for services that normally do not support them.
+[RSSHub](https://docs.rsshub.app/) is a RSS bridge that generates RSS feeds for services that normally do not support them.
 
 There is an official image for this service that we'll use: [diygod/rsshub](https://hub.docker.com/r/diygod/rsshub).
 
