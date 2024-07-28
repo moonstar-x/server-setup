@@ -37,7 +37,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.pigallery.rule: Host(`gallery.home.example.com`, `gallery.vpn.example.com`)
+      traefik.http.routers.pigallery.rule: Host(`gallery.home.example.com`) || Host(`gallery.vpn.example.com`)
       traefik.http.routers.pigallery.entrypoints: local-https
       traefik.http.routers.pigallery.tls: true
       traefik.http.routers.pigallery.tls.certresolver: le

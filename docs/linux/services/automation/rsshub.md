@@ -38,7 +38,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.rsshub.rule: Host(`rss.home.example.com`, `rss.vpn.example.com`)
+      traefik.http.routers.rsshub.rule: Host(`rss.home.example.com`) || Host(`rss.vpn.example.com`)
       traefik.http.routers.rsshub.entrypoints: local-https
       traefik.http.routers.rsshub.tls: true
       traefik.http.routers.rsshub.tls.certresolver: le

@@ -36,7 +36,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.jellyfin.rule: Host(`jellyfin.home.example.com`, `jellyfin.vpn.example.com`)
+      traefik.http.routers.jellyfin.rule: Host(`jellyfin.home.example.com`) || Host(`jellyfin.vpn.example.com`)
       traefik.http.routers.jellyfin.entrypoints: local-https
       traefik.http.routers.jellyfin.tls: true
       traefik.http.routers.jellyfin.tls.certresolver: le

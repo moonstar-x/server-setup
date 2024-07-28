@@ -31,7 +31,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.kroki.rule: Host(`diagrams.home.example.com`, `diagrams.vpn.example.com`)
+      traefik.http.routers.kroki.rule: Host(`diagrams.home.example.com`) || Host(`diagrams.vpn.example.com`)
       traefik.http.routers.kroki.entrypoints: local-https
       traefik.http.routers.kroki.tls: true
       traefik.http.routers.kroki.tls.certresolver: le

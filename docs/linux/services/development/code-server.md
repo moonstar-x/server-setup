@@ -39,7 +39,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.code-server.rule: Host(`code.home.example.com`, `code.vpn.example.com`)
+      traefik.http.routers.code-server.rule: Host(`code.home.example.com`) || Host(`code.vpn.example.com`)
       traefik.http.routers.code-server.entrypoints: local-https
       traefik.http.routers.code-server.tls: true
       traefik.http.routers.code-server.tls.certresolver: le

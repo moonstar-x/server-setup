@@ -61,7 +61,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.transmission.rule: Host(`transmission.home.example.com`, `transmission.vpn.example.com`)
+      traefik.http.routers.transmission.rule: Host(`transmission.home.example.com`) || Host(`transmission.vpn.example.com`)
       traefik.http.routers.transmission.entrypoints: local-https
       traefik.http.routers.transmission.tls: true
       traefik.http.routers.transmission.tls.certresolver: le

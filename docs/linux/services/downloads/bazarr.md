@@ -47,7 +47,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.bazarr.rule: Host(`bazarr.home.example.com`, `bazarr.vpn.example.com`)
+      traefik.http.routers.bazarr.rule: Host(`bazarr.home.example.com`) || Host(`bazarr.vpn.example.com`)
       traefik.http.routers.bazarr.entrypoints: local-https
       traefik.http.routers.bazarr.tls: true
       traefik.http.routers.bazarr.tls.certresolver: le

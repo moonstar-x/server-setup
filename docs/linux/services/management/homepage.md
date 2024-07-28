@@ -18,14 +18,14 @@ mkdir ~/services/management/homepage
 
 ```yaml
 services:
-  web:
+  web_home:
     image: ghcr.io/gethomepage/homepage:latest
     restart: unless-stopped
     networks:
       default:
       proxy_external:
         aliases:
-          - homepage
+          - homepage-home
     volumes:
       - ./config:/app/config
       - ./images:/app/public/images
@@ -36,15 +36,45 @@ services:
       - /media/usb_8tb:/media/usb_8tb:ro
     environment:
       TZ: America/Guayaquil
+      HOMEPAGE_VAR_DOMAIN: home.example.com
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.homepage.rule: Host(`home.example.com`, `vpn.example.com`)
-      traefik.http.routers.homepage.entrypoints: local-https
-      traefik.http.routers.homepage.tls: true
-      traefik.http.routers.homepage.tls.certresolver: le
-      traefik.http.routers.homepage.service: homepage@docker
-      traefik.http.services.homepage.loadbalancer.server.port: 3000
+      traefik.http.routers.homepage-home.rule: Host(`home.example.com`)
+      traefik.http.routers.homepage-home.entrypoints: local-https
+      traefik.http.routers.homepage-home.service: homepage-home@docker
+      traefik.http.services.homepage-home.loadbalancer.server.port: 3000
+      traefik.http.routers.homepage-home.tls: true
+      traefik.http.routers.homepage-home.tls.certresolver: le
+
+  web_vpn:
+    image: ghcr.io/gethomepage/homepage:latest
+    restart: unless-stopped
+    networks:
+      default:
+      proxy_external:
+        aliases:
+          - homepage-vpn
+    volumes:
+      - ./config:/app/config
+      - ./images:/app/public/images
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /media/sata_2tb:/media/sata_2tb:ro
+      - /media/usb_4tb:/media/usb_4tb:ro
+      - /media/usb_4tb_2:/media/usb_4tb_2:ro
+      - /media/usb_8tb:/media/usb_8tb:ro
+    environment:
+      TZ: America/Guayaquil
+      HOMEPAGE_VAR_DOMAIN: vpn.example.com
+    labels:
+      traefik.enable: true
+      traefik.docker.network: proxy_external
+      traefik.http.routers.homepage-vpn.rule: Host(`vpn.example.com`)
+      traefik.http.routers.homepage-vpn.entrypoints: local-https
+      traefik.http.routers.homepage-vpn.service: homepage-vpn@docker
+      traefik.http.services.homepage-vpn.loadbalancer.server.port: 3000
+      traefik.http.routers.homepage-vpn.tls: true
+      traefik.http.routers.homepage-vpn.tls.certresolver: le
 
 networks:
   proxy_external:

@@ -83,7 +83,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.automation-mongo.rule: Host(`mongo.automation.home.example.com`, `mongo.automation.vpn.example.com`)
+      traefik.http.routers.automation-mongo.rule: Host(`mongo.automation.home.example.com`) || Host(`mongo.automation.vpn.example.com`)
       traefik.http.routers.automation-mongo.entrypoints: local-https
       traefik.http.routers.automation-mongo.tls: true
       traefik.http.routers.automation-mongo.tls.certresolver: le
@@ -114,7 +114,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.automation-redis.rule: Host(`redis.automation.home.example.com`, `redis.automation.vpn.example.com`)
+      traefik.http.routers.automation-redis.rule: Host(`redis.automation.home.example.com`) || Host(`redis.automation.vpn.example.com`)
       traefik.http.routers.automation-redis.entrypoints: local-https
       traefik.http.routers.automation-redis.tls: true
       traefik.http.routers.automation-redis.tls.certresolver: le
@@ -138,7 +138,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.automation-rabbit-mq.rule: Host(`rabbitmq.automation.home.moonstar-x.dev`, `rabbitmq.automation.vpn.moonstar-x.dev`)
+      traefik.http.routers.automation-rabbit-mq.rule: Host(`rabbitmq.automation.home.moonstar-x.dev`) || Host(`rabbitmq.automation.vpn.moonstar-x.dev`)
       traefik.http.routers.automation-rabbit-mq.entrypoints: local-https
       traefik.http.routers.automation-rabbit-mq.tls: true
       traefik.http.routers.automation-rabbit-mq.tls.certresolver: le
