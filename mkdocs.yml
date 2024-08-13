@@ -111,6 +111,7 @@ nav:
       - RSSHub: linux/services/automation/rsshub.md
     - Data:
       - Introduction: linux/services/data/index.md
+      - Memos: linux/services/data/memos.md
       - Nextcloud: linux/services/data/nextcloud.md
       - Pairdrop: linux/services/data/pairdrop.md
       - Reactive Resume: linux/services/data/rx-resume.md
