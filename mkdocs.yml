@@ -185,6 +185,19 @@ nav:
     - Observability:
       - Introduction: servers/vps/services/observability/index.md
       - Uptime Kuma: servers/vps/services/observability/uptime-kuma.md
+  - Bravo/Setting Up:
+    - 0. Introduction: servers/bravo/setting-up/index.md
+    - 1. Installation: servers/bravo/setting-up/installation.md
+    - 2. Docker: servers/bravo/setting-up/docker.md
+    - 3. Custom Scripts: servers/bravo/setting-up/custom-scripts.md
+  - Bravo/Services:
+    - Introduction: servers/bravo/services/index.md
+    - Management:
+      - Introduction: servers/bravo/services/management/index.md
+      - Portainer Agent: servers/bravo/services/management/portainer-agent.md
+    - Networking:
+      - Introduction: servers/bravo/services/networking/index.md
+      - ZeroTier-One: servers/bravo/services/networking/zerotier.md
   - Delta/Setting Up:
     - 0. Introduction: servers/delta/setting-up/index.md
     - 1. Installation: servers/delta/setting-up/installation.md
