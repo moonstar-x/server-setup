@@ -94,122 +94,122 @@ extra_css:
 nav:
   - Home: index.md
   - Alpha/Setting Up:
-    - 0. Introduction: alpha/setting-up/index.md
-    - 1. Installation: alpha/setting-up/installation.md
-    - 2. Mounting Drives: alpha/setting-up/mounting-drives.md
-    - 3. Docker: alpha/setting-up/docker.md
-    - 4. Custom Scripts: alpha/setting-up/custom-scripts.md
+    - 0. Introduction: servers/alpha/setting-up/index.md
+    - 1. Installation: servers/alpha/setting-up/installation.md
+    - 2. Mounting Drives: servers/alpha/setting-up/mounting-drives.md
+    - 3. Docker: servers/alpha/setting-up/docker.md
+    - 4. Custom Scripts: servers/alpha/setting-up/custom-scripts.md
   - Alpha/Services:
-    - Introduction: alpha/services/index.md
+    - Introduction: servers/alpha/services/index.md
     - Analytics:
-      - Introduction: alpha/services/analytics/index.md
-      - Umami: alpha/services/analytics/umami.md
+      - Introduction: servers/alpha/services/analytics/index.md
+      - Umami: servers/alpha/services/analytics/umami.md
     - Automation:
-      - Introduction: alpha/services/automation/index.md
-      - Homebridge: alpha/services/automation/homebridge.md
-      - n8n: alpha/services/automation/n8n.md
-      - RSSHub: alpha/services/automation/rsshub.md
+      - Introduction: servers/alpha/services/automation/index.md
+      - Homebridge: servers/alpha/services/automation/homebridge.md
+      - n8n: servers/alpha/services/automation/n8n.md
+      - RSSHub: servers/alpha/services/automation/rsshub.md
     - Data:
-      - Introduction: alpha/services/data/index.md
-      - Actual: alpha/services/data/actual.md
-      - Memos: alpha/services/data/memos.md
-      - Nextcloud: alpha/services/data/nextcloud.md
-      - Pairdrop: alpha/services/data/pairdrop.md
-      - Reactive Resume: alpha/services/data/rx-resume.md
-      - Wallos: alpha/services/data/wallos.md
+      - Introduction: servers/alpha/services/data/index.md
+      - Actual: servers/alpha/services/data/actual.md
+      - Memos: servers/alpha/services/data/memos.md
+      - Nextcloud: servers/alpha/services/data/nextcloud.md
+      - Pairdrop: servers/alpha/services/data/pairdrop.md
+      - Reactive Resume: servers/alpha/services/data/rx-resume.md
+      - Wallos: servers/alpha/services/data/wallos.md
     - Development:
-      - Introduction: alpha/services/development/index.md
-      - Gitea: alpha/services/development/gitea.md
-      - Kroki: alpha/services/development/kroki.md
-      - Penpot: alpha/services/development/penpot.md
+      - Introduction: servers/alpha/services/development/index.md
+      - Gitea: servers/alpha/services/development/gitea.md
+      - Kroki: servers/alpha/services/development/kroki.md
+      - Penpot: servers/alpha/services/development/penpot.md
     - Discord:
-      - Introduction: alpha/services/discord/index.md
-      - Free Games Notifier: alpha/services/discord/free-games-notifier.md
-      - JDA Music Bot: alpha/services/discord/jda-music-bot.md
-      - Text-to-Speech: alpha/services/discord/text-to-speech.md
+      - Introduction: servers/alpha/services/discord/index.md
+      - Free Games Notifier: servers/alpha/services/discord/free-games-notifier.md
+      - JDA Music Bot: servers/alpha/services/discord/jda-music-bot.md
+      - Text-to-Speech: servers/alpha/services/discord/text-to-speech.md
     - Downloads:
-      - Introduction: alpha/services/downloads/index.md
-      - Bazarr: alpha/services/downloads/bazarr.md
-      - JDownloader: alpha/services/downloads/jdownloader.md
-      - Overseerr: alpha/services/downloads/overseerr.md
-      - Prowlarr: alpha/services/downloads/prowlarr.md
-      - Radarr: alpha/services/downloads/radarr.md
-      - Sonarr: alpha/services/downloads/sonarr.md
-      - Transmission: alpha/services/downloads/transmission.md
+      - Introduction: servers/alpha/services/downloads/index.md
+      - Bazarr: servers/alpha/services/downloads/bazarr.md
+      - JDownloader: servers/alpha/services/downloads/jdownloader.md
+      - Overseerr: servers/alpha/services/downloads/overseerr.md
+      - Prowlarr: servers/alpha/services/downloads/prowlarr.md
+      - Radarr: servers/alpha/services/downloads/radarr.md
+      - Sonarr: servers/alpha/services/downloads/sonarr.md
+      - Transmission: servers/alpha/services/downloads/transmission.md
     - Games:
-      - Introduction: alpha/services/games/index.md
-      - Assetto Corsa: alpha/services/games/assetto-corsa.md
-      - Romm: alpha/services/games/romm.md
-      - TeamSpeak 3: alpha/services/games/teamspeak.md
+      - Introduction: servers/alpha/services/games/index.md
+      - Assetto Corsa: servers/alpha/services/games/assetto-corsa.md
+      - Romm: servers/alpha/services/games/romm.md
+      - TeamSpeak 3: servers/alpha/services/games/teamspeak.md
     - Management:
-      - Introduction: alpha/services/management/index.md
-      - Homepage: alpha/services/management/homepage.md
-      - Portainer: alpha/services/management/portainer.md
+      - Introduction: servers/alpha/services/management/index.md
+      - Homepage: servers/alpha/services/management/homepage.md
+      - Portainer: servers/alpha/services/management/portainer.md
     - Media:
-      - Introduction: alpha/services/media/index.md
-      - FreshRSS: alpha/services/media/freshrss.md
-      - Jellyfin: alpha/services/media/jellyfin.md
-      - Kavita: alpha/services/media/kavita.md
-      - PiGallery 2: alpha/services/media/pigallery-2.md
-      - Plex: alpha/services/media/plex.md
-      - Reddit Slideshow: alpha/services/media/reddit-slideshow.md
-      - Restreamer: alpha/services/media/restreamer.md
-      - Tautulli: alpha/services/media/tautulli.md
+      - Introduction: servers/alpha/services/media/index.md
+      - FreshRSS: servers/alpha/services/media/freshrss.md
+      - Jellyfin: servers/alpha/services/media/jellyfin.md
+      - Kavita: servers/alpha/services/media/kavita.md
+      - PiGallery 2: servers/alpha/services/media/pigallery-2.md
+      - Plex: servers/alpha/services/media/plex.md
+      - Reddit Slideshow: servers/alpha/services/media/reddit-slideshow.md
+      - Restreamer: servers/alpha/services/media/restreamer.md
+      - Tautulli: servers/alpha/services/media/tautulli.md
     - Networking:
-      - Introduction: alpha/services/networking/index.md
-      - Cloudflared: alpha/services/networking/cloudflared.md
-      - Traefik: alpha/services/networking/traefik.md
-      - Samba: alpha/services/networking/samba.md
-      - ZeroTier-One: alpha/services/networking/zerotier.md
+      - Introduction: servers/alpha/services/networking/index.md
+      - Cloudflared: servers/alpha/services/networking/cloudflared.md
+      - Traefik: servers/alpha/services/networking/traefik.md
+      - Samba: servers/alpha/services/networking/samba.md
+      - ZeroTier-One: servers/alpha/services/networking/zerotier.md
     - Observability:
-      - Introduction: alpha/services/observability/index.md
-      - Grafana: alpha/services/observability/grafana.md
-      - LibreSpeed: alpha/services/observability/librespeed.md
-      - Prometheus: alpha/services/observability/prometheus.md
-      - Scrutiny: alpha/services/observability/scrutiny.md
+      - Introduction: servers/alpha/services/observability/index.md
+      - Grafana: servers/alpha/services/observability/grafana.md
+      - LibreSpeed: servers/alpha/services/observability/librespeed.md
+      - Prometheus: servers/alpha/services/observability/prometheus.md
+      - Scrutiny: servers/alpha/services/observability/scrutiny.md
   - VPS/Setting Up:
-    - 0. Introduction: vps/setting-up/index.md
-    - 1. Installation: vps/setting-up/installation.md
-    - 2. Docker: vps/setting-up/docker.md
-    - 3. Custom Scripts: vps/setting-up/custom-scripts.md
+    - 0. Introduction: servers/vps/setting-up/index.md
+    - 1. Installation: servers/vps/setting-up/installation.md
+    - 2. Docker: servers/vps/setting-up/docker.md
+    - 3. Custom Scripts: servers/vps/setting-up/custom-scripts.md
   - VPS/Services:
-    - Introduction: vps/services/index.md
+    - Introduction: servers/vps/services/index.md
     - Management:
-      - Introduction: vps/services/management/index.md
-      - Portainer Agent: vps/services/management/portainer-agent.md
+      - Introduction: servers/vps/services/management/index.md
+      - Portainer Agent: servers/vps/services/management/portainer-agent.md
     - Networking:
-      - Introduction: vps/services/networking/index.md
-      - Cloudflared: vps/services/networking/cloudflared.md
-      - Traefik: vps/services/networking/traefik.md
-      - ZeroTier-One: vps/services/networking/zerotier.md
+      - Introduction: servers/vps/services/networking/index.md
+      - Cloudflared: servers/vps/services/networking/cloudflared.md
+      - Traefik: servers/vps/services/networking/traefik.md
+      - ZeroTier-One: servers/vps/services/networking/zerotier.md
     - Observability:
-      - Introduction: vps/services/observability/index.md
-      - Uptime Kuma: vps/services/observability/uptime-kuma.md
+      - Introduction: servers/vps/services/observability/index.md
+      - Uptime Kuma: servers/vps/services/observability/uptime-kuma.md
   - Delta/Setting Up:
-    - 0. Introduction: delta/setting-up/index.md
-    - 1. Installation: delta/setting-up/installation.md
-    - 2. Docker: delta/setting-up/docker.md
-    - 3. Custom Scripts: delta/setting-up/custom-scripts.md
+    - 0. Introduction: servers/delta/setting-up/index.md
+    - 1. Installation: servers/delta/setting-up/installation.md
+    - 2. Docker: servers/delta/setting-up/docker.md
+    - 3. Custom Scripts: servers/delta/setting-up/custom-scripts.md
   - Delta/Services:
-    - Introduction: delta/services/index.md
+    - Introduction: servers/delta/services/index.md
     - Management:
-      - Introduction: delta/services/management/index.md
-      - Portainer Agent: delta/services/management/portainer-agent.md
+      - Introduction: servers/delta/services/management/index.md
+      - Portainer Agent: servers/delta/services/management/portainer-agent.md
     - Networking:
-      - Introduction: delta/services/networking/index.md
-      - ZeroTier-One: delta/services/networking/zerotier.md
+      - Introduction: servers/delta/services/networking/index.md
+      - ZeroTier-One: servers/delta/services/networking/zerotier.md
   # - Bootcamp/Setting Up:
-  #   - 0. Introduction: bootcamp/setting-up/index.md
-  #   - 1. macOS Configuration: bootcamp/setting-up/mac-os-configuration.md
-  #   - 2. Bootcamp: bootcamp/setting-up/bootcamp.md
-  #   - 3. Windows Configuration: bootcamp/setting-up/windows-configuration.md
+  #   - 0. Introduction: servers/bootcamp/setting-up/index.md
+  #   - 1. macOS Configuration: servers/bootcamp/setting-up/mac-os-configuration.md
+  #   - 2. Bootcamp: servers/bootcamp/setting-up/bootcamp.md
+  #   - 3. Windows Configuration: servers/bootcamp/setting-up/windows-configuration.md
   # - Bootcamp/Game Servers:
-  #   - Introduction: bootcamp/games/index.md
-  #   - Alien Swarm Reactive Drop: bootcamp/games/reactivedrop.md
-  #   - Arma 3: bootcamp/games/arma3.md
-  #   - 'Counter-Strike: Global Offensive': bootcamp/games/csgo.md
-  #   - DayZ: bootcamp/games/dayz.md
-  #   - Left 4 Dead 2: bootcamp/games/l4d2.md
-  #   - No More Room in Hell: bootcamp/games/nmrih.md
-  #   - Sven Coop: bootcamp/games/svencoop.md
-  #   - Valheim: bootcamp/games/valheim.md
+  #   - Introduction: servers/bootcamp/games/index.md
+  #   - Alien Swarm Reactive Drop: servers/bootcamp/games/reactivedrop.md
+  #   - Arma 3: servers/bootcamp/games/arma3.md
+  #   - 'Counter-Strike: Global Offensive': servers/bootcamp/games/csgo.md
+  #   - DayZ: servers/bootcamp/games/dayz.md
+  #   - Left 4 Dead 2: servers/bootcamp/games/l4d2.md
+  #   - No More Room in Hell: servers/bootcamp/games/nmrih.md
+  #   - Sven Coop: servers/bootcamp/games/svencoop.md
+  #   - Valheim: servers/bootcamp/games/valheim.md

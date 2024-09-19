@@ -4,10 +4,10 @@ This is a simple guide that focuses on the installation and configuration proces
 
 As you will notice, this server setup is actually composed of multiple devices with specific roles. That go along the lines of:
 
-> * [Linux Server (Main Server)](./linux/setting-up/index.md)
+> * [Alpha (Main Server)](./servers/alpha/setting-up/index.md)
 >
 > Hosts most of the services I use for my personal (and shared) use.
 >
-> * [VPS (Monitoring)](./vps/setting-up/index.md)
+> * [Delta (Discord Deployments)](./servers/delta/setting-up/index.md)
 >
-> Hosts a monitoring service to serve a status page for the main services.
+> Hosts my personal Discord bot deployments.
