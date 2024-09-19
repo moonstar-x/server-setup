@@ -3,7 +3,7 @@
 [Portainer](https://www.portainer.io/) is a web UI for Docker which allows us to have an insight on all the containers running on our server.
 
 The *Portainer* agent allows you to expose the machine's Docker management to another *Portainer* service hosted elsewhere. We're using the agent in this case to use
-the main [Portainer](../../../linux/services/management/portainer.md) service to manage this one.
+the main [Portainer](../../../alpha/services/management/portainer.md) service to manage this one.
 
 There is an official image for this service that we'll use: [portainer/agent](https://hub.docker.com/r/portainer/agent).
 

@@ -34,22 +34,22 @@ First, visit the following page: [https://one.dash.cloudflare.com](https://one.d
 
 In the dashboard, click `Networks > Tunnels` and click the `Create a tunnel` button.
 
-![step-1](../../../assets/cloudflared/step-1.png)
+![step-1](../../../../assets/cloudflared/step-1.png)
 
 Select `Cloudflared` and click `Next`.
 
-![step-2](../../../assets/cloudflared/step-2.png)
+![step-2](../../../../assets/cloudflared/step-2.png)
 
 Name your tunnel and click in `Save tunnel`.
 
-![step-3](../../../assets/cloudflared/step-3.png)
+![step-3](../../../../assets/cloudflared/step-3.png)
 
 Select `Docker` as the environment and copy the command shown below. You'll notice this command shows a token inside, you should copy this value and continue by running your [Docker Compose](#docker-compose) stack with this value set as the container's `TUNNEL_TOKEN` environment variable.
 
 You should notice that when doing this, the webpage will update with the detected connector. If you see this, it means that your container
 is working perfectly. Finally click `Next`.
 
-![step-4](../../../assets/cloudflared/step-4.png)
+![step-4](../../../../assets/cloudflared/step-4.png)
 
 Next, create a temporary route. Cloudflare requires you to create one when creating the tunnel, however we'll remove it afterwards because we do not need it for now.
 
@@ -59,7 +59,7 @@ Choose your domain to use, and leave the path empty. As the service you should c
 
 Finally click `Save tunnel`.
 
-![step-5](../../../assets/cloudflared/step-5.png)
+![step-5](../../../../assets/cloudflared/step-5.png)
 
 You'll then be taken back to the tunnel dashboard. Select your newly created tunnel and click on the `Configure` button. You'll then see a tab
 that says `Public Hostname`, click on it and you'll now see a list of your hostnames defined.
@@ -68,11 +68,11 @@ Delete all your hostnames and set the `Catch-all rule` to `http://traefik:8000`.
 
 Your hostname definition should look like this:
 
-![step-6](../../../assets/cloudflared/step-6.png)
+![step-6](../../../../assets/cloudflared/step-6.png)
 
 Now, check your URL, you should see something along the lines of `/networks/tunnels/cfd_tunnel/:UUID` as shown in the following image:
 
-![step-7](../../../assets/cloudflared/step-7.png)
+![step-7](../../../../assets/cloudflared/step-7.png)
 
 Copy this uuid and paste it somewhere in the following way:
 

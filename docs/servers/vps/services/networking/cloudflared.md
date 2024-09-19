@@ -34,24 +34,24 @@ First, visit the following page: [https://one.dash.cloudflare.com](https://one.d
 
 In the dashboard, click `Networks > Tunnels` and click the `Create a tunnel` button.
 
-![step-1](../../../assets/cloudflared/step-1.png)
+![step-1](../../../../assets/cloudflared/step-1.png)
 
 Select `Cloudflared` and click `Next`.
 
-![step-2](../../../assets/cloudflared/step-2.png)
+![step-2](../../../../assets/cloudflared/step-2.png)
 
 Name your tunnel and click in `Save tunnel`.
 
-![step-3](../../../assets/cloudflared/step-3.png)
+![step-3](../../../../assets/cloudflared/step-3.png)
 
 Select `Docker` as the environment and copy the command shown below. You'll notice this command shows a token inside, you should copy this value and continue by running your [Docker Compose](#docker-compose) stack with this value set as the container's `TUNNEL_TOKEN` environment variable.
 
 You should notice that when doing this, the webpage will update with the detected connector. If you see this, it means that your container
 is working perfectly. Finally click `Next`.
 
-![step-4](../../../assets/cloudflared/step-4.png)
+![step-4](../../../../assets/cloudflared/step-4.png)
 
-As you may have noticed, up to this point, the steps have been the same as the main server's [Cloudflared](../../../linux/services/networking/cloudflared.md) service. However, since we already have a wildcard, set to the main server's tunnel, you should
+As you may have noticed, up to this point, the steps have been the same as the main server's [Cloudflared](../../../alpha/services/networking/cloudflared.md) service. However, since we already have a wildcard, set to the main server's tunnel, you should
 now create only the necessary routes. They still should point to `http://traefik:8000`.
 
 ## Docker Compose
