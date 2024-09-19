@@ -157,7 +157,6 @@ nav:
     - Networking:
       - Introduction: linux/services/networking/index.md
       - Cloudflared: linux/services/networking/cloudflared.md
-      - PiHole: linux/services/networking/pihole.md
       - Traefik: linux/services/networking/traefik.md
       - Samba: linux/services/networking/samba.md
       - ZeroTier-One: linux/services/networking/zerotier.md
