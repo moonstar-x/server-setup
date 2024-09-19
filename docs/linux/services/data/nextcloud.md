@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y procps smbclient && rm -rf /var/lib/apt
 
 ## Docker Compose
 
-*Actual* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
+*Nextcloud* will be run using *Docker Compose*. The content of the `docker-compose.yml` file is as follows:
 
 ```yaml
 services:
