@@ -119,7 +119,6 @@ nav:
     - Development:
       - Introduction: linux/services/development/index.md
       - Gitea: linux/services/development/gitea.md
-      - Jenkins: linux/services/development/jenkins.md
       - Kroki: linux/services/development/kroki.md
       - Penpot: linux/services/development/penpot.md
     - Discord:
