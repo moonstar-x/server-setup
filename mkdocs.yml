@@ -115,6 +115,7 @@ nav:
       - Nextcloud: linux/services/data/nextcloud.md
       - Pairdrop: linux/services/data/pairdrop.md
       - Reactive Resume: linux/services/data/rx-resume.md
+      - Wallos: linux/services/data/wallos.md
     - Development:
       - Introduction: linux/services/development/index.md
       - Code Server: linux/services/development/code-server.md
