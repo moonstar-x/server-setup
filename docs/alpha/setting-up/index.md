@@ -1,6 +1,6 @@
 # Introduction
 
-This section details the configuration process of the server running linux.
+This section details the configuration process of the Alpha server running Linux.
 
 ## Server Specs
 

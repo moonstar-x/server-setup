@@ -93,80 +93,80 @@ extra_css:
 # Navigation
 nav:
   - Home: index.md
-  - Linux/Setting Up:
-    - 0. Introduction: linux/setting-up/index.md
-    - 1. Installation: linux/setting-up/installation.md
-    - 2. Mounting Drives: linux/setting-up/mounting-drives.md
-    - 3. Docker: linux/setting-up/docker.md
-    - 4. Custom Scripts: linux/setting-up/custom-scripts.md
-  - Linux/Services:
-    - Introduction: linux/services/index.md
+  - Alpha/Setting Up:
+    - 0. Introduction: alpha/setting-up/index.md
+    - 1. Installation: alpha/setting-up/installation.md
+    - 2. Mounting Drives: alpha/setting-up/mounting-drives.md
+    - 3. Docker: alpha/setting-up/docker.md
+    - 4. Custom Scripts: alpha/setting-up/custom-scripts.md
+  - Alpha/Services:
+    - Introduction: alpha/services/index.md
     - Analytics:
-      - Introduction: linux/services/analytics/index.md
-      - Umami: linux/services/analytics/umami.md
+      - Introduction: alpha/services/analytics/index.md
+      - Umami: alpha/services/analytics/umami.md
     - Automation:
-      - Introduction: linux/services/automation/index.md
-      - Homebridge: linux/services/automation/homebridge.md
-      - n8n: linux/services/automation/n8n.md
-      - RSSHub: linux/services/automation/rsshub.md
+      - Introduction: alpha/services/automation/index.md
+      - Homebridge: alpha/services/automation/homebridge.md
+      - n8n: alpha/services/automation/n8n.md
+      - RSSHub: alpha/services/automation/rsshub.md
     - Data:
-      - Introduction: linux/services/data/index.md
-      - Actual: linux/services/data/actual.md
-      - Memos: linux/services/data/memos.md
-      - Nextcloud: linux/services/data/nextcloud.md
-      - Pairdrop: linux/services/data/pairdrop.md
-      - Reactive Resume: linux/services/data/rx-resume.md
-      - Wallos: linux/services/data/wallos.md
+      - Introduction: alpha/services/data/index.md
+      - Actual: alpha/services/data/actual.md
+      - Memos: alpha/services/data/memos.md
+      - Nextcloud: alpha/services/data/nextcloud.md
+      - Pairdrop: alpha/services/data/pairdrop.md
+      - Reactive Resume: alpha/services/data/rx-resume.md
+      - Wallos: alpha/services/data/wallos.md
     - Development:
-      - Introduction: linux/services/development/index.md
-      - Gitea: linux/services/development/gitea.md
-      - Kroki: linux/services/development/kroki.md
-      - Penpot: linux/services/development/penpot.md
+      - Introduction: alpha/services/development/index.md
+      - Gitea: alpha/services/development/gitea.md
+      - Kroki: alpha/services/development/kroki.md
+      - Penpot: alpha/services/development/penpot.md
     - Discord:
-      - Introduction: linux/services/discord/index.md
-      - Free Games Notifier: linux/services/discord/free-games-notifier.md
-      - JDA Music Bot: linux/services/discord/jda-music-bot.md
-      - Text-to-Speech: linux/services/discord/text-to-speech.md
+      - Introduction: alpha/services/discord/index.md
+      - Free Games Notifier: alpha/services/discord/free-games-notifier.md
+      - JDA Music Bot: alpha/services/discord/jda-music-bot.md
+      - Text-to-Speech: alpha/services/discord/text-to-speech.md
     - Downloads:
-      - Introduction: linux/services/downloads/index.md
-      - Bazarr: linux/services/downloads/bazarr.md
-      - JDownloader: linux/services/downloads/jdownloader.md
-      - Overseerr: linux/services/downloads/overseerr.md
-      - Prowlarr: linux/services/downloads/prowlarr.md
-      - Radarr: linux/services/downloads/radarr.md
-      - Sonarr: linux/services/downloads/sonarr.md
-      - Transmission: linux/services/downloads/transmission.md
+      - Introduction: alpha/services/downloads/index.md
+      - Bazarr: alpha/services/downloads/bazarr.md
+      - JDownloader: alpha/services/downloads/jdownloader.md
+      - Overseerr: alpha/services/downloads/overseerr.md
+      - Prowlarr: alpha/services/downloads/prowlarr.md
+      - Radarr: alpha/services/downloads/radarr.md
+      - Sonarr: alpha/services/downloads/sonarr.md
+      - Transmission: alpha/services/downloads/transmission.md
     - Games:
-      - Introduction: linux/services/games/index.md
-      - Assetto Corsa: linux/services/games/assetto-corsa.md
-      - Romm: linux/services/games/romm.md
-      - TeamSpeak 3: linux/services/games/teamspeak.md
+      - Introduction: alpha/services/games/index.md
+      - Assetto Corsa: alpha/services/games/assetto-corsa.md
+      - Romm: alpha/services/games/romm.md
+      - TeamSpeak 3: alpha/services/games/teamspeak.md
     - Management:
-      - Introduction: linux/services/management/index.md
-      - Homepage: linux/services/management/homepage.md
-      - Portainer: linux/services/management/portainer.md
+      - Introduction: alpha/services/management/index.md
+      - Homepage: alpha/services/management/homepage.md
+      - Portainer: alpha/services/management/portainer.md
     - Media:
-      - Introduction: linux/services/media/index.md
-      - FreshRSS: linux/services/media/freshrss.md
-      - Jellyfin: linux/services/media/jellyfin.md
-      - Kavita: linux/services/media/kavita.md
-      - PiGallery 2: linux/services/media/pigallery-2.md
-      - Plex: linux/services/media/plex.md
-      - Reddit Slideshow: linux/services/media/reddit-slideshow.md
-      - Restreamer: linux/services/media/restreamer.md
-      - Tautulli: linux/services/media/tautulli.md
+      - Introduction: alpha/services/media/index.md
+      - FreshRSS: alpha/services/media/freshrss.md
+      - Jellyfin: alpha/services/media/jellyfin.md
+      - Kavita: alpha/services/media/kavita.md
+      - PiGallery 2: alpha/services/media/pigallery-2.md
+      - Plex: alpha/services/media/plex.md
+      - Reddit Slideshow: alpha/services/media/reddit-slideshow.md
+      - Restreamer: alpha/services/media/restreamer.md
+      - Tautulli: alpha/services/media/tautulli.md
     - Networking:
-      - Introduction: linux/services/networking/index.md
-      - Cloudflared: linux/services/networking/cloudflared.md
-      - Traefik: linux/services/networking/traefik.md
-      - Samba: linux/services/networking/samba.md
-      - ZeroTier-One: linux/services/networking/zerotier.md
+      - Introduction: alpha/services/networking/index.md
+      - Cloudflared: alpha/services/networking/cloudflared.md
+      - Traefik: alpha/services/networking/traefik.md
+      - Samba: alpha/services/networking/samba.md
+      - ZeroTier-One: alpha/services/networking/zerotier.md
     - Observability:
-      - Introduction: linux/services/observability/index.md
-      - Grafana: linux/services/observability/grafana.md
-      - LibreSpeed: linux/services/observability/librespeed.md
-      - Prometheus: linux/services/observability/prometheus.md
-      - Scrutiny: linux/services/observability/scrutiny.md
+      - Introduction: alpha/services/observability/index.md
+      - Grafana: alpha/services/observability/grafana.md
+      - LibreSpeed: alpha/services/observability/librespeed.md
+      - Prometheus: alpha/services/observability/prometheus.md
+      - Scrutiny: alpha/services/observability/scrutiny.md
   - VPS/Setting Up:
     - 0. Introduction: vps/setting-up/index.md
     - 1. Installation: vps/setting-up/installation.md
