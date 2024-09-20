@@ -167,21 +167,7 @@ nav:
       - LibreSpeed: servers/alpha/services/observability/librespeed.md
       - Prometheus: servers/alpha/services/observability/prometheus.md
       - Scrutiny: servers/alpha/services/observability/scrutiny.md
-  - VPS/Setting Up:
-    - 0. Introduction: servers/vps/setting-up/index.md
-    - 1. Installation: servers/vps/setting-up/installation.md
-    - 2. Docker: servers/vps/setting-up/docker.md
-    - 3. Custom Scripts: servers/vps/setting-up/custom-scripts.md
   - VPS/Services:
-    - Introduction: servers/vps/services/index.md
-    - Management:
-      - Introduction: servers/vps/services/management/index.md
-      - Portainer Agent: servers/vps/services/management/portainer-agent.md
-    - Networking:
-      - Introduction: servers/vps/services/networking/index.md
-      - Cloudflared: servers/vps/services/networking/cloudflared.md
-      - Traefik: servers/vps/services/networking/traefik.md
-      - ZeroTier-One: servers/vps/services/networking/zerotier.md
     - Observability:
       - Introduction: servers/vps/services/observability/index.md
       - Uptime Kuma: servers/vps/services/observability/uptime-kuma.md
@@ -197,6 +183,8 @@ nav:
       - Portainer Agent: servers/bravo/services/management/portainer-agent.md
     - Networking:
       - Introduction: servers/bravo/services/networking/index.md
+      - Cloudflared: servers/bravo/services/networking/cloudflared.md
+      - Traefik: servers/bravo/services/networking/traefik.md
       - ZeroTier-One: servers/bravo/services/networking/zerotier.md
   - Delta/Setting Up:
     - 0. Introduction: servers/delta/setting-up/index.md
