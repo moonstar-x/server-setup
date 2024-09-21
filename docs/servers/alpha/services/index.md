@@ -1,6 +1,6 @@
 # Introduction
 
-This section details the installation and configuration of all the services run by the server. Almost all of these services are run through [Docker](../setting-up/docker.md), so make sure you have it set up before reading any further.
+This section details the installation and configuration of all the services run by the server. All of these services are run through [Docker](../setting-up/docker.md), so make sure you have it set up before reading any further.
 
 ## Configuration
 

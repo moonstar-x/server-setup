@@ -28,18 +28,18 @@ services:
         aliases:
           - jellyfin
     volumes:
-      - ./jellyfin-config:/config
-      - ./jellyfin-cache:/cache
-      - /media/usb_4tb_2/Jellyfin:/media
+      - ./config:/config
+      - ./cache:/cache
+      - /media/usb_4tb:/media/usb_4tb
+      - /media/usb_8tb:/media/usb_8tb
+      - /media/sata_2tb:/media/sata_2tb
     environment:
       TZ: America/Guayaquil
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.jellyfin.rule: Host(`jellyfin.home.example.com`) || Host(`jellyfin.vpn.example.com`)
-      traefik.http.routers.jellyfin.entrypoints: local-https
-      traefik.http.routers.jellyfin.tls: true
-      traefik.http.routers.jellyfin.tls.certresolver: le
+      traefik.http.routers.jellyfin.rule: Host(`subdomain.example.com`)
+      traefik.http.routers.jellyfin.entrypoints: public
       traefik.http.routers.jellyfin.service: jellyfin@docker
       traefik.http.services.jellyfin.loadbalancer.server.port: 8096
 
@@ -50,6 +50,9 @@ networks:
 
 !!! note
     In the case of the `user` directive, `1000:1000` corresponds to the user's `UID:GID`. You can find the values for your own user by running `id $whoami`.
+
+!!! note
+    Replace `subdomain.example.com` with the domain name where your service will be accessible from.
 
 ### Reverse Proxy
 

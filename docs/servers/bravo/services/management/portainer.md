@@ -26,8 +26,6 @@ services:
       proxy_external:
         aliases:
           - portainer
-    ports:
-      - 8000:8000
     volumes:
       - ./data:/data
       - /var/run/docker.sock:/var/run/docker.sock

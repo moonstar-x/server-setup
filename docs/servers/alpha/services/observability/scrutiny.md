@@ -43,7 +43,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.scrutiny.rule: Host(`scrutiny.home.example.com`) || Host(`scrutiny.vpn.example.com`)
+      traefik.http.routers.scrutiny.rule: Host(`scrutiny.alpha.example.com`) || Host(`scrutiny.alpha.home.example.com`)
       traefik.http.routers.scrutiny.entrypoints: local-https
       traefik.http.routers.scrutiny.tls: true
       traefik.http.routers.scrutiny.tls.certresolver: le

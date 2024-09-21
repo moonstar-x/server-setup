@@ -36,7 +36,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.restreamer.rule: Host(`stream.home.example.com`) || Host(`stream.vpn.example.com`)
+      traefik.http.routers.restreamer.rule: Host(`stream.alpha.example.com`) || Host(`stream.alpha.home.example.com`)
       traefik.http.routers.restreamer.entrypoints: local-https
       traefik.http.routers.restreamer.tls: true
       traefik.http.routers.restreamer.tls.certresolver: le

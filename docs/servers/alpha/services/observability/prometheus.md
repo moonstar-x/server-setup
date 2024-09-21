@@ -75,7 +75,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.prometheus.rule: Host(`prometheus.home.example.com`) || Host(`prometheus.vpn.example.com`)
+      traefik.http.routers.prometheus.rule: Host(`prometheus.alpha.example.com`) || Host(`prometheus.alpha.home.example.com`)
       traefik.http.routers.prometheus.entrypoints: local-https
       traefik.http.routers.prometheus.tls: true
       traefik.http.routers.prometheus.tls.certresolver: le

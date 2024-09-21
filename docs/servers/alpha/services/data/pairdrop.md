@@ -33,7 +33,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.pairdrop.rule: Host(`pairdrop.home.example.com`) || Host(`pairdrop.vpn.example.com`)
+      traefik.http.routers.pairdrop.rule: Host(`pairdrop.alpha.example.com`) || Host(`pairdrop.alpha.home.example.com`)
       traefik.http.routers.pairdrop.entrypoints: local-https
       traefik.http.routers.pairdrop.tls: true
       traefik.http.routers.pairdrop.tls.certresolver: le

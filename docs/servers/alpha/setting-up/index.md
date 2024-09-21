@@ -1,6 +1,6 @@
 # Introduction
 
-This section details the configuration process of the Alpha server running Linux.
+This section details the configuration process of the Alpha home server.
 
 ## Server Specs
 

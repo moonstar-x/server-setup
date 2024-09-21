@@ -102,7 +102,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.traefik.rule: Host(`proxy.home.example.com`) || Host(`proxy.vpn.example.com`)
+      traefik.http.routers.traefik.rule: Host(`proxy.alpha.example.com`) || Host(`proxy.alpha.home.example.com`)
       traefik.http.routers.traefik.entrypoints: local-https
       traefik.http.routers.traefik.tls: true
       traefik.http.routers.traefik.tls.certresolver: le

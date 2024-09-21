@@ -3,7 +3,7 @@
 [Portainer](https://www.portainer.io/) is a web UI for Docker which allows us to have an insight on all the containers running on our server.
 
 The *Portainer* agent allows you to expose the machine's Docker management to another *Portainer* service hosted elsewhere. We're using the agent in this case to use
-the main [Portainer](../../../alpha/services/management/portainer.md) service to manage this one.
+the main [Portainer](../../../bravo/services/management/portainer.md) service to manage this one.
 
 There is an official image for this service that we'll use: [portainer/agent](https://hub.docker.com/r/portainer/agent).
 
@@ -45,10 +45,10 @@ In your main *Portainer* service,
 
 1. Head over to `Environments > Add environment`.
 2. Pick `Docker Standalone` and click on `Start wizard`.
-3. Select `Agent`, set a `Name` for your agent and paste your VPS's address with `9001` as the port into `Environment address`.
+3. Select `Agent`, set a `Name` for your agent and paste your server's address with `9001` as the port into `Environment address`.
 4. Finally, click `Connect`.
 
-And that's it, you can now manage your VPS's Docker services from your main *Portainer* service.
+And that's it, you can now manage your server's Docker services from your main *Portainer* service.
 
 ## Running
 

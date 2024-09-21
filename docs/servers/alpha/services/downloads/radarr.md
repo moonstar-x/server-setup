@@ -47,7 +47,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.radarr.rule: Host(`radarr.home.example.com`) || Host(`radarr.vpn.example.com`)
+      traefik.http.routers.radarr.rule: Host(`radarr.alpha.example.com`) || Host(`radarr.alpha.home.example.com`)
       traefik.http.routers.radarr.entrypoints: local-https
       traefik.http.routers.radarr.tls: true
       traefik.http.routers.radarr.tls.certresolver: le

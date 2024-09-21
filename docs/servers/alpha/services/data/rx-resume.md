@@ -41,8 +41,8 @@ services:
       - db
     environment:
       TZ: America/Guayaquil
-      PUBLIC_URL: https://resume.home.example.com
-      PUBLIC_SERVER_URL: https://resume-api.home.example.com
+      PUBLIC_URL: https://resume.alpha.example.com
+      PUBLIC_SERVER_URL: https://resume-api.alpha.example.com
       POSTGRES_DB: rxresume
       POSTGRES_USER: rxresume
       POSTGRES_PASSWORD: DATABASE_PASSWORD
@@ -54,7 +54,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.rxresume_api.rule: Host(`resume-api.home.example.com`)
+      traefik.http.routers.rxresume_api.rule: Host(`resume-api.alpha.example.com`)
       traefik.http.routers.rxresume_api.entrypoints: local-https
       traefik.http.routers.rxresume_api.tls: true
       traefik.http.routers.rxresume_api.tls.certresolver: le
@@ -73,12 +73,12 @@ services:
       - api
     environment:
       TZ: America/Guayaquil
-      PUBLIC_URL: https://resume.home.example.com
-      PUBLIC_SERVER_URL: https://resume-api.home.example.com
+      PUBLIC_URL: https://resume.alpha.example.com
+      PUBLIC_SERVER_URL: https://resume-api.alpha.example.com
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.rxresume_web.rule: Host(`resume.home.example.com`)
+      traefik.http.routers.rxresume_web.rule: Host(`resume.alpha.example.com`)
       traefik.http.routers.rxresume_web.entrypoints: local-https
       traefik.http.routers.rxresume_web.tls: true
       traefik.http.routers.rxresume_web.tls.certresolver: le
@@ -94,7 +94,7 @@ networks:
     Make sure to change `DATABASE_PASSWORD`, `SECRET_KEY`, and `JWT_SECRET` to a custom secret value.
 
 !!! note
-    Make sure to change `http://public_client_domain.com` and `http://public_api_domain.com` to the domains where each service is hosted.
+    Make sure to change `PUBLIC_URL` and `PUBLIC_SERVER_URL` to the URLs where each service is hosted.
 
 ## Running
 

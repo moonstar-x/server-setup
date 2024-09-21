@@ -49,7 +49,7 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.romm.rule: Host(`roms.home.example.com`) || Host(`roms.vpn.example.com`)
+      traefik.http.routers.romm.rule: Host(`roms.alpha.example.com`) || Host(`roms.alpha.home.example.com`)
       traefik.http.routers.romm.entrypoints: local-https
       traefik.http.routers.romm.tls: true
       traefik.http.routers.romm.tls.certresolver: le
