@@ -64,39 +64,7 @@ Finally click `Save tunnel`.
 You'll then be taken back to the tunnel dashboard. Select your newly created tunnel and click on the `Configure` button. You'll then see a tab
 that says `Public Hostname`, click on it and you'll now see a list of your hostnames defined.
 
-Delete all your hostnames and set the `Catch-all rule` to `http://traefik:8000`.
-
-Your hostname definition should look like this:
-
-![step-6](../../../../assets/cloudflared/step-6.png)
-
-Now, check your URL, you should see something along the lines of `/networks/tunnels/cfd_tunnel/:UUID` as shown in the following image:
-
-![step-7](../../../../assets/cloudflared/step-7.png)
-
-Copy this uuid and paste it somewhere in the following way:
-
-```text
-UUID.cfargotunnel.com
-```
-
-So if your UUID is `abcd-efgh-ijkl` you should have the following text ready:
-
-```text
-abcd-efgh-ijkl.cfargotunnel.com
-```
-
-Head over to your domain's [DNS Dashboard](https://dash.cloudflare.com/) and create a new rule with the following info:
-
-```text
-Type: CNAME
-Name: *
-Target: abcd-efgh-ijkl.cfargotunnel.com
-Proxied: Enabled
-TTL: Auto
-```
-
-And done, you should now have a wildcard definition for your domain that will point to your [Traefik](./traefik.md) reverse proxy.
+And that's it. Whenever you need to add a new entry to the tunnel, just create a new hostname that points to `traefik:8000` and you're good to go.
 
 ## Docker Compose
 

@@ -51,8 +51,20 @@ is working perfectly. Finally click `Next`.
 
 ![step-4](../../../../assets/cloudflared/step-4.png)
 
-As you may have noticed, up to this point, the steps have been the same as the main server's [Cloudflared](../../../alpha/services/networking/cloudflared.md) service. However, since we already have a wildcard, set to the main server's tunnel, you should
-now create only the necessary routes. They still should point to `http://traefik:8000`.
+Next, create a temporary route. Cloudflare requires you to create one when creating the tunnel, however we'll remove it afterwards because we do not need it for now.
+
+You can leave the subdomain as anything you want (just keep in mind that Cloudflare will automatically create a record with that subdomain name, so if you have another record with that name it may get replaced).
+
+Choose your domain to use, and leave the path empty. As the service you should choose `HTTP` as the type and set the `URL` to anything.
+
+Finally click `Save tunnel`.
+
+![step-5](../../../../assets/cloudflared/step-5.png)
+
+You'll then be taken back to the tunnel dashboard. Select your newly created tunnel and click on the `Configure` button. You'll then see a tab
+that says `Public Hostname`, click on it and you'll now see a list of your hostnames defined.
+
+And that's it. Whenever you need to add a new entry to the tunnel, just create a new hostname that points to `traefik:8000` and you're good to go.
 
 ## Docker Compose
 
