@@ -34,7 +34,7 @@ services:
       traefik.enable: true
       traefik.docker.network: proxy_external
       traefik.http.routers.memos.rule: Host(`subdomain.example.com`)
-      traefik.http.routers.memos.entrypoints: public
+      traefik.http.routers.memos.entrypoints: tunnel
       traefik.http.routers.memos.service: memos@docker
       traefik.http.services.memos.loadbalancer.server.port: 5230
 

@@ -35,7 +35,7 @@ services:
       traefik.enable: true
       traefik.docker.network: proxy_external
       traefik.http.routers.wallos.rule: Host(`subdomain.example.com`)
-      traefik.http.routers.wallos.entrypoints: public
+      traefik.http.routers.wallos.entrypoints: tunnel
       traefik.http.routers.wallos.service: wallos@docker
       traefik.http.services.wallos.loadbalancer.server.port: 80
 

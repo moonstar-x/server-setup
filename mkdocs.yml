@@ -103,9 +103,6 @@ nav:
       - 4. Custom Scripts: servers/alpha/setting-up/custom-scripts.md
     - Services:
       - Introduction: servers/alpha/services/index.md
-      - Analytics:
-        - Initialization: servers/alpha/services/analytics/index.md
-        - Umami: servers/alpha/services/analytics/umami.md
       - Automation:
         - Initialization: servers/alpha/services/automation/index.md
         - Homebridge: servers/alpha/services/automation/homebridge.md
@@ -171,6 +168,9 @@ nav:
       - 3. Custom Scripts: servers/bravo/setting-up/custom-scripts.md
     - Services:
       - Introduction: servers/bravo/services/index.md
+      - Analytics:
+        - Initialization: servers/bravo/services/analytics/index.md
+        - Umami: servers/bravo/services/analytics/umami.md
       - Data:
         - Initialization: servers/bravo/services/data/index.md
         - Actual: servers/bravo/services/data/actual.md

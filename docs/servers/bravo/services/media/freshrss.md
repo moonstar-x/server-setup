@@ -36,7 +36,7 @@ services:
       traefik.enable: true
       traefik.docker.network: proxy_external
       traefik.http.routers.freshrss.rule: Host(`subdomain.example.com`)
-      traefik.http.routers.freshrss.entrypoints: public
+      traefik.http.routers.freshrss.entrypoints: tunnel
       traefik.http.routers.freshrss.service: freshrss@docker
       traefik.http.services.freshrss.loadbalancer.server.port: 80
 

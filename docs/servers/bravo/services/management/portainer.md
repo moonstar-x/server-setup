@@ -35,7 +35,7 @@ services:
       traefik.enable: true
       traefik.docker.network: proxy_external
       traefik.http.routers.portainer.rule: Host(`subdomain.example.com`)
-      traefik.http.routers.portainer.entrypoints: public
+      traefik.http.routers.portainer.entrypoints: tunnel
       traefik.http.routers.portainer.service: portainer@docker
       traefik.http.services.portainer.loadbalancer.server.port: 9000
 

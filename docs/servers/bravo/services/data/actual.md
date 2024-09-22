@@ -34,7 +34,7 @@ services:
       traefik.enable: true
       traefik.docker.network: proxy_external
       traefik.http.routers.actual.rule: Host(`subdomain.example.com`)
-      traefik.http.routers.actual.entrypoints: public
+      traefik.http.routers.actual.entrypoints: tunnel
       traefik.http.routers.actual.service: actual@docker
       traefik.http.services.actual.loadbalancer.server.port: 5006
 

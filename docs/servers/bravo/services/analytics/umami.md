@@ -43,7 +43,7 @@ services:
       traefik.enable: true
       traefik.docker.network: proxy_external
       traefik.http.routers.umami.rule: Host(`subdomain.example.com`)
-      traefik.http.routers.umami.entrypoints: public
+      traefik.http.routers.umami.entrypoints: tunnel
       traefik.http.routers.umami.service: umami@docker
       traefik.http.services.umami.loadbalancer.server.port: 3000
 
