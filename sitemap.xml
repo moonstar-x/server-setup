@@ -146,11 +146,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://moonstar-x.dev/server-setup/servers/alpha/services/management/homepage/</loc>
-         <lastmod>2024-09-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://moonstar-x.dev/server-setup/servers/alpha/services/management/portainer-agent/</loc>
          <lastmod>2024-09-22</lastmod>
          <changefreq>daily</changefreq>
