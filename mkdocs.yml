@@ -137,7 +137,6 @@ nav:
         - TeamSpeak 3: servers/alpha/services/games/teamspeak.md
       - Management:
         - Initialization: servers/alpha/services/management/index.md
-        - Homepage: servers/alpha/services/management/homepage.md
         - Portainer Agent: servers/alpha/services/management/portainer-agent.md
       - Media:
         - Initialization: servers/alpha/services/media/index.md
