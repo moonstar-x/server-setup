@@ -177,6 +177,7 @@ nav:
         - Wallos: servers/bravo/services/data/wallos.md
       - Management:
         - Initialization: servers/bravo/services/management/index.md
+        - Glance: servers/bravo/services/management/glance.md
         - Portainer: servers/bravo/services/management/portainer.md
       - Media:
         - Initialization: servers/bravo/services/media/index.md
