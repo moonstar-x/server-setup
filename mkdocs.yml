@@ -150,8 +150,9 @@ nav:
       - Networking:
         - Initialization: servers/alpha/services/networking/index.md
         - Cloudflared: servers/alpha/services/networking/cloudflared.md
-        - Traefik: servers/alpha/services/networking/traefik.md
         - Samba: servers/alpha/services/networking/samba.md
+        - Tailscale: servers/alpha/services/networking/tailscale.md
+        - Traefik: servers/alpha/services/networking/traefik.md
         - ZeroTier-One: servers/alpha/services/networking/zerotier.md
       - Observability:
         - Initialization: servers/alpha/services/observability/index.md
@@ -187,7 +188,7 @@ nav:
         - Initialization: servers/bravo/services/networking/index.md
         - Cloudflared: servers/bravo/services/networking/cloudflared.md
         - Traefik: servers/bravo/services/networking/traefik.md
-        - ZeroTier-One: servers/bravo/services/networking/zerotier.md
+        - Tailscale: servers/bravo/services/networking/tailscale.md
       - Observability:
         - Initialization: servers/bravo/services/observability/index.md
         - Uptime Kuma: servers/bravo/services/observability/uptime-kuma.md
@@ -208,7 +209,7 @@ nav:
         - Portainer Agent: servers/delta/services/management/portainer-agent.md
       - Networking:
         - Initialization: servers/delta/services/networking/index.md
-        - ZeroTier-One: servers/delta/services/networking/zerotier.md
+        - Tailscale: servers/delta/services/networking/tailscale.md
   # - Bootcamp/Setting Up:
   #   - 0. Introduction: servers/bootcamp/setting-up/index.md
   #   - 1. macOS Configuration: servers/bootcamp/setting-up/mac-os-configuration.md
