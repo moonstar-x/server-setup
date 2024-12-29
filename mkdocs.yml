@@ -174,8 +174,9 @@ nav:
       - Data:
         - Initialization: servers/bravo/services/data/index.md
         - Actual: servers/bravo/services/data/actual.md
-        - Memos: servers/bravo/services/data/memos.md
         - LinkStack: servers/bravo/services/data/linkstack.md
+        - Maybe: servers/bravo/services/data/maybe.md
+        - Memos: servers/bravo/services/data/memos.md
         - Wallos: servers/bravo/services/data/wallos.md
       - Management:
         - Initialization: servers/bravo/services/management/index.md
