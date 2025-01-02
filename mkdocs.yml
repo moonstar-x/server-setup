@@ -142,9 +142,7 @@ nav:
         - Initialization: servers/alpha/services/media/index.md
         - Jellyfin: servers/alpha/services/media/jellyfin.md
         - Kavita: servers/alpha/services/media/kavita.md
-        - PiGallery 2: servers/alpha/services/media/pigallery-2.md
         - Plex: servers/alpha/services/media/plex.md
-        - Reddit Slideshow: servers/alpha/services/media/reddit-slideshow.md
         - Restreamer: servers/alpha/services/media/restreamer.md
         - Tautulli: servers/alpha/services/media/tautulli.md
       - Networking:
