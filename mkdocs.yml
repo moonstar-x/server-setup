@@ -180,6 +180,7 @@ nav:
         - Initialization: servers/bravo/services/management/index.md
         - Glance: servers/bravo/services/management/glance.md
         - Portainer: servers/bravo/services/management/portainer.md
+        - Rustdesk: servers/bravo/services/management/rustdesk.md
       - Media:
         - Initialization: servers/bravo/services/media/index.md
         - FreshRSS: servers/bravo/services/media/freshrss.md
