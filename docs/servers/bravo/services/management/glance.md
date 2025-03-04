@@ -27,7 +27,7 @@ services:
         aliases:
           - glance
     volumes:
-      - ./glance.yml:/app/glance.yml
+      - ./config:/app/config
       - ./assets:/app/assets
     environment:
       TZ: America/Guayaquil
@@ -66,7 +66,7 @@ Keep in mind you might need to bind the ports to connect to the service instead.
 
 ## Post Configuration
 
-To configure this, make sure to create a `glance.yml` file. Check out the [documentation](https://github.com/glanceapp/glance/blob/main/docs/configuration.md) to see what you can add.
+To configure this, make sure to create a `config/glance.yml` file. Check out the [documentation](https://github.com/glanceapp/glance/blob/main/docs/configuration.md) to see what you can add.
 
 ## Running
 

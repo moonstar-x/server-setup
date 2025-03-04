@@ -40,7 +40,7 @@ services:
       traefik.http.routers.penpot.rule: Host(`subdomain.example.com`)
       traefik.http.routers.penpot.entrypoints: public
       traefik.http.routers.penpot.service: penpot@docker
-      traefik.http.services.penpot.loadbalancer.server.port: 80
+      traefik.http.services.penpot.loadbalancer.server.port: 8080
 
   penpot-backend:
     image: penpotapp/backend:latest
