@@ -1,19 +1,17 @@
-# Introduction
+# Welcome to MkDocs
 
-This is a simple guide that focuses on the installation and configuration process of my self hosted infrastructure that runs multiple services for various purposes. The server now uses exclusively Docker for all of its services.
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-This is an improved version of the [previous server guide](https://moonstar-x.dev/old-server-setup), some of the services from the previous version are present here, some are gone for good.
+## Commands
 
-As you will notice, this server setup is actually composed of multiple devices with specific roles. That go along the lines of:
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs -h` - Print help message and exit.
 
-> * [Alpha (Home Server)](./servers/alpha/setting-up/index.md)
->
-> Hosts most of the services I host from my own self-built machine.
->
-> * [Bravo (VPS)](./servers/bravo/setting-up/index.md)
->
-> Hosts some of the services that need a higher availability than my home server can provide.
->
-> * [Delta (VPS)](./servers/delta/setting-up/index.md)
->
-> Hosts my personal Discord bot deployments.
+## Project layout
+
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.

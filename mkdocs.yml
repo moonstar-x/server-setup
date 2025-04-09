@@ -1,6 +1,6 @@
 # Site Information
 site_name: Server Setup Guide
-site_description: A guide of how I've set up my home server.
+site_description: A guide on how I've set up my self-hosted services.
 site_author: moonstar-x
 site_url: https://moonstar-x.dev/server-setup/
 
@@ -15,9 +15,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/moonstar-x
       name: moonstar-x's GitHub Profile
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/moonstar_x99
-      name: moonstar-x on Twitter
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/moonstar_x99
+      name: moonstar-x on X
     - icon: fontawesome/brands/discord
       link: https://discord.gg/mhj3Zsv
       name: moonstar-x's Discord Server
@@ -26,7 +26,7 @@ extra:
       name: moonstar-x's Website
 
 # Copyright
-copyright: Copyright &copy; 2021 moonstar-x
+copyright: Copyright &copy; 2025 moonstar-x
 
 # Theme Customization
 theme:
@@ -94,134 +94,3 @@ extra_css:
 # Navigation
 nav:
   - Home: index.md
-  - Alpha (Home Server):
-    - Setting Up:
-      - 0. Introduction: servers/alpha/setting-up/index.md
-      - 1. Installation: servers/alpha/setting-up/installation.md
-      - 2. Mounting Drives: servers/alpha/setting-up/mounting-drives.md
-      - 3. Docker: servers/alpha/setting-up/docker.md
-      - 4. Custom Scripts: servers/alpha/setting-up/custom-scripts.md
-    - Services:
-      - Introduction: servers/alpha/services/index.md
-      - Automation:
-        - Initialization: servers/alpha/services/automation/index.md
-        - Homebridge: servers/alpha/services/automation/homebridge.md
-        - n8n: servers/alpha/services/automation/n8n.md
-        - RSSHub: servers/alpha/services/automation/rsshub.md
-      - Data:
-        - Initialization: servers/alpha/services/data/index.md
-        - Nextcloud: servers/alpha/services/data/nextcloud.md
-        - Pairdrop: servers/alpha/services/data/pairdrop.md
-        - Reactive Resume: servers/alpha/services/data/rx-resume.md
-      - Development:
-        - Initialization: servers/alpha/services/development/index.md
-        - Gitea: servers/alpha/services/development/gitea.md
-        - Kroki: servers/alpha/services/development/kroki.md
-        - Penpot: servers/alpha/services/development/penpot.md
-      - Discord:
-        - Initialization: servers/alpha/services/discord/index.md
-        - JDA Music Bot: servers/alpha/services/discord/jda-music-bot.md
-      - Downloads:
-        - Initialization: servers/alpha/services/downloads/index.md
-        - Bazarr: servers/alpha/services/downloads/bazarr.md
-        - JDownloader: servers/alpha/services/downloads/jdownloader.md
-        - Overseerr: servers/alpha/services/downloads/overseerr.md
-        - Prowlarr: servers/alpha/services/downloads/prowlarr.md
-        - Radarr: servers/alpha/services/downloads/radarr.md
-        - Sonarr: servers/alpha/services/downloads/sonarr.md
-        - Transmission: servers/alpha/services/downloads/transmission.md
-      - Games:
-        - Initialization: servers/alpha/services/games/index.md
-        - Assetto Corsa: servers/alpha/services/games/assetto-corsa.md
-        - Romm: servers/alpha/services/games/romm.md
-        - TeamSpeak 3: servers/alpha/services/games/teamspeak.md
-      - Management:
-        - Initialization: servers/alpha/services/management/index.md
-        - Portainer Agent: servers/alpha/services/management/portainer-agent.md
-      - Media:
-        - Initialization: servers/alpha/services/media/index.md
-        - Jellyfin: servers/alpha/services/media/jellyfin.md
-        - Kavita: servers/alpha/services/media/kavita.md
-        - Plex: servers/alpha/services/media/plex.md
-        - Restreamer: servers/alpha/services/media/restreamer.md
-        - Tautulli: servers/alpha/services/media/tautulli.md
-      - Networking:
-        - Initialization: servers/alpha/services/networking/index.md
-        - Cloudflared: servers/alpha/services/networking/cloudflared.md
-        - Samba: servers/alpha/services/networking/samba.md
-        - Tailscale: servers/alpha/services/networking/tailscale.md
-        - Traefik: servers/alpha/services/networking/traefik.md
-        - ZeroTier-One: servers/alpha/services/networking/zerotier.md
-      - Observability:
-        - Initialization: servers/alpha/services/observability/index.md
-        - Grafana: servers/alpha/services/observability/grafana.md
-        - LibreSpeed: servers/alpha/services/observability/librespeed.md
-        - Prometheus: servers/alpha/services/observability/prometheus.md
-        - Scrutiny: servers/alpha/services/observability/scrutiny.md
-  - Bravo (VPS):
-    - Setting Up:
-      - 0. Introduction: servers/bravo/setting-up/index.md
-      - 1. Installation: servers/bravo/setting-up/installation.md
-      - 2. Docker: servers/bravo/setting-up/docker.md
-      - 3. Custom Scripts: servers/bravo/setting-up/custom-scripts.md
-    - Services:
-      - Introduction: servers/bravo/services/index.md
-      - Analytics:
-        - Initialization: servers/bravo/services/analytics/index.md
-        - Umami: servers/bravo/services/analytics/umami.md
-      - Data:
-        - Initialization: servers/bravo/services/data/index.md
-        - Actual: servers/bravo/services/data/actual.md
-        - LinkStack: servers/bravo/services/data/linkstack.md
-        - Maybe: servers/bravo/services/data/maybe.md
-        - Memos: servers/bravo/services/data/memos.md
-        - Wallos: servers/bravo/services/data/wallos.md
-      - Management:
-        - Initialization: servers/bravo/services/management/index.md
-        - Glance: servers/bravo/services/management/glance.md
-        - Portainer: servers/bravo/services/management/portainer.md
-        - Rustdesk: servers/bravo/services/management/rustdesk.md
-      - Media:
-        - Initialization: servers/bravo/services/media/index.md
-        - FreshRSS: servers/bravo/services/media/freshrss.md
-      - Networking:
-        - Initialization: servers/bravo/services/networking/index.md
-        - Cloudflared: servers/bravo/services/networking/cloudflared.md
-        - Traefik: servers/bravo/services/networking/traefik.md
-        - Tailscale: servers/bravo/services/networking/tailscale.md
-      - Observability:
-        - Initialization: servers/bravo/services/observability/index.md
-        - Uptime Kuma: servers/bravo/services/observability/uptime-kuma.md
-  - Delta (VPS):
-    - Setting Up:
-      - 0. Introduction: servers/delta/setting-up/index.md
-      - 1. Installation: servers/delta/setting-up/installation.md
-      - 2. Docker: servers/delta/setting-up/docker.md
-      - 3. Custom Scripts: servers/delta/setting-up/custom-scripts.md
-    - Services:
-      - Introduction: servers/delta/services/index.md
-      - Discord:
-        - Initialization: servers/delta/services/discord/index.md
-        - Free Games Notifier: servers/delta/services/discord/free-games-notifier.md
-        - Text-to-Speech: servers/delta/services/discord/text-to-speech.md
-      - Management:
-        - Initialization: servers/delta/services/management/index.md
-        - Portainer Agent: servers/delta/services/management/portainer-agent.md
-      - Networking:
-        - Initialization: servers/delta/services/networking/index.md
-        - Tailscale: servers/delta/services/networking/tailscale.md
-  # - Bootcamp/Setting Up:
-  #   - 0. Introduction: servers/bootcamp/setting-up/index.md
-  #   - 1. macOS Configuration: servers/bootcamp/setting-up/mac-os-configuration.md
-  #   - 2. Bootcamp: servers/bootcamp/setting-up/bootcamp.md
-  #   - 3. Windows Configuration: servers/bootcamp/setting-up/windows-configuration.md
-  # - Bootcamp/Game Servers:
-  #   - Introduction: servers/bootcamp/games/index.md
-  #   - Alien Swarm Reactive Drop: servers/bootcamp/games/reactivedrop.md
-  #   - Arma 3: servers/bootcamp/games/arma3.md
-  #   - 'Counter-Strike: Global Offensive': servers/bootcamp/games/csgo.md
-  #   - DayZ: servers/bootcamp/games/dayz.md
-  #   - Left 4 Dead 2: servers/bootcamp/games/l4d2.md
-  #   - No More Room in Hell: servers/bootcamp/games/nmrih.md
-  #   - Sven Coop: servers/bootcamp/games/svencoop.md
-  #   - Valheim: servers/bootcamp/games/valheim.md
