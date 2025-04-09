@@ -94,3 +94,17 @@ extra_css:
 # Navigation
 nav:
   - Home: index.md
+  - dev-ec-uio-01:
+    - Configuration:
+      - 0. Introduction: servers/dev-ec-uio-01/configuration/index.md
+      - 1. Installation: servers/dev-ec-uio-01/configuration/installation.md
+      - 2. Docker: servers/dev-ec-uio-01/configuration/docker.md
+      - 3. Mounting Drives: servers/dev-ec-uio-01/configuration/mounting-drives.md
+      - 4. Custom Scripts: servers/dev-ec-uio-01/configuration/custom-scripts.md
+    - Services:
+      - Introduction: servers/dev-ec-uio-01/services/index.md
+      - Networking:
+        - Initialization: servers/dev-ec-uio-01/services/networking/index.md
+        - Cloudflared: servers/dev-ec-uio-01/services/networking/cloudflared.md
+        - Tailscale: servers/dev-ec-uio-01/services/networking/tailscale.md
+        - Traefik: servers/dev-ec-uio-01/services/networking/traefik.md
