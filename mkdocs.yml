@@ -103,6 +103,15 @@ nav:
       - 4. Custom Scripts: servers/dev-ec-uio-01/configuration/custom-scripts.md
     - Services:
       - Introduction: servers/dev-ec-uio-01/services/index.md
+      - Development:
+        - Initialization: servers/dev-ec-uio-01/services/development/index.md
+        - Gitea: servers/dev-ec-uio-01/services/development/gitea.md
+        - Gitea Runners: servers/dev-ec-uio-01/services/development/gitea-runners.md
+        - Kroki: servers/dev-ec-uio-01/services/development/kroki.md
+        - Penpot: servers/dev-ec-uio-01/services/development/penpot.md
+      - Management:
+        - Initialization: servers/dev-ec-uio-01/services/management/index.md
+        - Portainer Agent: servers/dev-ec-uio-01/services/management/portainer-agent.md
       - Networking:
         - Initialization: servers/dev-ec-uio-01/services/networking/index.md
         - Cloudflared: servers/dev-ec-uio-01/services/networking/cloudflared.md
