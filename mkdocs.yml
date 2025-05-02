@@ -117,3 +117,10 @@ nav:
         - Cloudflared: servers/dev-ec-uio-01/services/networking/cloudflared.md
         - Tailscale: servers/dev-ec-uio-01/services/networking/tailscale.md
         - Traefik: servers/dev-ec-uio-01/services/networking/traefik.md
+  - misc-ec-uio-01:
+    - Configuration:
+      - 0. Introduction: servers/misc-ec-uio-01/configuration/index.md
+      - 1. Installation: servers/misc-ec-uio-01/configuration/installation.md
+      - 2. Docker: servers/misc-ec-uio-01/configuration/docker.md
+      - 3. Mounting Drives: servers/misc-ec-uio-01/configuration/mounting-drives.md
+      - 4. Custom Scripts: servers/misc-ec-uio-01/configuration/custom-scripts.md
