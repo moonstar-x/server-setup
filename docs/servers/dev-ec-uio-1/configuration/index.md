@@ -1,6 +1,6 @@
 # Introduction
 
-This section contains details of the `dev-ec-uio-01` server.
+This section contains details of the `dev-ec-uio-1` server.
 
 > This server is mostly used for development purposes.
 

@@ -94,43 +94,43 @@ extra_css:
 # Navigation
 nav:
   - Home: index.md
-  - dev-ec-uio-01:
+  - dev-ec-uio-1:
     - Configuration:
-      - 0. Introduction: servers/dev-ec-uio-01/configuration/index.md
-      - 1. Installation: servers/dev-ec-uio-01/configuration/installation.md
-      - 2. Docker: servers/dev-ec-uio-01/configuration/docker.md
-      - 3. Mounting Drives: servers/dev-ec-uio-01/configuration/mounting-drives.md
-      - 4. Custom Scripts: servers/dev-ec-uio-01/configuration/custom-scripts.md
+      - 0. Introduction: servers/dev-ec-uio-1/configuration/index.md
+      - 1. Installation: servers/dev-ec-uio-1/configuration/installation.md
+      - 2. Docker: servers/dev-ec-uio-1/configuration/docker.md
+      - 3. Mounting Drives: servers/dev-ec-uio-1/configuration/mounting-drives.md
+      - 4. Custom Scripts: servers/dev-ec-uio-1/configuration/custom-scripts.md
     - Services:
-      - Introduction: servers/dev-ec-uio-01/services/index.md
+      - Introduction: servers/dev-ec-uio-1/services/index.md
       - Development:
-        - Initialization: servers/dev-ec-uio-01/services/development/index.md
-        - Gitea: servers/dev-ec-uio-01/services/development/gitea.md
-        - Gitea Runners: servers/dev-ec-uio-01/services/development/gitea-runners.md
-        - Kroki: servers/dev-ec-uio-01/services/development/kroki.md
-        - Penpot: servers/dev-ec-uio-01/services/development/penpot.md
+        - Initialization: servers/dev-ec-uio-1/services/development/index.md
+        - Gitea: servers/dev-ec-uio-1/services/development/gitea.md
+        - Gitea Runners: servers/dev-ec-uio-1/services/development/gitea-runners.md
+        - Kroki: servers/dev-ec-uio-1/services/development/kroki.md
+        - Penpot: servers/dev-ec-uio-1/services/development/penpot.md
       - Management:
-        - Initialization: servers/dev-ec-uio-01/services/management/index.md
-        - Portainer Agent: servers/dev-ec-uio-01/services/management/portainer-agent.md
+        - Initialization: servers/dev-ec-uio-1/services/management/index.md
+        - Portainer Agent: servers/dev-ec-uio-1/services/management/portainer-agent.md
       - Networking:
-        - Initialization: servers/dev-ec-uio-01/services/networking/index.md
-        - Cloudflared: servers/dev-ec-uio-01/services/networking/cloudflared.md
-        - Tailscale: servers/dev-ec-uio-01/services/networking/tailscale.md
-        - Traefik: servers/dev-ec-uio-01/services/networking/traefik.md
-  - misc-ec-uio-01:
+        - Initialization: servers/dev-ec-uio-1/services/networking/index.md
+        - Cloudflared: servers/dev-ec-uio-1/services/networking/cloudflared.md
+        - Tailscale: servers/dev-ec-uio-1/services/networking/tailscale.md
+        - Traefik: servers/dev-ec-uio-1/services/networking/traefik.md
+  - misc-ec-uio-1:
     - Configuration:
-      - 0. Introduction: servers/misc-ec-uio-01/configuration/index.md
-      - 1. Installation: servers/misc-ec-uio-01/configuration/installation.md
-      - 2. Docker: servers/misc-ec-uio-01/configuration/docker.md
-      - 3. Mounting Drives: servers/misc-ec-uio-01/configuration/mounting-drives.md
-      - 4. Custom Scripts: servers/misc-ec-uio-01/configuration/custom-scripts.md
+      - 0. Introduction: servers/misc-ec-uio-1/configuration/index.md
+      - 1. Installation: servers/misc-ec-uio-1/configuration/installation.md
+      - 2. Docker: servers/misc-ec-uio-1/configuration/docker.md
+      - 3. Mounting Drives: servers/misc-ec-uio-1/configuration/mounting-drives.md
+      - 4. Custom Scripts: servers/misc-ec-uio-1/configuration/custom-scripts.md
     - Services:
-      - Introduction: servers/misc-ec-uio-01/services/index.md
+      - Introduction: servers/misc-ec-uio-1/services/index.md
       - Management:
-        - Initialization: servers/misc-ec-uio-01/services/management/index.md
-        - Portainer Agent: servers/misc-ec-uio-01/services/management/portainer-agent.md
+        - Initialization: servers/misc-ec-uio-1/services/management/index.md
+        - Portainer Agent: servers/misc-ec-uio-1/services/management/portainer-agent.md
       - Networking:
-        - Initialization: servers/misc-ec-uio-01/services/networking/index.md
-        - Samba: servers/misc-ec-uio-01/services/networking/samba.md
-        - Tailscale: servers/misc-ec-uio-01/services/networking/tailscale.md
-        - ZeroTier-One: servers/misc-ec-uio-01/services/networking/zerotier.md
+        - Initialization: servers/misc-ec-uio-1/services/networking/index.md
+        - Samba: servers/misc-ec-uio-1/services/networking/samba.md
+        - Tailscale: servers/misc-ec-uio-1/services/networking/tailscale.md
+        - ZeroTier-One: servers/misc-ec-uio-1/services/networking/zerotier.md
