@@ -124,3 +124,13 @@ nav:
       - 2. Docker: servers/misc-ec-uio-01/configuration/docker.md
       - 3. Mounting Drives: servers/misc-ec-uio-01/configuration/mounting-drives.md
       - 4. Custom Scripts: servers/misc-ec-uio-01/configuration/custom-scripts.md
+    - Services:
+      - Introduction: servers/misc-ec-uio-01/services/index.md
+      - Management:
+        - Initialization: servers/misc-ec-uio-01/services/management/index.md
+        - Portainer Agent: servers/misc-ec-uio-01/services/management/portainer-agent.md
+      - Networking:
+        - Initialization: servers/misc-ec-uio-01/services/networking/index.md
+        - Samba: servers/misc-ec-uio-01/services/networking/samba.md
+        - Tailscale: servers/misc-ec-uio-01/services/networking/tailscale.md
+        - ZeroTier-One: servers/misc-ec-uio-01/services/networking/zerotier.md
