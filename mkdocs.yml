@@ -134,3 +134,9 @@ nav:
         - Samba: servers/misc-ec-uio-1/services/networking/samba.md
         - Tailscale: servers/misc-ec-uio-1/services/networking/tailscale.md
         - ZeroTier-One: servers/misc-ec-uio-1/services/networking/zerotier.md
+  - deploy-us-east-1:
+    - Configuration:
+      - 0. Introduction: servers/deploy-us-east-1/configuration/index.md
+      - 1. Installation: servers/deploy-us-east-1/configuration/installation.md
+      - 2. Docker: servers/deploy-us-east-1/configuration/docker.md
+      - 3. Custom Scripts: servers/deploy-us-east-1/configuration/custom-scripts.md
