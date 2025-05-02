@@ -144,11 +144,30 @@ nav:
       - 3. Custom Scripts: servers/misc-us-east-1/configuration/custom-scripts.md
     - Services:
       - Introduction: servers/misc-us-east-1/services/index.md
+      - Analytics:
+        - Initialization: servers/misc-us-east-1/services/analytics/index.md
+        - Umami: servers/misc-us-east-1/services/analytics/umami.md
+      - Data:
+        - Initialization: servers/misc-us-east-1/services/data/index.md
+        - Actual: servers/misc-us-east-1/services/data/actual.md
+        - Maybe: servers/misc-us-east-1/services/data/maybe.md
+        - Memos: servers/misc-us-east-1/services/data/memos.md
+      - Management:
+        - Initialization: servers/misc-us-east-1/services/management/index.md
+        - Glance: servers/misc-us-east-1/services/management/glance.md
+        - Portainer: servers/misc-us-east-1/services/management/portainer.md
+        - Rustdesk: servers/misc-us-east-1/services/management/rustdesk.md
+      - Media:
+        - Initialization: servers/misc-us-east-1/services/media/index.md
+        - FreshRSS: servers/misc-us-east-1/services/media/freshrss.md
       - Networking:
         - Initialization: servers/misc-us-east-1/services/networking/index.md
         - Cloudflared: servers/misc-us-east-1/services/networking/cloudflared.md
         - Tailscale: servers/misc-us-east-1/services/networking/tailscale.md
         - Traefik: servers/misc-us-east-1/services/networking/traefik.md
+      - Observability:
+        - Initialization: servers/misc-us-east-1/services/observability/index.md
+        - Uptime Kuma: servers/misc-us-east-1/services/observability/uptime-kuma.md
   - deploy-us-east-1:
     - Configuration:
       - 0. Introduction: servers/deploy-us-east-1/configuration/index.md
