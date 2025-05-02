@@ -146,3 +146,9 @@ nav:
       - 1. Installation: servers/deploy-us-east-1/configuration/installation.md
       - 2. Docker: servers/deploy-us-east-1/configuration/docker.md
       - 3. Custom Scripts: servers/deploy-us-east-1/configuration/custom-scripts.md
+    - Management:
+      - Initialization: servers/deploy-us-east-1/services/management/index.md
+      - Portainer Agent: servers/deploy-us-east-1/services/management/portainer-agent.md
+    - Networking:
+      - Initialization: servers/deploy-us-east-1/services/networking/index.md
+      - Tailscale: servers/deploy-us-east-1/services/networking/tailscale.md
