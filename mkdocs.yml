@@ -126,11 +126,24 @@ nav:
       - 4. Custom Scripts: servers/misc-ec-uio-1/configuration/custom-scripts.md
     - Services:
       - Introduction: servers/misc-ec-uio-1/services/index.md
+      - Automation:
+        - Initialization: servers/misc-ec-uio-1/services/automation/index.md
+        - Homebridge: servers/misc-ec-uio-1/services/automation/homebridge.md
+        - n8n: servers/misc-ec-uio-1/services/automation/n8n.md
       - Data:
         - Initialization: servers/misc-ec-uio-1/services/data/index.md
         - Nextcloud: servers/misc-ec-uio-1/services/data/nextcloud.md
         - Pairdrop: servers/misc-ec-uio-1/services/data/pairdrop.md
         - Reactive Resume: servers/misc-ec-uio-1/services/data/rx-resume.md
+      - Downloads:
+        - Initialization: servers/misc-ec-uio-1/services/downloads/index.md
+        - Bazarr: servers/misc-ec-uio-1/services/downloads/bazarr.md
+        - JDownloader: servers/misc-ec-uio-1/services/downloads/jdownloader.md
+        - Overseerr: servers/misc-ec-uio-1/services/downloads/overseerr.md
+        - Prowlarr: servers/misc-ec-uio-1/services/downloads/prowlarr.md
+        - Radarr: servers/misc-ec-uio-1/services/downloads/radarr.md
+        - Sonarr: servers/misc-ec-uio-1/services/downloads/sonarr.md
+        - Transmission: servers/misc-ec-uio-1/services/downloads/transmission.md
       - Games:
         - Initialization: servers/misc-ec-uio-1/services/games/index.md
         - Assetto Corsa: servers/misc-ec-uio-1/services/games/assetto-corsa.md
@@ -141,6 +154,7 @@ nav:
         - Portainer Agent: servers/misc-ec-uio-1/services/management/portainer-agent.md
       - Media:
         - Initialization: servers/misc-ec-uio-1/services/media/index.md
+        - Jellyfin: servers/misc-ec-uio-1/services/media/jellyfin.md
         - Kavita: servers/misc-ec-uio-1/services/media/kavita.md
         - Plex: servers/misc-ec-uio-1/services/media/plex.md
         - Restreamer: servers/misc-ec-uio-1/services/media/restreamer.md
