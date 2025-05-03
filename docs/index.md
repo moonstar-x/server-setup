@@ -1,19 +1,12 @@
 # Introduction
 
-This is a simple guide that focuses on the installation and configuration process of my self hosted infrastructure that runs multiple services for various purposes. The server now uses exclusively Docker for all of its services.
+This is a guide that focuses on the installation and configuration process of my self-hosted infrastructure that runs some custom services that I use.
 
-This is an improved version of the [previous server guide](https://moonstar-x.dev/old-server-setup), some of the services from the previous version are present here, some are gone for good.
+As you'll notice, this setup is actually composed of multiple servers with specific roles, all of which use Docker exclusively.
 
-As you will notice, this server setup is actually composed of multiple devices with specific roles. That go along the lines of:
+Currently, these are the servers available:
 
-> * [Alpha (Home Server)](./servers/alpha/setting-up/index.md)
->
-> Hosts most of the services I host from my own self-built machine.
->
-> * [Bravo (VPS)](./servers/bravo/setting-up/index.md)
->
-> Hosts some of the services that need a higher availability than my home server can provide.
->
-> * [Delta (VPS)](./servers/delta/setting-up/index.md)
->
-> Hosts my personal Discord bot deployments.
+- [deploy-us-east-1](./servers/deploy-us-east-1/configuration/index.md)
+- [dev-ec-uio-1](./servers/dev-ec-uio-1/configuration/index.md)
+- [misc-ec-uio-1](./servers/misc-ec-uio-1/configuration/index.md)
+- [misc-us-east-1](./servers/misc-us-east-1/configuration/index.md)
