@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Introduction
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This is a guide that focuses on the installation and configuration process of my self-hosted infrastructure that runs some custom services that I use.
 
-## Commands
+As you'll notice, this setup is actually composed of multiple servers with specific roles, all of which use Docker exclusively.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Currently, these are the servers available:
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [deploy-us-east-1](./servers/deploy-us-east-1/configuration/index.md)
+- [dev-ec-uio-1](./servers/dev-ec-uio-1/configuration/index.md)
+- [misc-ec-uio-1](./servers/misc-ec-uio-1/configuration/index.md)
+- [misc-us-east-1](./servers/misc-us-east-1/configuration/index.md)
