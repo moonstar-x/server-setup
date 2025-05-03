@@ -126,9 +126,25 @@ nav:
       - 4. Custom Scripts: servers/misc-ec-uio-1/configuration/custom-scripts.md
     - Services:
       - Introduction: servers/misc-ec-uio-1/services/index.md
+      - Data:
+        - Initialization: servers/misc-ec-uio-1/services/data/index.md
+        - Nextcloud: servers/misc-ec-uio-1/services/data/nextcloud.md
+        - Pairdrop: servers/misc-ec-uio-1/services/data/pairdrop.md
+        - Reactive Resume: servers/misc-ec-uio-1/services/data/rx-resume.md
+      - Games:
+        - Initialization: servers/misc-ec-uio-1/services/games/index.md
+        - Assetto Corsa: servers/misc-ec-uio-1/services/games/assetto-corsa.md
+        - Romm: servers/misc-ec-uio-1/services/games/romm.md
+        - TeamSpeak 3: servers/misc-ec-uio-1/services/games/teamspeak.md
       - Management:
         - Initialization: servers/misc-ec-uio-1/services/management/index.md
         - Portainer Agent: servers/misc-ec-uio-1/services/management/portainer-agent.md
+      - Media:
+        - Initialization: servers/misc-ec-uio-1/services/media/index.md
+        - Kavita: servers/misc-ec-uio-1/services/media/kavita.md
+        - Plex: servers/misc-ec-uio-1/services/media/plex.md
+        - Restreamer: servers/misc-ec-uio-1/services/media/restreamer.md
+        - Tautulli: servers/misc-ec-uio-1/services/media/tautulli.md
       - Networking:
         - Initialization: servers/misc-ec-uio-1/services/networking/index.md
         - Cloudflared: servers/misc-ec-uio-1/services/networking/cloudflared.md
