@@ -103,6 +103,9 @@ nav:
       - 4. Custom Scripts: servers/dev-ec-uio-1/configuration/custom-scripts.md
     - Services:
       - Introduction: servers/dev-ec-uio-1/services/index.md
+      - AI:
+        - Initialization: servers/dev-ec-uio-1/services/ai/index.md
+        - Langfuse: servers/dev-ec-uio-1/services/ai/langfuse.md
       - Development:
         - Initialization: servers/dev-ec-uio-1/services/development/index.md
         - Gitea: servers/dev-ec-uio-1/services/development/gitea.md
