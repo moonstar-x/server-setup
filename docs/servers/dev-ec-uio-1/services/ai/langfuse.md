@@ -1,6 +1,6 @@
 # Langfuse
 
-[Langfuse](https://glitchtip.com) is a self-hosted tracing tool for LLMs.
+[Langfuse](https://langfuse.com) is a self-hosted tracing tool for LLMs.
 
 There is an official image for this service that we'll use: [langfuse/langfuse](https://hub.docker.com/r/langfuse/langfuse/).
 
