@@ -109,6 +109,7 @@ nav:
         - Gitea Runners: servers/dev-ec-uio-1/services/development/gitea-runners.md
         - Kroki: servers/dev-ec-uio-1/services/development/kroki.md
         - Penpot: servers/dev-ec-uio-1/services/development/penpot.md
+        - Sonarqube: servers/dev-ec-uio-1/services/development/sonarqube.md
       - Management:
         - Initialization: servers/dev-ec-uio-1/services/management/index.md
         - Portainer Agent: servers/dev-ec-uio-1/services/management/portainer-agent.md
