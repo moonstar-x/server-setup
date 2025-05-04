@@ -107,6 +107,7 @@ nav:
         - Initialization: servers/dev-ec-uio-1/services/development/index.md
         - Gitea: servers/dev-ec-uio-1/services/development/gitea.md
         - Gitea Runners: servers/dev-ec-uio-1/services/development/gitea-runners.md
+        - Glitchtip: servers/dev-ec-uio-1/services/development/glitchtip.md
         - Kroki: servers/dev-ec-uio-1/services/development/kroki.md
         - Penpot: servers/dev-ec-uio-1/services/development/penpot.md
         - Sonarqube: servers/dev-ec-uio-1/services/development/sonarqube.md
