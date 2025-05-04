@@ -106,6 +106,7 @@ nav:
       - AI:
         - Initialization: servers/dev-ec-uio-1/services/ai/index.md
         - Langfuse: servers/dev-ec-uio-1/services/ai/langfuse.md
+        - Ollama: servers/dev-ec-uio-1/services/ai/ollama.md
       - Development:
         - Initialization: servers/dev-ec-uio-1/services/development/index.md
         - Gitea: servers/dev-ec-uio-1/services/development/gitea.md
