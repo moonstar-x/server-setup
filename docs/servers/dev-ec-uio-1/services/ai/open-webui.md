@@ -21,6 +21,8 @@ services:
   web:
     image: ghcr.io/open-webui/open-webui:main
     restart: unless-stopped
+    extra_hosts:
+      - host.docker.internal:host-gateway
     networks:
       default:
       proxy_external:
@@ -41,11 +43,49 @@ services:
       traefik.http.routers.open-webui.entrypoints: public
       traefik.http.routers.open-webui.service: open-webui@docker
       traefik.http.services.open-webui.loadbalancer.server.port: 8080
+      
+  proxy:
+    image: nginx:alpine
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    environment:
+      TZ: America/Guayaquil
 
 networks:
   proxy_external:
     external: true
 ```
+
+!!! note
+    The `proxy` container is completely optional, you might not need it. I'm using it to access an Ollama instance on a separate machine on my local network without having to expose the `web` container itself.
+
+### `nginx.conf`
+
+The contents of this file are as follows:
+
+```text
+events {}
+
+http {
+    server {
+        listen 61000;
+
+        location / {
+            proxy_pass http://192.168.100.43:11434;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+    }
+}
+```
+
+!!! info
+    This proxy configuration acts as a route to forward all requests to the host machine on port `61000` to a machine on my local network on `192.168.100.43:11434` which is an Ollama instance on a separate machine.
+
+    This way, from within the `web` container this LAN service becomes accessible on `host.docker.internal:61000`.
 
 ### Secrets
 
@@ -69,6 +109,14 @@ For this reason, you will see that this service has:
 
 If you're not using a reverse proxy, feel free to remove these from the `docker-compose.yml` file.
 Keep in mind you might need to bind the ports to connect to the service instead.
+
+## Post-Installation
+
+In case you decide to use the `proxy` container as how I'm using it, you'll need to create a firewall rule.
+
+```bash
+sudo ufw allow 61000/tcp
+```
 
 ## Running
 
