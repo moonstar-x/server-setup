@@ -108,6 +108,9 @@ nav:
         - Langfuse: servers/dev-ec-uio-1/services/ai/langfuse.md
         - Ollama: servers/dev-ec-uio-1/services/ai/ollama.md
         - Open WebUI: servers/dev-ec-uio-1/services/ai/open-webui.md
+      - Data:
+        - Initialization: servers/dev-ec-uio-1/services/data/index.md
+        - Wakapi: servers/dev-ec-uio-1/services/data/wakapi.md
       - Development:
         - Initialization: servers/dev-ec-uio-1/services/development/index.md
         - Gitea: servers/dev-ec-uio-1/services/development/gitea.md
