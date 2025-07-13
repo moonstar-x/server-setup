@@ -235,9 +235,13 @@ nav:
       - 3. Custom Scripts: servers/dev-eu-west-1/configuration/custom-scripts.md
     - Services:
       - Introduction: servers/dev-eu-west-1/services/index.md
+      - Development:
+        - Initialization: servers/dev-eu-west-1/services/development/index.md
+        - Gitea: servers/dev-eu-west-1/services/development/gitea.md
       - Management:
           - Initialization: servers/dev-eu-west-1/services/management/index.md
           - Portainer Agent: servers/dev-eu-west-1/services/management/portainer-agent.md
       - Networking:
           - Initialization: servers/dev-eu-west-1/services/networking/index.md
           - Tailscale: servers/dev-eu-west-1/services/networking/tailscale.md
+          - Traefik: servers/dev-eu-west-1/services/networking/traefik.md

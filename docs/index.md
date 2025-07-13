@@ -8,5 +8,6 @@ Currently, these are the servers available:
 
 - [deploy-us-east-1](./servers/deploy-us-east-1/configuration/index.md)
 - [dev-ec-uio-1](./servers/dev-ec-uio-1/configuration/index.md)
+- [dev-eu-west-1](./servers/dev-eu-west-1/configuration/index.md)
 - [misc-ec-uio-1](./servers/misc-ec-uio-1/configuration/index.md)
 - [misc-us-east-1](./servers/misc-us-east-1/configuration/index.md)
