@@ -192,6 +192,7 @@ nav:
         - Actual: servers/misc-us-east-1/services/data/actual.md
         - Maybe: servers/misc-us-east-1/services/data/maybe.md
         - Memos: servers/misc-us-east-1/services/data/memos.md
+        - Wallos: servers/misc-us-east-1/services/data/wallos.md
       - Management:
         - Initialization: servers/misc-us-east-1/services/management/index.md
         - Glance: servers/misc-us-east-1/services/management/glance.md
@@ -226,3 +227,13 @@ nav:
       - Networking:
         - Initialization: servers/deploy-us-east-1/services/networking/index.md
         - Tailscale: servers/deploy-us-east-1/services/networking/tailscale.md
+  - dev-eu-west-1:
+    - Configuration:
+      - 0. Introduction: servers/dev-eu-west-1/configuration/index.md
+      - 1. Installation: servers/dev-eu-west-1/configuration/installation.md
+      - 2. Docker: servers/dev-eu-west-1/configuration/docker.md
+      - 3. Custom Scripts: servers/dev-eu-west-1/configuration/custom-scripts.md
+    - Services:
+      - Networking:
+          - Initialization: servers/dev-eu-west-1/services/networking/index.md
+          - Tailscale: servers/dev-eu-west-1/services/networking/tailscale.md
