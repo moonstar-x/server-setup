@@ -42,10 +42,21 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.umami.rule: Host(`${DOMAIN_UMAMI}`)
-      traefik.http.routers.umami.entrypoints: tunnel
-      traefik.http.routers.umami.service: umami@docker
+      traefik.http.routers.umami-http.rule: Host(`${DOMAIN_UMAMI}`)
+      traefik.http.routers.umami-http.entrypoints: http
+      traefik.http.routers.umami-http.middlewares: umami-redirectscheme
+      traefik.http.routers.umami-http.service: umami@docker
+      traefik.http.routers.umami-https.rule: Host(`${DOMAIN_UMAMI}`)
+      traefik.http.routers.umami-https.entrypoints: https
+      traefik.http.routers.umami-https.service: umami@docker
+      traefik.http.routers.umami-https.middlewares: umami-headers
+      traefik.http.routers.umami-https.tls: true
+      traefik.http.routers.umami-https.tls.certresolver: le
       traefik.http.services.umami.loadbalancer.server.port: 3000
+      traefik.http.middlewares.umami-redirectscheme.redirectscheme.scheme: https
+      traefik.http.middlewares.umami-redirectscheme.redirectscheme.permanent: true
+      traefik.http.middlewares.umami-headers.headers.customrequestheaders.X-Forwarded-Proto: https
+      traefik.http.middlewares.umami-headers.headers.customrequestheaders.Host: ${DOMAIN_UMAMI}
 
   db:
     image: postgres:15-alpine

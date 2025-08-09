@@ -197,9 +197,6 @@ nav:
       - 3. Custom Scripts: servers/misc-us-east-1/configuration/custom-scripts.md
     - Services:
       - Introduction: servers/misc-us-east-1/services/index.md
-      - Analytics:
-        - Initialization: servers/misc-us-east-1/services/analytics/index.md
-        - Umami: servers/misc-us-east-1/services/analytics/umami.md
       - Data:
         - Initialization: servers/misc-us-east-1/services/data/index.md
         - Actual: servers/misc-us-east-1/services/data/actual.md
@@ -248,6 +245,9 @@ nav:
       - 3. Custom Scripts: servers/dev-eu-west-1/configuration/custom-scripts.md
     - Services:
       - Introduction: servers/dev-eu-west-1/services/index.md
+      - Analytics:
+        - Initialization: servers/dev-eu-west-1/services/analytics/index.md
+        - Umami: servers/dev-eu-west-1/services/analytics/umami.md
       - Development:
         - Initialization: servers/dev-eu-west-1/services/development/index.md
         - Gitea: servers/dev-eu-west-1/services/development/gitea.md
