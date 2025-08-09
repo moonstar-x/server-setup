@@ -33,10 +33,21 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.uptime-kuma.rule: Host(`${DOMAIN_UPTIME_KUMA}`)
-      traefik.http.routers.uptime-kuma.entrypoints: tunnel
-      traefik.http.routers.uptime-kuma.service: uptime-kuma@docker
+      traefik.http.routers.uptime-kuma-http.rule: Host(`${DOMAIN_UPTIME_KUMA}`)
+      traefik.http.routers.uptime-kuma-http.entrypoints: http
+      traefik.http.routers.uptime-kuma-http.middlewares: uptime-kuma-redirectscheme
+      traefik.http.routers.uptime-kuma-http.service: uptime-kuma@docker
+      traefik.http.routers.uptime-kuma-https.rule: Host(`${DOMAIN_UPTIME_KUMA}`)
+      traefik.http.routers.uptime-kuma-https.entrypoints: https
+      traefik.http.routers.uptime-kuma-https.service: uptime-kuma@docker
+      traefik.http.routers.uptime-kuma-https.middlewares: uptime-kuma-headers
+      traefik.http.routers.uptime-kuma-https.tls: true
+      traefik.http.routers.uptime-kuma-https.tls.certresolver: le
       traefik.http.services.uptime-kuma.loadbalancer.server.port: 3001
+      traefik.http.middlewares.uptime-kuma-redirectscheme.redirectscheme.scheme: https
+      traefik.http.middlewares.uptime-kuma-redirectscheme.redirectscheme.permanent: true
+      traefik.http.middlewares.uptime-kuma-headers.headers.customrequestheaders.X-Forwarded-Proto: https
+      traefik.http.middlewares.uptime-kuma-headers.headers.customrequestheaders.Host: ${DOMAIN_UPTIME_KUMA}
 
 networks:
   proxy_external:

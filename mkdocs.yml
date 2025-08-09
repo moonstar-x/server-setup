@@ -216,9 +216,6 @@ nav:
         - Cloudflared: servers/misc-us-east-1/services/networking/cloudflared.md
         - Tailscale: servers/misc-us-east-1/services/networking/tailscale.md
         - Traefik: servers/misc-us-east-1/services/networking/traefik.md
-      - Observability:
-        - Initialization: servers/misc-us-east-1/services/observability/index.md
-        - Uptime Kuma: servers/misc-us-east-1/services/observability/uptime-kuma.md
   - deploy-us-east-1:
     - Configuration:
       - 0. Introduction: servers/deploy-us-east-1/configuration/index.md
@@ -258,3 +255,6 @@ nav:
           - Initialization: servers/dev-eu-west-1/services/networking/index.md
           - Tailscale: servers/dev-eu-west-1/services/networking/tailscale.md
           - Traefik: servers/dev-eu-west-1/services/networking/traefik.md
+      - Observability:
+        - Initialization: servers/dev-eu-west-1/services/observability/index.md
+        - Uptime Kuma: servers/dev-eu-west-1/services/observability/uptime-kuma.md
