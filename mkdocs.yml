@@ -176,6 +176,19 @@ nav:
         - Tailscale: servers/misc-ec-uio-1/services/networking/tailscale.md
         - Traefik: servers/misc-ec-uio-1/services/networking/traefik.md
         - ZeroTier-One: servers/misc-ec-uio-1/services/networking/zerotier.md
+  - nano-ec-uio-1:
+    - Configuration:
+      - 0. Introduction: servers/nano-ec-uio-1/configuration/index.md
+      - 1. Installation: servers/nano-ec-uio-1/configuration/installation.md
+      - 2. Docker: servers/nano-ec-uio-1/configuration/docker.md
+      - 3. Monitor: servers/nano-ec-uio-1/configuration/monitor.md
+    - Services:
+      - Management:
+        - Initialization: servers/nano-ec-uio-1/services/management/index.md
+        - Portainer Agent: servers/nano-ec-uio-1/services/management/portainer-agent.md
+      - Networking:
+        - Initialization: servers/nano-ec-uio-1/services/networking/index.md
+        - Tailscale: servers/nano-ec-uio-1/services/networking/tailscale.md
   - misc-us-east-1:
     - Configuration:
       - 0. Introduction: servers/misc-us-east-1/configuration/index.md
