@@ -31,6 +31,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       TZ: America/Guayaquil
+      TRUSTED_ORIGINS: ${DOMAIN_PORTAINER}
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
