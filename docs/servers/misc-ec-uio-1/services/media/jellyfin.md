@@ -38,9 +38,14 @@ services:
     labels:
       traefik.enable: true
       traefik.docker.network: proxy_external
-      traefik.http.routers.jellyfin.rule: Host(`${DOMAIN_JELLYFIN}`)
-      traefik.http.routers.jellyfin.entrypoints: public
-      traefik.http.routers.jellyfin.service: jellyfin@docker
+      traefik.http.routers.jellyfin-public.rule: Host(`${DOMAIN_JELLYFIN_PUBLIC}`)
+      traefik.http.routers.jellyfin-public.entrypoints: public
+      traefik.http.routers.jellyfin-public.service: jellyfin-mv@docker
+      traefik.http.routers.jellyfin-local.rule: Host(`${DOMAIN_JELLYFIN_LOCAL}`)
+      traefik.http.routers.jellyfin-local.entrypoints: local-https
+      traefik.http.routers.jellyfin-local.tls: true
+      traefik.http.routers.jellyfin-local.tls.certresolver: le
+      traefik.http.routers.jellyfin-local.service: jellyfin@docker
       traefik.http.services.jellyfin.loadbalancer.server.port: 8096
 
 networks:
@@ -56,7 +61,8 @@ networks:
 Make sure to create a `.env` file with the following structure:
 
 ```text
-DOMAIN_JELLYFIN=
+DOMAIN_JELLYFIN_PUBLIC=
+DOMAIN_JELLYFIN_LOCAL=
 ```
 
 ### Reverse Proxy
